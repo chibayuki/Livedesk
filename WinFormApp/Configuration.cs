@@ -26,12 +26,7 @@ namespace WinFormApp
     {
         #region 配置设置
 
-        // 根目录：此产品
-        public static readonly string RootDir_Product = Environment.SystemDirectory.Substring(0, 1) + @":\ProgramData\AppConfig\Livedesk";
-        // 根目录：当前版本
-        public static readonly string RootDir_CurrentVersion = RootDir_Product + "\\" + Application.ProductVersion;
-
-        // 兼容的版本列表
+        // 兼容的版本列表，用于从最新的兼容版本迁移配置设置
         public static readonly List<Version> OldVersionList = new List<Version>
         {
             new Version(1, 0, 1704, 0),
@@ -41,6 +36,11 @@ namespace WinFormApp
             new Version(1, 0, 1712, 0),/*
             new Version(1, 0, 1712, 127)*/
         };
+
+        // 根目录：此产品
+        public static readonly string RootDir_Product = Environment.SystemDirectory.Substring(0, 1) + @":\ProgramData\AppConfig\Livedesk";
+        // 根目录：当前版本
+        public static readonly string RootDir_CurrentVersion = RootDir_Product + "\\" + Application.ProductVersion;
 
         // 配置文件所在目录
         public static readonly string ConfigFileDir = RootDir_CurrentVersion + @"\Config";

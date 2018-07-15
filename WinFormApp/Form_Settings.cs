@@ -19,6 +19,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using System.Diagnostics;
+
 namespace WinFormApp
 {
     public partial class Form_Settings : Form
@@ -178,8 +180,9 @@ namespace WinFormApp
             CheckBox_DesktopShortcut.CheckedChanged += CheckBox_DesktopShortcut_CheckedChanged;
 
             // "关于"区域
-            Label_AppName.Text = Application.ProductName;
-            Label_AppVersion.Text = "版本: " + Application.ProductVersion;
+            Label_ApplicationName.Text = Application.ProductName;
+            Label_ApplicationEdition.Text = "Build " + new Version(Application.ProductVersion).Build;
+            Label_Version.Text = "版本: " + Application.ProductVersion;
         }
 
         // 窗体关闭
@@ -217,12 +220,12 @@ namespace WinFormApp
             Button_CloseSettings.FlatAppearance.MouseOverBackColor = FormManager.RecommendColors.Button_DEC.ToColor();
             Button_CloseSettings.FlatAppearance.MouseDownBackColor = FormManager.RecommendColors.Button_INC.ToColor();
 
-            // 功能区
+            // 功能区选项卡
 
             Panel_FunctionArea.BackColor = FormManager.RecommendColors.Background_DEC.ToColor();
             Panel_FunctionAreaOptionsBar.BackColor = FormManager.RecommendColors.Button_DEC.ToColor();
 
-            FunctionAreaTab = FunctionAreaTab;
+            FunctionAreaTab = _FunctionAreaTab;
 
             // "动画"区域
 
@@ -568,8 +571,9 @@ namespace WinFormApp
 
             // "关于"区域
 
-            Label_AppName.ForeColor = FormManager.RecommendColors.Text_INC.ToColor();
-            Label_AppVersion.ForeColor = Label_Copyright.ForeColor = FormManager.RecommendColors.Text.ToColor();
+            Label_ApplicationName.ForeColor = FormManager.RecommendColors.Text_INC.ToColor();
+            Label_ApplicationEdition.ForeColor = Label_Version.ForeColor = Label_Copyright.ForeColor = FormManager.RecommendColors.Text.ToColor();
+            Label_GitHub_Part1.ForeColor = Label_GitHub_Base.ForeColor = Label_GitHub_Part2.ForeColor = Label_GitHub_Release.ForeColor = FormManager.RecommendColors.Text.ToColor();
 
             // 控件替代
             Com.WinForm.ControlSubstitution.LabelAsButton(Label_LightSpot_Color_Val, Label_LightSpot_Color_Val_Click, Color.Transparent, FormManager.RecommendColors.Button_DEC.ToColor(), FormManager.RecommendColors.Button_INC.ToColor(), new Font("微软雅黑", 9.75F, FontStyle.Underline, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134));
@@ -580,6 +584,9 @@ namespace WinFormApp
             Com.WinForm.ControlSubstitution.LabelAsButton(Label_GravityParticle_Color_Val, Label_GravityParticle_Color_Val_Click, Color.Transparent, FormManager.RecommendColors.Button_DEC.ToColor(), FormManager.RecommendColors.Button_INC.ToColor(), new Font("微软雅黑", 9.75F, FontStyle.Underline, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134));
             Com.WinForm.ControlSubstitution.LabelAsButton(Label_GravityGrid_Color_Val, Label_GravityGrid_Color_Val_Click, Color.Transparent, FormManager.RecommendColors.Button_DEC.ToColor(), FormManager.RecommendColors.Button_INC.ToColor(), new Font("微软雅黑", 9.75F, FontStyle.Underline, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134));
             Com.WinForm.ControlSubstitution.LabelAsButton(Label_SpreadSpot_Color_Val, Label_SpreadSpot_Color_Val_Click, Color.Transparent, FormManager.RecommendColors.Button_DEC.ToColor(), FormManager.RecommendColors.Button_INC.ToColor(), new Font("微软雅黑", 9.75F, FontStyle.Underline, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134));
+
+            Com.WinForm.ControlSubstitution.LabelAsButton(Label_GitHub_Base, Label_GitHub_Base_Click, Color.Transparent, FormManager.RecommendColors.Button_DEC.ToColor(), FormManager.RecommendColors.Button_INC.ToColor(), new Font("微软雅黑", 9.75F, FontStyle.Underline, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134));
+            Com.WinForm.ControlSubstitution.LabelAsButton(Label_GitHub_Release, Label_GitHub_Release_Click, Color.Transparent, FormManager.RecommendColors.Button_DEC.ToColor(), FormManager.RecommendColors.Button_INC.ToColor(), new Font("微软雅黑", 9.75F, FontStyle.Underline, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134));
         }
 
         #endregion
@@ -3190,6 +3197,25 @@ namespace WinFormApp
             CheckBox_DesktopShortcut.CheckedChanged -= CheckBox_DesktopShortcut_CheckedChanged;
             CheckBox_DesktopShortcut.Checked = Animation.Settings.DesktopShortcut;
             CheckBox_DesktopShortcut.CheckedChanged += CheckBox_DesktopShortcut_CheckedChanged;
+        }
+
+        #endregion
+
+        #region "关于"区域
+
+        private static readonly string URL_GitHub_Base = @"https://github.com/chibayuki/Livedesk"; // 此项目在 GitHub 的 URL。
+        private static readonly string URL_GitHub_Release = URL_GitHub_Base + @"/releases/latest"; // 此项目的最新发布版本在 GitHub 的 URL。
+
+        // 单击 Label_GitHub_Base。
+        private void Label_GitHub_Base_Click(object sender, EventArgs e)
+        {
+            Process.Start(URL_GitHub_Base);
+        }
+
+        // 单击 Label_GitHub_Release。
+        private void Label_GitHub_Release_Click(object sender, EventArgs e)
+        {
+            Process.Start(URL_GitHub_Release);
         }
 
         #endregion

@@ -404,9 +404,14 @@
             this.Panel_Tab_About = new System.Windows.Forms.Panel();
             this.Panel_AppInfo = new System.Windows.Forms.Panel();
             this.PictureBox_AppLogo = new System.Windows.Forms.PictureBox();
-            this.Label_AppName = new System.Windows.Forms.Label();
-            this.Label_AppVersion = new System.Windows.Forms.Label();
+            this.Label_ApplicationName = new System.Windows.Forms.Label();
+            this.Label_ApplicationEdition = new System.Windows.Forms.Label();
+            this.Label_Version = new System.Windows.Forms.Label();
             this.Label_Copyright = new System.Windows.Forms.Label();
+            this.Label_GitHub_Part1 = new System.Windows.Forms.Label();
+            this.Label_GitHub_Base = new System.Windows.Forms.Label();
+            this.Label_GitHub_Part2 = new System.Windows.Forms.Label();
+            this.Label_GitHub_Release = new System.Windows.Forms.Label();
             this.Panel_BottomArea = new System.Windows.Forms.Panel();
             this.ColorDialog_Color = new System.Windows.Forms.ColorDialog();
             this.Panel_Main.SuspendLayout();
@@ -604,7 +609,6 @@
             // 
             // Label_Tab_Animation
             // 
-            this.Label_Tab_Animation.BackColor = System.Drawing.Color.Transparent;
             this.Label_Tab_Animation.Font = new System.Drawing.Font("微软雅黑", 11.25F);
             this.Label_Tab_Animation.Location = new System.Drawing.Point(0, 0);
             this.Label_Tab_Animation.Name = "Label_Tab_Animation";
@@ -619,7 +623,6 @@
             // 
             // Label_Tab_Common
             // 
-            this.Label_Tab_Common.BackColor = System.Drawing.Color.Transparent;
             this.Label_Tab_Common.Font = new System.Drawing.Font("微软雅黑", 11.25F);
             this.Label_Tab_Common.Location = new System.Drawing.Point(0, 40);
             this.Label_Tab_Common.Name = "Label_Tab_Common";
@@ -634,7 +637,6 @@
             // 
             // Label_Tab_About
             // 
-            this.Label_Tab_About.BackColor = System.Drawing.Color.Transparent;
             this.Label_Tab_About.Font = new System.Drawing.Font("微软雅黑", 11.25F);
             this.Label_Tab_About.Location = new System.Drawing.Point(0, 80);
             this.Label_Tab_About.Name = "Label_Tab_About";
@@ -696,7 +698,6 @@
             // 
             // Label_LightSpot
             // 
-            this.Label_LightSpot.BackColor = System.Drawing.Color.Transparent;
             this.Label_LightSpot.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.Label_LightSpot.Location = new System.Drawing.Point(0, 0);
             this.Label_LightSpot.Name = "Label_LightSpot";
@@ -711,7 +712,6 @@
             // 
             // Label_TrianglePiece
             // 
-            this.Label_TrianglePiece.BackColor = System.Drawing.Color.Transparent;
             this.Label_TrianglePiece.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.Label_TrianglePiece.Location = new System.Drawing.Point(0, 25);
             this.Label_TrianglePiece.Name = "Label_TrianglePiece";
@@ -726,7 +726,6 @@
             // 
             // Label_Shine
             // 
-            this.Label_Shine.BackColor = System.Drawing.Color.Transparent;
             this.Label_Shine.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.Label_Shine.Location = new System.Drawing.Point(0, 50);
             this.Label_Shine.Name = "Label_Shine";
@@ -741,7 +740,6 @@
             // 
             // Label_Meteor
             // 
-            this.Label_Meteor.BackColor = System.Drawing.Color.Transparent;
             this.Label_Meteor.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.Label_Meteor.Location = new System.Drawing.Point(0, 75);
             this.Label_Meteor.Name = "Label_Meteor";
@@ -756,7 +754,6 @@
             // 
             // Label_Snow
             // 
-            this.Label_Snow.BackColor = System.Drawing.Color.Transparent;
             this.Label_Snow.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.Label_Snow.Location = new System.Drawing.Point(0, 100);
             this.Label_Snow.Name = "Label_Snow";
@@ -771,7 +768,6 @@
             // 
             // Label_GravityParticle
             // 
-            this.Label_GravityParticle.BackColor = System.Drawing.Color.Transparent;
             this.Label_GravityParticle.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.Label_GravityParticle.Location = new System.Drawing.Point(0, 125);
             this.Label_GravityParticle.Name = "Label_GravityParticle";
@@ -786,7 +782,6 @@
             // 
             // Label_GravityGrid
             // 
-            this.Label_GravityGrid.BackColor = System.Drawing.Color.Transparent;
             this.Label_GravityGrid.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.Label_GravityGrid.Location = new System.Drawing.Point(0, 150);
             this.Label_GravityGrid.Name = "Label_GravityGrid";
@@ -801,7 +796,6 @@
             // 
             // Label_SpreadSpot
             // 
-            this.Label_SpreadSpot.BackColor = System.Drawing.Color.Transparent;
             this.Label_SpreadSpot.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.Label_SpreadSpot.Location = new System.Drawing.Point(0, 175);
             this.Label_SpreadSpot.Name = "Label_SpreadSpot";
@@ -4809,12 +4803,17 @@
             // Panel_AppInfo
             // 
             this.Panel_AppInfo.Controls.Add(this.PictureBox_AppLogo);
-            this.Panel_AppInfo.Controls.Add(this.Label_AppName);
-            this.Panel_AppInfo.Controls.Add(this.Label_AppVersion);
+            this.Panel_AppInfo.Controls.Add(this.Label_ApplicationName);
+            this.Panel_AppInfo.Controls.Add(this.Label_ApplicationEdition);
+            this.Panel_AppInfo.Controls.Add(this.Label_Version);
             this.Panel_AppInfo.Controls.Add(this.Label_Copyright);
+            this.Panel_AppInfo.Controls.Add(this.Label_GitHub_Part1);
+            this.Panel_AppInfo.Controls.Add(this.Label_GitHub_Base);
+            this.Panel_AppInfo.Controls.Add(this.Label_GitHub_Part2);
+            this.Panel_AppInfo.Controls.Add(this.Label_GitHub_Release);
             this.Panel_AppInfo.Location = new System.Drawing.Point(20, 20);
             this.Panel_AppInfo.Name = "Panel_AppInfo";
-            this.Panel_AppInfo.Size = new System.Drawing.Size(440, 120);
+            this.Panel_AppInfo.Size = new System.Drawing.Size(440, 215);
             this.Panel_AppInfo.TabIndex = 0;
             // 
             // PictureBox_AppLogo
@@ -4822,42 +4821,92 @@
             this.PictureBox_AppLogo.ErrorImage = null;
             this.PictureBox_AppLogo.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox_AppLogo.Image")));
             this.PictureBox_AppLogo.InitialImage = null;
-            this.PictureBox_AppLogo.Location = new System.Drawing.Point(376, 0);
+            this.PictureBox_AppLogo.Location = new System.Drawing.Point(20, 20);
             this.PictureBox_AppLogo.Name = "PictureBox_AppLogo";
             this.PictureBox_AppLogo.Size = new System.Drawing.Size(64, 64);
             this.PictureBox_AppLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PictureBox_AppLogo.TabIndex = 0;
             this.PictureBox_AppLogo.TabStop = false;
             // 
-            // Label_AppName
+            // Label_ApplicationName
             // 
-            this.Label_AppName.AutoSize = true;
-            this.Label_AppName.Font = new System.Drawing.Font("微软雅黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Label_AppName.Location = new System.Drawing.Point(0, 0);
-            this.Label_AppName.Name = "Label_AppName";
-            this.Label_AppName.Size = new System.Drawing.Size(109, 27);
-            this.Label_AppName.TabIndex = 0;
-            this.Label_AppName.Text = "AppName";
+            this.Label_ApplicationName.AutoSize = true;
+            this.Label_ApplicationName.Font = new System.Drawing.Font("微软雅黑", 18F);
+            this.Label_ApplicationName.Location = new System.Drawing.Point(105, 25);
+            this.Label_ApplicationName.Name = "Label_ApplicationName";
+            this.Label_ApplicationName.Size = new System.Drawing.Size(212, 31);
+            this.Label_ApplicationName.TabIndex = 0;
+            this.Label_ApplicationName.Text = "ApplicationName";
             // 
-            // Label_AppVersion
+            // Label_ApplicationEdition
             // 
-            this.Label_AppVersion.AutoSize = true;
-            this.Label_AppVersion.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Label_AppVersion.Location = new System.Drawing.Point(20, 40);
-            this.Label_AppVersion.Name = "Label_AppVersion";
-            this.Label_AppVersion.Size = new System.Drawing.Size(107, 17);
-            this.Label_AppVersion.TabIndex = 0;
-            this.Label_AppVersion.Text = "版本: AppVersion";
+            this.Label_ApplicationEdition.AutoSize = true;
+            this.Label_ApplicationEdition.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Label_ApplicationEdition.Location = new System.Drawing.Point(107, 60);
+            this.Label_ApplicationEdition.Name = "Label_ApplicationEdition";
+            this.Label_ApplicationEdition.Size = new System.Drawing.Size(149, 21);
+            this.Label_ApplicationEdition.TabIndex = 0;
+            this.Label_ApplicationEdition.Text = "ApplicationEdition";
+            // 
+            // Label_Version
+            // 
+            this.Label_Version.AutoSize = true;
+            this.Label_Version.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Label_Version.Location = new System.Drawing.Point(20, 125);
+            this.Label_Version.Name = "Label_Version";
+            this.Label_Version.Size = new System.Drawing.Size(83, 17);
+            this.Label_Version.TabIndex = 0;
+            this.Label_Version.Text = "版本: Version";
             // 
             // Label_Copyright
             // 
             this.Label_Copyright.AutoSize = true;
             this.Label_Copyright.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Label_Copyright.Location = new System.Drawing.Point(20, 65);
+            this.Label_Copyright.Location = new System.Drawing.Point(20, 150);
             this.Label_Copyright.Name = "Label_Copyright";
             this.Label_Copyright.Size = new System.Drawing.Size(253, 17);
             this.Label_Copyright.TabIndex = 0;
             this.Label_Copyright.Text = "Copyright © 2018 chibayuki@foxmail.com";
+            // 
+            // Label_GitHub_Part1
+            // 
+            this.Label_GitHub_Part1.AutoSize = true;
+            this.Label_GitHub_Part1.Font = new System.Drawing.Font("微软雅黑", 9.75F);
+            this.Label_GitHub_Part1.Location = new System.Drawing.Point(20, 175);
+            this.Label_GitHub_Part1.Name = "Label_GitHub_Part1";
+            this.Label_GitHub_Part1.Size = new System.Drawing.Size(113, 19);
+            this.Label_GitHub_Part1.TabIndex = 0;
+            this.Label_GitHub_Part1.Text = "访问 GitHub 查看";
+            // 
+            // Label_GitHub_Base
+            // 
+            this.Label_GitHub_Base.AutoSize = true;
+            this.Label_GitHub_Base.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Underline);
+            this.Label_GitHub_Base.Location = new System.Drawing.Point(133, 175);
+            this.Label_GitHub_Base.Name = "Label_GitHub_Base";
+            this.Label_GitHub_Base.Size = new System.Drawing.Size(48, 19);
+            this.Label_GitHub_Base.TabIndex = 0;
+            this.Label_GitHub_Base.Text = "源代码";
+            // 
+            // Label_GitHub_Part2
+            // 
+            this.Label_GitHub_Part2.AutoSize = true;
+            this.Label_GitHub_Part2.Font = new System.Drawing.Font("微软雅黑", 9.75F);
+            this.Label_GitHub_Part2.Location = new System.Drawing.Point(181, 175);
+            this.Label_GitHub_Part2.Name = "Label_GitHub_Part2";
+            this.Label_GitHub_Part2.Size = new System.Drawing.Size(22, 19);
+            this.Label_GitHub_Part2.TabIndex = 0;
+            this.Label_GitHub_Part2.Text = "或";
+            // 
+            // Label_GitHub_Release
+            // 
+            this.Label_GitHub_Release.AutoSize = true;
+            this.Label_GitHub_Release.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Underline);
+            this.Label_GitHub_Release.Location = new System.Drawing.Point(203, 175);
+            this.Label_GitHub_Release.Name = "Label_GitHub_Release";
+            this.Label_GitHub_Release.Size = new System.Drawing.Size(87, 19);
+            this.Label_GitHub_Release.TabIndex = 0;
+            this.Label_GitHub_Release.Text = "最新发布版本";
             // 
             // Panel_BottomArea
             // 
@@ -5140,8 +5189,8 @@
         private System.Windows.Forms.Label Label_TrianglePiece_MinRadius_Val;
         private System.Windows.Forms.Label Label_TrianglePiece_MaxRadius_Val;
         private System.Windows.Forms.Label Label_Copyright;
-        private System.Windows.Forms.Label Label_AppVersion;
-        private System.Windows.Forms.Label Label_AppName;
+        private System.Windows.Forms.Label Label_Version;
+        private System.Windows.Forms.Label Label_ApplicationName;
         private System.Windows.Forms.Panel Panel_Animations_GravityParticle;
         private System.Windows.Forms.Label Label_GravityParticle_Mass;
         private System.Windows.Forms.Label Label_GravityParticle_MinMass;
@@ -5483,5 +5532,10 @@
         private System.Windows.Forms.Label Label_GravityGrid;
         private System.Windows.Forms.Label Label_GravityParticle;
         private System.Windows.Forms.Label Label_Snow;
+        private System.Windows.Forms.Label Label_ApplicationEdition;
+        private System.Windows.Forms.Label Label_GitHub_Part1;
+        private System.Windows.Forms.Label Label_GitHub_Base;
+        private System.Windows.Forms.Label Label_GitHub_Part2;
+        private System.Windows.Forms.Label Label_GitHub_Release;
     }
 }
