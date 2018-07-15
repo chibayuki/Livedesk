@@ -147,8 +147,8 @@ namespace WinFormApp
             // 初始化"动画"区域当前打开的选项卡
             AnimationTab = (AnimationTabs)Animation.Type;
 
-            // 初始化选项卡
-            FunctionTab = FunctionTabs.Animation;
+            // 初始化功能区选项卡
+            FunctionAreaTab = FunctionAreaTabs.Animation;
 
             // "通用"区域
             CheckBox_AntiAlias.CheckedChanged -= CheckBox_AntiAlias_CheckedChanged;
@@ -222,7 +222,7 @@ namespace WinFormApp
             Panel_FunctionArea.BackColor = FormManager.RecommendColors.Background_DEC.ToColor();
             Panel_FunctionAreaOptionsBar.BackColor = FormManager.RecommendColors.Button_DEC.ToColor();
 
-            FunctionTab = FunctionTab;
+            FunctionAreaTab = FunctionAreaTab;
 
             // "动画"区域
 
@@ -570,6 +570,16 @@ namespace WinFormApp
 
             Label_AppName.ForeColor = FormManager.RecommendColors.Text_INC.ToColor();
             Label_AppVersion.ForeColor = Label_Copyright.ForeColor = FormManager.RecommendColors.Text.ToColor();
+
+            // 控件替代
+            Com.WinForm.ControlSubstitution.LabelAsButton(Label_LightSpot_Color_Val, Label_LightSpot_Color_Val_Click, Color.Transparent, FormManager.RecommendColors.Button_DEC.ToColor(), FormManager.RecommendColors.Button_INC.ToColor(), new Font("微软雅黑", 9.75F, FontStyle.Underline, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134));
+            Com.WinForm.ControlSubstitution.LabelAsButton(Label_TrianglePiece_Color_Val, Label_TrianglePiece_Color_Val_Click, Color.Transparent, FormManager.RecommendColors.Button_DEC.ToColor(), FormManager.RecommendColors.Button_INC.ToColor(), new Font("微软雅黑", 9.75F, FontStyle.Underline, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134));
+            Com.WinForm.ControlSubstitution.LabelAsButton(Label_Shine_Color_Val, Label_Shine_Color_Val_Click, Color.Transparent, FormManager.RecommendColors.Button_DEC.ToColor(), FormManager.RecommendColors.Button_INC.ToColor(), new Font("微软雅黑", 9.75F, FontStyle.Underline, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134));
+            Com.WinForm.ControlSubstitution.LabelAsButton(Label_Meteor_Color_Val, Label_Meteor_Color_Val_Click, Color.Transparent, FormManager.RecommendColors.Button_DEC.ToColor(), FormManager.RecommendColors.Button_INC.ToColor(), new Font("微软雅黑", 9.75F, FontStyle.Underline, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134));
+            Com.WinForm.ControlSubstitution.LabelAsButton(Label_Snow_Color_Val, Label_Snow_Color_Val_Click, Color.Transparent, FormManager.RecommendColors.Button_DEC.ToColor(), FormManager.RecommendColors.Button_INC.ToColor(), new Font("微软雅黑", 9.75F, FontStyle.Underline, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134));
+            Com.WinForm.ControlSubstitution.LabelAsButton(Label_GravityParticle_Color_Val, Label_GravityParticle_Color_Val_Click, Color.Transparent, FormManager.RecommendColors.Button_DEC.ToColor(), FormManager.RecommendColors.Button_INC.ToColor(), new Font("微软雅黑", 9.75F, FontStyle.Underline, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134));
+            Com.WinForm.ControlSubstitution.LabelAsButton(Label_GravityGrid_Color_Val, Label_GravityGrid_Color_Val_Click, Color.Transparent, FormManager.RecommendColors.Button_DEC.ToColor(), FormManager.RecommendColors.Button_INC.ToColor(), new Font("微软雅黑", 9.75F, FontStyle.Underline, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134));
+            Com.WinForm.ControlSubstitution.LabelAsButton(Label_SpreadSpot_Color_Val, Label_SpreadSpot_Color_Val_Click, Color.Transparent, FormManager.RecommendColors.Button_DEC.ToColor(), FormManager.RecommendColors.Button_INC.ToColor(), new Font("微软雅黑", 9.75F, FontStyle.Underline, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134));
         }
 
         #endregion
@@ -585,7 +595,7 @@ namespace WinFormApp
 
             //
 
-            Control[] TabCtrl = new Control[(int)FunctionTabs.COUNT] { Label_Tab_Animation, Label_Tab_Common, Label_Tab_About };
+            Control[] TabCtrl = new Control[(int)FunctionAreaTabs.COUNT] { Label_Tab_Animation, Label_Tab_Common, Label_Tab_About };
 
             List<bool> TabBtnPointed = new List<bool>(TabCtrl.Length);
             List<bool> TabBtnSeld = new List<bool>(TabCtrl.Length);
@@ -593,7 +603,7 @@ namespace WinFormApp
             for (int i = 0; i < TabCtrl.Length; i++)
             {
                 TabBtnPointed.Add(Com.Geometry.CursorIsInControl(TabCtrl[i]));
-                TabBtnSeld.Add(FunctionTab == (FunctionTabs)i);
+                TabBtnSeld.Add(FunctionAreaTab == (FunctionAreaTabs)i);
             }
 
             Color TabBtnCr_Bk_Pointed = Com.ColorManipulation.ShiftLightnessByHSL(Panel_FunctionAreaOptionsBar.BackColor, -0.1), TabBtnCr_Bk_Seld = Com.ColorManipulation.ShiftLightnessByHSL(Panel_FunctionAreaOptionsBar.BackColor, -0.2), TabBtnCr_Bk_Uns = Panel_FunctionAreaOptionsBar.BackColor;
@@ -1292,86 +1302,84 @@ namespace WinFormApp
 
         #region 鼠标滚轮功能
 
-        // 鼠标滚轮在 this 滚动
-        private void Form_Main_MouseWheel(object sender, MouseEventArgs e)
+        // 鼠标滚轮在 Panel_FunctionAreaOptionsBar 滚动
+        private void Panel_FunctionAreaOptionsBar_MouseWheel(object sender, MouseEventArgs e)
         {
-            if (Panel_FunctionAreaOptionsBar.Visible && Panel_FunctionAreaOptionsBar.Enabled && Com.Geometry.CursorIsInControl(Panel_FunctionAreaOptionsBar))
+            if (e.Delta < 0 && (int)FunctionAreaTab < (int)FunctionAreaTabs.COUNT - 1)
             {
-                if (e.Delta < 0 && (int)FunctionTab < (int)FunctionTabs.COUNT - 1)
-                {
-                    FunctionTab += 1;
-                }
-                else if (e.Delta > 0 && (int)FunctionTab > 0)
-                {
-                    FunctionTab -= 1;
-                }
+                FunctionAreaTab += 1;
             }
-
-            if (Panel_Animations_AnimationTypesContainer.Visible && Panel_Animations_AnimationTypesContainer.Enabled && Com.Geometry.CursorIsInControl(Panel_Animations_AnimationTypesContainer))
+            else if (e.Delta > 0 && (int)FunctionAreaTab > 0)
             {
-                if (e.Delta < 0 && (int)AnimationTab < (int)AnimationTabs.COUNT - 1)
-                {
-                    AnimationTab += 1;
-                }
-                else if (e.Delta > 0 && (int)AnimationTab > 0)
-                {
-                    AnimationTab -= 1;
-                }
+                FunctionAreaTab -= 1;
+            }
+        }
+
+        // 鼠标滚轮在 Panel_Animations_AnimationTypesContainer 滚动
+        private void Panel_Animations_AnimationTypesContainer_MouseWheel(object sender, MouseEventArgs e)
+        {
+            if (e.Delta < 0 && (int)AnimationTab < (int)AnimationTabs.COUNT - 1)
+            {
+                AnimationTab += 1;
+            }
+            else if (e.Delta > 0 && (int)AnimationTab > 0)
+            {
+                AnimationTab -= 1;
             }
         }
 
         #endregion
 
-        #region 选项卡
+        #region 功能区
 
-        // 选项卡枚举
-        private enum FunctionTabs { NULL = -1, Animation, Common, About, COUNT }
-        // 当前打开的选项卡
-        private FunctionTabs _FunctionTab = FunctionTabs.NULL;
-        private FunctionTabs FunctionTab
+        // 功能区选项卡枚举
+        private enum FunctionAreaTabs { NULL = -1, Animation, Common, About, COUNT }
+        // 当前打开的功能区选项卡
+        private FunctionAreaTabs _FunctionAreaTab = FunctionAreaTabs.NULL;
+        private FunctionAreaTabs FunctionAreaTab
         {
             get
             {
-                return _FunctionTab;
+                return _FunctionAreaTab;
             }
             set
             {
-                _FunctionTab = value;
+                _FunctionAreaTab = value;
 
                 Color TabBtnCr_Fr_Seld = FormManager.RecommendColors.Text_INC.ToColor(), TabBtnCr_Fr_Uns = FormManager.RecommendColors.Text.ToColor();
                 Color TabBtnCr_Bk_Seld = Color.Transparent, TabBtnCr_Bk_Uns = Color.Transparent;
                 Font TabBtnFt_Seld = new Font("微软雅黑", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 134), TabBtnFt_Uns = new Font("微软雅黑", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 134);
 
-                Label_Tab_Animation.ForeColor = (_FunctionTab == FunctionTabs.Animation ? TabBtnCr_Fr_Seld : TabBtnCr_Fr_Uns);
-                Label_Tab_Animation.BackColor = (_FunctionTab == FunctionTabs.Animation ? TabBtnCr_Bk_Seld : TabBtnCr_Bk_Uns);
-                Label_Tab_Animation.Font = (_FunctionTab == FunctionTabs.Animation ? TabBtnFt_Seld : TabBtnFt_Uns);
+                Label_Tab_Animation.ForeColor = (_FunctionAreaTab == FunctionAreaTabs.Animation ? TabBtnCr_Fr_Seld : TabBtnCr_Fr_Uns);
+                Label_Tab_Animation.BackColor = (_FunctionAreaTab == FunctionAreaTabs.Animation ? TabBtnCr_Bk_Seld : TabBtnCr_Bk_Uns);
+                Label_Tab_Animation.Font = (_FunctionAreaTab == FunctionAreaTabs.Animation ? TabBtnFt_Seld : TabBtnFt_Uns);
 
-                Label_Tab_Common.ForeColor = (_FunctionTab == FunctionTabs.Common ? TabBtnCr_Fr_Seld : TabBtnCr_Fr_Uns);
-                Label_Tab_Common.BackColor = (_FunctionTab == FunctionTabs.Common ? TabBtnCr_Bk_Seld : TabBtnCr_Bk_Uns);
-                Label_Tab_Common.Font = (_FunctionTab == FunctionTabs.Common ? TabBtnFt_Seld : TabBtnFt_Uns);
+                Label_Tab_Common.ForeColor = (_FunctionAreaTab == FunctionAreaTabs.Common ? TabBtnCr_Fr_Seld : TabBtnCr_Fr_Uns);
+                Label_Tab_Common.BackColor = (_FunctionAreaTab == FunctionAreaTabs.Common ? TabBtnCr_Bk_Seld : TabBtnCr_Bk_Uns);
+                Label_Tab_Common.Font = (_FunctionAreaTab == FunctionAreaTabs.Common ? TabBtnFt_Seld : TabBtnFt_Uns);
 
-                Label_Tab_About.ForeColor = (_FunctionTab == FunctionTabs.About ? TabBtnCr_Fr_Seld : TabBtnCr_Fr_Uns);
-                Label_Tab_About.BackColor = (_FunctionTab == FunctionTabs.About ? TabBtnCr_Bk_Seld : TabBtnCr_Bk_Uns);
-                Label_Tab_About.Font = (_FunctionTab == FunctionTabs.About ? TabBtnFt_Seld : TabBtnFt_Uns);
+                Label_Tab_About.ForeColor = (_FunctionAreaTab == FunctionAreaTabs.About ? TabBtnCr_Fr_Seld : TabBtnCr_Fr_Uns);
+                Label_Tab_About.BackColor = (_FunctionAreaTab == FunctionAreaTabs.About ? TabBtnCr_Bk_Seld : TabBtnCr_Bk_Uns);
+                Label_Tab_About.Font = (_FunctionAreaTab == FunctionAreaTabs.About ? TabBtnFt_Seld : TabBtnFt_Uns);
 
                 // Panel 的 AutoScroll 功能似乎存在 bug，下面的代码可以规避某些显示问题
                 if (Panel_FunctionAreaTab.AutoScroll)
                 {
                     Panel_FunctionAreaTab.AutoScroll = false;
-                    foreach (var V in Panel_FunctionAreaTab.Controls)
+                    foreach (object Obj in Panel_FunctionAreaTab.Controls)
                     {
-                        if (V is Panel)
+                        if (Obj is Panel)
                         {
-                            Panel Pnl = V as Panel;
+                            Panel Pnl = Obj as Panel;
                             Pnl.Location = new Point(0, 0);
                         }
                     }
                     Panel_FunctionAreaTab.AutoScroll = true;
                 }
 
-                Panel_Tab_Animations.Visible = (_FunctionTab == FunctionTabs.Animation);
-                Panel_Tab_Common.Visible = (_FunctionTab == FunctionTabs.Common);
-                Panel_Tab_About.Visible = (_FunctionTab == FunctionTabs.About);
+                Panel_Tab_Animations.Visible = (_FunctionAreaTab == FunctionAreaTabs.Animation);
+                Panel_Tab_Common.Visible = (_FunctionAreaTab == FunctionAreaTabs.Common);
+                Panel_Tab_About.Visible = (_FunctionAreaTab == FunctionAreaTabs.About);
             }
         }
 
@@ -1392,9 +1400,9 @@ namespace WinFormApp
         {
             if (e.Button == MouseButtons.Left)
             {
-                if (FunctionTab != FunctionTabs.Animation)
+                if (FunctionAreaTab != FunctionAreaTabs.Animation)
                 {
-                    FunctionTab = FunctionTabs.Animation;
+                    FunctionAreaTab = FunctionAreaTabs.Animation;
                 }
             }
         }
@@ -1404,9 +1412,9 @@ namespace WinFormApp
         {
             if (e.Button == MouseButtons.Left)
             {
-                if (FunctionTab != FunctionTabs.Common)
+                if (FunctionAreaTab != FunctionAreaTabs.Common)
                 {
-                    FunctionTab = FunctionTabs.Common;
+                    FunctionAreaTab = FunctionAreaTabs.Common;
                 }
             }
         }
@@ -1416,9 +1424,9 @@ namespace WinFormApp
         {
             if (e.Button == MouseButtons.Left)
             {
-                if (FunctionTab != FunctionTabs.About)
+                if (FunctionAreaTab != FunctionAreaTabs.About)
                 {
-                    FunctionTab = FunctionTabs.About;
+                    FunctionAreaTab = FunctionAreaTabs.About;
                 }
             }
         }
@@ -1429,9 +1437,9 @@ namespace WinFormApp
 
         #region 选项卡
 
-        // 选项卡枚举
+        // 动画选项卡枚举
         private enum AnimationTabs { NULL = -1, LightSpot, TrianglePiece, Shine, Meteor, Snow, GravityParticle, GravityGrid, SpreadSpot, COUNT }
-        // 当前打开的选项卡
+        // 当前打开的动画选项卡
         private AnimationTabs _AnimationTab = AnimationTabs.NULL;
         private AnimationTabs AnimationTab
         {
@@ -1489,11 +1497,11 @@ namespace WinFormApp
                 if (Panel_Animations_AnimationsContainer.AutoScroll)
                 {
                     Panel_Animations_AnimationsContainer.AutoScroll = false;
-                    foreach (var V in Panel_Animations_AnimationsContainer.Controls)
+                    foreach (object Obj in Panel_Animations_AnimationsContainer.Controls)
                     {
-                        if (V is Panel)
+                        if (Obj is Panel)
                         {
-                            Panel Pnl = V as Panel;
+                            Panel Pnl = Obj as Panel;
                             Pnl.Location = new Point(0, 0);
                         }
                     }
@@ -1767,17 +1775,14 @@ namespace WinFormApp
             Label_LightSpot_Color_Val.Enabled = (Animation.Animations.LightSpot.Settings.ColorMode == Animation.ColorModes.Custom);
         }
 
-        // 鼠标单击 Label_LightSpot_Color_Val
-        private void Label_LightSpot_Color_Val_MouseClick(object sender, MouseEventArgs e)
+        // 单击 Label_LightSpot_Color_Val
+        private void Label_LightSpot_Color_Val_Click(object sender, EventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
+            ColorDialog_Color.Color = Animation.Animations.LightSpot.Settings.Color;
+            if (ColorDialog_Color.ShowDialog() == DialogResult.OK)
             {
-                ColorDialog_Color.Color = Animation.Animations.LightSpot.Settings.Color;
-                if (ColorDialog_Color.ShowDialog() == DialogResult.OK)
-                {
-                    Animation.Animations.LightSpot.Settings.Color = ColorDialog_Color.Color;
-                    Label_LightSpot_Color_Val.Text = "当前颜色: " + Com.ColorManipulation.GetColorName(Animation.Animations.LightSpot.Settings.Color);
-                }
+                Animation.Animations.LightSpot.Settings.Color = ColorDialog_Color.Color;
+                Label_LightSpot_Color_Val.Text = "当前颜色: " + Com.ColorManipulation.GetColorName(Animation.Animations.LightSpot.Settings.Color);
             }
         }
 
@@ -1958,17 +1963,14 @@ namespace WinFormApp
             Label_TrianglePiece_Color_Val.Enabled = (Animation.Animations.TrianglePiece.Settings.ColorMode == Animation.ColorModes.Custom);
         }
 
-        // 鼠标单击 Label_TrianglePiece_Color_Val
-        private void Label_TrianglePiece_Color_Val_MouseClick(object sender, MouseEventArgs e)
+        // 单击 Label_TrianglePiece_Color_Val
+        private void Label_TrianglePiece_Color_Val_Click(object sender, EventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
+            ColorDialog_Color.Color = Animation.Animations.TrianglePiece.Settings.Color;
+            if (ColorDialog_Color.ShowDialog() == DialogResult.OK)
             {
-                ColorDialog_Color.Color = Animation.Animations.TrianglePiece.Settings.Color;
-                if (ColorDialog_Color.ShowDialog() == DialogResult.OK)
-                {
-                    Animation.Animations.TrianglePiece.Settings.Color = ColorDialog_Color.Color;
-                    Label_TrianglePiece_Color_Val.Text = "当前颜色: " + Com.ColorManipulation.GetColorName(Animation.Animations.TrianglePiece.Settings.Color);
-                }
+                Animation.Animations.TrianglePiece.Settings.Color = ColorDialog_Color.Color;
+                Label_TrianglePiece_Color_Val.Text = "当前颜色: " + Com.ColorManipulation.GetColorName(Animation.Animations.TrianglePiece.Settings.Color);
             }
         }
 
@@ -2154,17 +2156,14 @@ namespace WinFormApp
             Label_Shine_Color_Val.Enabled = (Animation.Animations.Shine.Settings.ColorMode == Animation.ColorModes.Custom);
         }
 
-        // 鼠标单击 Label_Shine_Color_Val
-        private void Label_Shine_Color_Val_MouseClick(object sender, MouseEventArgs e)
+        // 单击 Label_Shine_Color_Val
+        private void Label_Shine_Color_Val_Click(object sender, EventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
+            ColorDialog_Color.Color = Animation.Animations.Shine.Settings.Color;
+            if (ColorDialog_Color.ShowDialog() == DialogResult.OK)
             {
-                ColorDialog_Color.Color = Animation.Animations.Shine.Settings.Color;
-                if (ColorDialog_Color.ShowDialog() == DialogResult.OK)
-                {
-                    Animation.Animations.Shine.Settings.Color = ColorDialog_Color.Color;
-                    Label_Shine_Color_Val.Text = "当前颜色: " + Com.ColorManipulation.GetColorName(Animation.Animations.Shine.Settings.Color);
-                }
+                Animation.Animations.Shine.Settings.Color = ColorDialog_Color.Color;
+                Label_Shine_Color_Val.Text = "当前颜色: " + Com.ColorManipulation.GetColorName(Animation.Animations.Shine.Settings.Color);
             }
         }
 
@@ -2355,17 +2354,14 @@ namespace WinFormApp
             Label_Meteor_Color_Val.Enabled = (Animation.Animations.Meteor.Settings.ColorMode == Animation.ColorModes.Custom);
         }
 
-        // 鼠标单击 Label_Meteor_Color_Val
-        private void Label_Meteor_Color_Val_MouseClick(object sender, MouseEventArgs e)
+        // 单击 Label_Meteor_Color_Val
+        private void Label_Meteor_Color_Val_Click(object sender, EventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
+            ColorDialog_Color.Color = Animation.Animations.Meteor.Settings.Color;
+            if (ColorDialog_Color.ShowDialog() == DialogResult.OK)
             {
-                ColorDialog_Color.Color = Animation.Animations.Meteor.Settings.Color;
-                if (ColorDialog_Color.ShowDialog() == DialogResult.OK)
-                {
-                    Animation.Animations.Meteor.Settings.Color = ColorDialog_Color.Color;
-                    Label_Meteor_Color_Val.Text = "当前颜色: " + Com.ColorManipulation.GetColorName(Animation.Animations.Meteor.Settings.Color);
-                }
+                Animation.Animations.Meteor.Settings.Color = ColorDialog_Color.Color;
+                Label_Meteor_Color_Val.Text = "当前颜色: " + Com.ColorManipulation.GetColorName(Animation.Animations.Meteor.Settings.Color);
             }
         }
 
@@ -2526,17 +2522,14 @@ namespace WinFormApp
             Label_Snow_Color_Val.Enabled = (Animation.Animations.Snow.Settings.ColorMode == Animation.ColorModes.Custom);
         }
 
-        // 鼠标单击 Label_Snow_Color_Val
-        private void Label_Snow_Color_Val_MouseClick(object sender, MouseEventArgs e)
+        // 单击 Label_Snow_Color_Val
+        private void Label_Snow_Color_Val_Click(object sender, EventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
+            ColorDialog_Color.Color = Animation.Animations.Snow.Settings.Color;
+            if (ColorDialog_Color.ShowDialog() == DialogResult.OK)
             {
-                ColorDialog_Color.Color = Animation.Animations.Snow.Settings.Color;
-                if (ColorDialog_Color.ShowDialog() == DialogResult.OK)
-                {
-                    Animation.Animations.Snow.Settings.Color = ColorDialog_Color.Color;
-                    Label_Snow_Color_Val.Text = "当前颜色: " + Com.ColorManipulation.GetColorName(Animation.Animations.Snow.Settings.Color);
-                }
+                Animation.Animations.Snow.Settings.Color = ColorDialog_Color.Color;
+                Label_Snow_Color_Val.Text = "当前颜色: " + Com.ColorManipulation.GetColorName(Animation.Animations.Snow.Settings.Color);
             }
         }
 
@@ -2717,17 +2710,14 @@ namespace WinFormApp
             Label_GravityParticle_Color_Val.Enabled = (Animation.Animations.GravityParticle.Settings.ColorMode == Animation.ColorModes.Custom);
         }
 
-        // 鼠标单击 Label_GravityParticle_Color_Val
-        private void Label_GravityParticle_Color_Val_MouseClick(object sender, MouseEventArgs e)
+        // 单击 Label_GravityParticle_Color_Val
+        private void Label_GravityParticle_Color_Val_Click(object sender, EventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
+            ColorDialog_Color.Color = Animation.Animations.GravityParticle.Settings.Color;
+            if (ColorDialog_Color.ShowDialog() == DialogResult.OK)
             {
-                ColorDialog_Color.Color = Animation.Animations.GravityParticle.Settings.Color;
-                if (ColorDialog_Color.ShowDialog() == DialogResult.OK)
-                {
-                    Animation.Animations.GravityParticle.Settings.Color = ColorDialog_Color.Color;
-                    Label_GravityParticle_Color_Val.Text = "当前颜色: " + Com.ColorManipulation.GetColorName(Animation.Animations.GravityParticle.Settings.Color);
-                }
+                Animation.Animations.GravityParticle.Settings.Color = ColorDialog_Color.Color;
+                Label_GravityParticle_Color_Val.Text = "当前颜色: " + Com.ColorManipulation.GetColorName(Animation.Animations.GravityParticle.Settings.Color);
             }
         }
 
@@ -2895,17 +2885,14 @@ namespace WinFormApp
             Label_GravityGrid_Color_Val.Enabled = (Animation.Animations.GravityGrid.Settings.ColorMode == Animation.ColorModes.Custom);
         }
 
-        // 鼠标单击 Label_GravityGrid_Color_Val
-        private void Label_GravityGrid_Color_Val_MouseClick(object sender, MouseEventArgs e)
+        // 单击 Label_GravityGrid_Color_Val
+        private void Label_GravityGrid_Color_Val_Click(object sender, EventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
+            ColorDialog_Color.Color = Animation.Animations.GravityGrid.Settings.Color;
+            if (ColorDialog_Color.ShowDialog() == DialogResult.OK)
             {
-                ColorDialog_Color.Color = Animation.Animations.GravityGrid.Settings.Color;
-                if (ColorDialog_Color.ShowDialog() == DialogResult.OK)
-                {
-                    Animation.Animations.GravityGrid.Settings.Color = ColorDialog_Color.Color;
-                    Label_GravityGrid_Color_Val.Text = "当前颜色: " + Com.ColorManipulation.GetColorName(Animation.Animations.GravityGrid.Settings.Color);
-                }
+                Animation.Animations.GravityGrid.Settings.Color = ColorDialog_Color.Color;
+                Label_GravityGrid_Color_Val.Text = "当前颜色: " + Com.ColorManipulation.GetColorName(Animation.Animations.GravityGrid.Settings.Color);
             }
         }
 
@@ -3104,17 +3091,14 @@ namespace WinFormApp
             Label_SpreadSpot_Color_Val.Enabled = (Animation.Animations.SpreadSpot.Settings.ColorMode == Animation.ColorModes.Custom);
         }
 
-        // 鼠标单击 Label_SpreadSpot_Color_Val
-        private void Label_SpreadSpot_Color_Val_MouseClick(object sender, MouseEventArgs e)
+        // 单击 Label_SpreadSpot_Color_Val
+        private void Label_SpreadSpot_Color_Val_Click(object sender, EventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
+            ColorDialog_Color.Color = Animation.Animations.SpreadSpot.Settings.Color;
+            if (ColorDialog_Color.ShowDialog() == DialogResult.OK)
             {
-                ColorDialog_Color.Color = Animation.Animations.SpreadSpot.Settings.Color;
-                if (ColorDialog_Color.ShowDialog() == DialogResult.OK)
-                {
-                    Animation.Animations.SpreadSpot.Settings.Color = ColorDialog_Color.Color;
-                    Label_SpreadSpot_Color_Val.Text = "当前颜色: " + Com.ColorManipulation.GetColorName(Animation.Animations.SpreadSpot.Settings.Color);
-                }
+                Animation.Animations.SpreadSpot.Settings.Color = ColorDialog_Color.Color;
+                Label_SpreadSpot_Color_Val.Text = "当前颜色: " + Com.ColorManipulation.GetColorName(Animation.Animations.SpreadSpot.Settings.Color);
             }
         }
 
@@ -3217,44 +3201,6 @@ namespace WinFormApp
         {
             // 关闭设置窗体
             this.Close();
-        }
-
-        #endregion
-
-        #region 公用函数与方法
-
-        // 鼠标进入 Label
-        private void Label_MouseEnter(object sender, EventArgs e)
-        {
-            ((Label)sender).BackColor = FormManager.RecommendColors.Button_DEC.ToColor();
-
-            if (((Label)sender).Font.Underline)
-            {
-                ((Label)sender).Font = new Font(((Label)sender).Font.Name, ((Label)sender).Font.Size, ((Label)sender).Font.Style ^ FontStyle.Underline);
-            }
-        }
-
-        // 鼠标离开 Label
-        private void Label_MouseLeave(object sender, EventArgs e)
-        {
-            ((Label)sender).BackColor = Color.Transparent;
-
-            ((Label)sender).Font = new Font(((Label)sender).Font.Name, ((Label)sender).Font.Size, ((Label)sender).Font.Style | FontStyle.Underline);
-        }
-
-        // 鼠标按下 Label
-        private void Label_MouseDown(object sender, MouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Left)
-            {
-                ((Label)sender).BackColor = FormManager.RecommendColors.Button_INC.ToColor();
-            }
-        }
-
-        // 鼠标释放 Label
-        private void Label_MouseUp(object sender, MouseEventArgs e)
-        {
-            ((Label)sender).BackColor = FormManager.RecommendColors.Button_DEC.ToColor();
         }
 
         #endregion

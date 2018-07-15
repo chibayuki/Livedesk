@@ -207,14 +207,13 @@ namespace WinFormApp
             public class LightSpot
             {
                 // 列表
-                private static List<LightSpot> List = new List<LightSpot>(0);
+                private static List<LightSpot> List = new List<LightSpot>(Settings.Count_MaxValue);
                 // 设置列表容量
                 private static void _SetListCount(int Count)
                 {
                     if (Count <= 0)
                     {
                         List.Clear();
-                        List.TrimExcess();
                     }
                     else if (List.Count < Count)
                     {
@@ -228,13 +227,12 @@ namespace WinFormApp
                     else if (List.Count > Count)
                     {
                         List.RemoveRange(Count, List.Count - Count);
-                        List.TrimExcess();
                     }
                 }
                 // 更新列表
                 private static void _UpdateList()
                 {
-                    foreach (var Element in List)
+                    foreach (LightSpot Element in List)
                     {
                         Element.TotalSeconds += DeltaTime.Elapsed.TotalSeconds;
                         Element._UpdateColor();
@@ -326,7 +324,7 @@ namespace WinFormApp
                                 Grap.SmoothingMode = SmoothingMode.AntiAlias;
                             }
 
-                            foreach (var Element in List)
+                            foreach (LightSpot Element in List)
                             {
                                 if (Element.TotalSeconds >= 0)
                                 {
@@ -344,10 +342,12 @@ namespace WinFormApp
                                                     RectangleF Bounds_Outer_Inner = new RectangleF(Bounds_Outer_Outer.X + Bounds_Outer_Outer.Width * 0.25F, Bounds_Outer_Outer.Y + Bounds_Outer_Outer.Height * 0.25F, Bounds_Outer_Outer.Width * 0.5F, Bounds_Outer_Outer.Height * 0.5F);
                                                     RectangleF Bounds_Inner = new RectangleF(Bounds_Outer_Outer.X + Bounds_Outer_Outer.Width * 0.2F, Bounds_Outer_Outer.Y + Bounds_Outer_Outer.Height * 0.2F, Bounds_Outer_Outer.Width * 0.6F, Bounds_Outer_Outer.Height * 0.6F);
 
-                                                    PathGradientBrush PGB_Outer = new PathGradientBrush(Element.Path);
-                                                    PGB_Outer.CenterColor = Element.CurrentColor;
-                                                    PGB_Outer.SurroundColors = new Color[] { Color.Transparent };
-                                                    PGB_Outer.FocusScales = new PointF(0.5F, 0.5F);
+                                                    PathGradientBrush PGB_Outer = new PathGradientBrush(Element.Path)
+                                                    {
+                                                        CenterColor = Element.CurrentColor,
+                                                        SurroundColors = new Color[] { Color.Transparent },
+                                                        FocusScales = new PointF(0.5F, 0.5F)
+                                                    };
                                                     GraphicsPath Path_Outer = new GraphicsPath();
                                                     Path_Outer.AddEllipse(Bounds_Outer_Inner);
                                                     Path_Outer.AddEllipse(Bounds_Outer_Outer);
@@ -357,10 +357,12 @@ namespace WinFormApp
 
                                                     GraphicsPath Path_Inner = new GraphicsPath();
                                                     Path_Inner.AddEllipse(Bounds_Inner);
-                                                    PathGradientBrush PGB_Inner = new PathGradientBrush(Path_Inner);
-                                                    PGB_Inner.CenterColor = Color.FromArgb(Element._Alpha, Color.White);
-                                                    PGB_Inner.SurroundColors = new Color[] { Color.Transparent };
-                                                    PGB_Inner.FocusScales = new PointF(0.8F, 0.8F);
+                                                    PathGradientBrush PGB_Inner = new PathGradientBrush(Path_Inner)
+                                                    {
+                                                        CenterColor = Color.FromArgb(Element._Alpha, Color.White),
+                                                        SurroundColors = new Color[] { Color.Transparent },
+                                                        FocusScales = new PointF(0.8F, 0.8F)
+                                                    };
                                                     Grap.FillPath(PGB_Inner, Path_Inner);
                                                     Path_Inner.Dispose();
                                                     PGB_Inner.Dispose();
@@ -369,10 +371,12 @@ namespace WinFormApp
 
                                             case GlowModes.InnerGlow:
                                                 {
-                                                    PathGradientBrush PGB = new PathGradientBrush(Element.Path);
-                                                    PGB.CenterColor = Element.CurrentColor;
-                                                    PGB.SurroundColors = new Color[] { Color.Transparent };
-                                                    PGB.FocusScales = new PointF(0.5F, 0.5F);
+                                                    PathGradientBrush PGB = new PathGradientBrush(Element.Path)
+                                                    {
+                                                        CenterColor = Element.CurrentColor,
+                                                        SurroundColors = new Color[] { Color.Transparent },
+                                                        FocusScales = new PointF(0.5F, 0.5F)
+                                                    };
                                                     Grap.FillPath(PGB, Element.Path);
                                                     PGB.Dispose();
                                                 }
@@ -625,7 +629,7 @@ namespace WinFormApp
                         }
 
                         Com.PointD3D Cr3D_Now = Com.PointD3D.Max(new Com.PointD3D(0, 0, 0), Com.PointD3D.Min(Cr3D_From + DistNow * Cr3D_Dist.VectorNormalize, new Com.PointD3D(255, 255, 255)));
-                        _CurrentColor = Color.FromArgb((Int32)Cr3D_Now.X, (Int32)Cr3D_Now.Y, (Int32)Cr3D_Now.Z);
+                        _CurrentColor = Color.FromArgb((int)Cr3D_Now.X, (int)Cr3D_Now.Y, (int)Cr3D_Now.Z);
                     }
                     else
                     {
@@ -738,14 +742,13 @@ namespace WinFormApp
             public class TrianglePiece
             {
                 // 列表
-                private static List<TrianglePiece> List = new List<TrianglePiece>(0);
+                private static List<TrianglePiece> List = new List<TrianglePiece>(Settings.Count_MaxValue);
                 // 设置列表容量
                 private static void _SetListCount(int Count)
                 {
                     if (Count <= 0)
                     {
                         List.Clear();
-                        List.TrimExcess();
                     }
                     else if (List.Count < Count)
                     {
@@ -759,13 +762,12 @@ namespace WinFormApp
                     else if (List.Count > Count)
                     {
                         List.RemoveRange(Count, List.Count - Count);
-                        List.TrimExcess();
                     }
                 }
                 // 更新列表
                 private static void _UpdateList()
                 {
-                    foreach (var Element in List)
+                    foreach (TrianglePiece Element in List)
                     {
                         Element.TotalSeconds += DeltaTime.Elapsed.TotalSeconds;
                         Element._UpdateColor();
@@ -857,7 +859,7 @@ namespace WinFormApp
                                 Grap.SmoothingMode = SmoothingMode.AntiAlias;
                             }
 
-                            foreach (var Element in List)
+                            foreach (TrianglePiece Element in List)
                             {
                                 if (Element.TotalSeconds >= 0)
                                 {
@@ -882,10 +884,12 @@ namespace WinFormApp
                                                         MotionVertex_Inner[i] = (new Com.PointD(MotionVertex_Outer_Outer[i]) * 0.8 + SideMid[i] * 0.2).ToPointF();
                                                     }
 
-                                                    PathGradientBrush PGB_Outer = new PathGradientBrush(Element.Path);
-                                                    PGB_Outer.CenterColor = Element.CurrentColor;
-                                                    PGB_Outer.SurroundColors = new Color[] { Color.Transparent };
-                                                    PGB_Outer.FocusScales = new PointF(0.7F, 0.7F);
+                                                    PathGradientBrush PGB_Outer = new PathGradientBrush(Element.Path)
+                                                    {
+                                                        CenterColor = Element.CurrentColor,
+                                                        SurroundColors = new Color[] { Color.Transparent },
+                                                        FocusScales = new PointF(0.7F, 0.7F)
+                                                    };
                                                     GraphicsPath Path_Outer = new GraphicsPath();
                                                     Path_Outer.AddPolygon(MotionVertex_Outer_Inner);
                                                     Path_Outer.AddPolygon(MotionVertex_Outer_Outer);
@@ -895,10 +899,12 @@ namespace WinFormApp
 
                                                     GraphicsPath Path_Inner = new GraphicsPath();
                                                     Path_Inner.AddPolygon(MotionVertex_Inner);
-                                                    PathGradientBrush PGB_Inner = new PathGradientBrush(Path_Inner);
-                                                    PGB_Inner.CenterColor = Color.FromArgb(Element._Alpha, Color.White);
-                                                    PGB_Inner.SurroundColors = new Color[] { Color.Transparent };
-                                                    PGB_Inner.FocusScales = new PointF(0.875F, 0.875F);
+                                                    PathGradientBrush PGB_Inner = new PathGradientBrush(Path_Inner)
+                                                    {
+                                                        CenterColor = Color.FromArgb(Element._Alpha, Color.White),
+                                                        SurroundColors = new Color[] { Color.Transparent },
+                                                        FocusScales = new PointF(0.875F, 0.875F)
+                                                    };
                                                     Grap.FillPath(PGB_Inner, Path_Inner);
                                                     Path_Inner.Dispose();
                                                     PGB_Inner.Dispose();
@@ -907,10 +913,12 @@ namespace WinFormApp
 
                                             case GlowModes.InnerGlow:
                                                 {
-                                                    PathGradientBrush PGB = new PathGradientBrush(Element.Path);
-                                                    PGB.CenterColor = Element.CurrentColor;
-                                                    PGB.SurroundColors = new Color[] { Color.Transparent };
-                                                    PGB.FocusScales = new PointF(0.7F, 0.7F);
+                                                    PathGradientBrush PGB = new PathGradientBrush(Element.Path)
+                                                    {
+                                                        CenterColor = Element.CurrentColor,
+                                                        SurroundColors = new Color[] { Color.Transparent },
+                                                        FocusScales = new PointF(0.7F, 0.7F)
+                                                    };
                                                     Grap.FillPath(PGB, Element.Path);
                                                     PGB.Dispose();
                                                 }
@@ -1164,7 +1172,7 @@ namespace WinFormApp
                         }
 
                         Com.PointD3D Cr3D_Now = Com.PointD3D.Max(new Com.PointD3D(0, 0, 0), Com.PointD3D.Min(Cr3D_From + DistNow * Cr3D_Dist.VectorNormalize, new Com.PointD3D(255, 255, 255)));
-                        _CurrentColor = Color.FromArgb((Int32)Cr3D_Now.X, (Int32)Cr3D_Now.Y, (Int32)Cr3D_Now.Z);
+                        _CurrentColor = Color.FromArgb((int)Cr3D_Now.X, (int)Cr3D_Now.Y, (int)Cr3D_Now.Z);
                     }
                     else
                     {
@@ -1311,14 +1319,13 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
             public class Shine
             {
                 // 列表
-                private static List<Shine> List = new List<Shine>(0);
+                private static List<Shine> List = new List<Shine>(Settings.Count_MaxValue);
                 // 设置列表容量
                 private static void _SetListCount(int Count)
                 {
                     if (Count <= 0)
                     {
                         List.Clear();
-                        List.TrimExcess();
                     }
                     else if (List.Count < Count)
                     {
@@ -1332,13 +1339,12 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                     else if (List.Count > Count)
                     {
                         List.RemoveRange(Count, List.Count - Count);
-                        List.TrimExcess();
                     }
                 }
                 // 更新列表
                 private static void _UpdateList()
                 {
-                    foreach (var Element in List)
+                    foreach (Shine Element in List)
                     {
                         Element.TotalSeconds += DeltaTime.Elapsed.TotalSeconds;
                         Element._UpdateColor();
@@ -1430,7 +1436,7 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                                 Grap.SmoothingMode = SmoothingMode.AntiAlias;
                             }
 
-                            foreach (var Element in List)
+                            foreach (Shine Element in List)
                             {
                                 if (Element.TotalSeconds >= 0)
                                 {
@@ -1455,10 +1461,12 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                                                         RectangleF Bounds_Outer_Inner = new RectangleF(Bounds_Outer_Outer.X + Bounds_Outer_Outer.Width * 0.25F, Bounds_Outer_Outer.Y + Bounds_Outer_Outer.Height * 0.25F, Bounds_Outer_Outer.Width * 0.5F, Bounds_Outer_Outer.Height * 0.5F);
                                                         RectangleF Bounds_Inner = new RectangleF(Bounds_Outer_Outer.X + Bounds_Outer_Outer.Width * 0.2F, Bounds_Outer_Outer.Y + Bounds_Outer_Outer.Height * 0.2F, Bounds_Outer_Outer.Width * 0.6F, Bounds_Outer_Outer.Height * 0.6F);
 
-                                                        PathGradientBrush PGB_Outer = new PathGradientBrush(Element.Path);
-                                                        PGB_Outer.CenterColor = Element.CurrentColor;
-                                                        PGB_Outer.SurroundColors = new Color[] { Color.Transparent };
-                                                        PGB_Outer.FocusScales = new PointF(0.5F, 0.5F);
+                                                        PathGradientBrush PGB_Outer = new PathGradientBrush(Element.Path)
+                                                        {
+                                                            CenterColor = Element.CurrentColor,
+                                                            SurroundColors = new Color[] { Color.Transparent },
+                                                            FocusScales = new PointF(0.5F, 0.5F)
+                                                        };
                                                         GraphicsPath Path_Outer = new GraphicsPath();
                                                         Path_Outer.AddEllipse(Bounds_Outer_Inner);
                                                         Path_Outer.AddEllipse(Bounds_Outer_Outer);
@@ -1468,10 +1476,12 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
 
                                                         GraphicsPath Path_Inner = new GraphicsPath();
                                                         Path_Inner.AddEllipse(Bounds_Inner);
-                                                        PathGradientBrush PGB_Inner = new PathGradientBrush(Path_Inner);
-                                                        PGB_Inner.CenterColor = Color.FromArgb(Element._Alpha, Color.White);
-                                                        PGB_Inner.SurroundColors = new Color[] { Color.Transparent };
-                                                        PGB_Inner.FocusScales = new PointF(0.8F, 0.8F);
+                                                        PathGradientBrush PGB_Inner = new PathGradientBrush(Path_Inner)
+                                                        {
+                                                            CenterColor = Color.FromArgb(Element._Alpha, Color.White),
+                                                            SurroundColors = new Color[] { Color.Transparent },
+                                                            FocusScales = new PointF(0.8F, 0.8F)
+                                                        };
                                                         Grap.FillPath(PGB_Inner, Path_Inner);
                                                         Path_Inner.Dispose();
                                                         PGB_Inner.Dispose();
@@ -1480,10 +1490,12 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
 
                                                 case GlowModes.InnerGlow:
                                                     {
-                                                        PathGradientBrush PGB = new PathGradientBrush(Element.Path);
-                                                        PGB.CenterColor = Element.CurrentColor;
-                                                        PGB.SurroundColors = new Color[] { Color.Transparent };
-                                                        PGB.FocusScales = new PointF(0.5F, 0.5F);
+                                                        PathGradientBrush PGB = new PathGradientBrush(Element.Path)
+                                                        {
+                                                            CenterColor = Element.CurrentColor,
+                                                            SurroundColors = new Color[] { Color.Transparent },
+                                                            FocusScales = new PointF(0.5F, 0.5F)
+                                                        };
                                                         Grap.FillPath(PGB, Element.Path);
                                                         PGB.Dispose();
                                                     }
@@ -1757,7 +1769,7 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                         }
 
                         Com.PointD3D Cr3D_Now = Com.PointD3D.Max(new Com.PointD3D(0, 0, 0), Com.PointD3D.Min(Cr3D_From + DistNow * Cr3D_Dist.VectorNormalize, new Com.PointD3D(255, 255, 255)));
-                        _CurrentColor = Color.FromArgb((Int32)Cr3D_Now.X, (Int32)Cr3D_Now.Y, (Int32)Cr3D_Now.Z);
+                        _CurrentColor = Color.FromArgb((int)Cr3D_Now.X, (int)Cr3D_Now.Y, (int)Cr3D_Now.Z);
                     }
                     else
                     {
@@ -1867,14 +1879,13 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
             public class Meteor
             {
                 // 列表
-                private static List<Meteor> List = new List<Meteor>(0);
+                private static List<Meteor> List = new List<Meteor>(Settings.Count_MaxValue);
                 // 设置列表容量
                 private static void _SetListCount(int Count)
                 {
                     if (Count <= 0)
                     {
                         List.Clear();
-                        List.TrimExcess();
                     }
                     else if (List.Count < Count)
                     {
@@ -1888,13 +1899,12 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                     else if (List.Count > Count)
                     {
                         List.RemoveRange(Count, List.Count - Count);
-                        List.TrimExcess();
                     }
                 }
                 // 更新列表
                 private static void _UpdateList()
                 {
-                    foreach (var Element in List)
+                    foreach (Meteor Element in List)
                     {
                         Element.TotalSeconds += DeltaTime.Elapsed.TotalSeconds;
                         Element._UpdateColor();
@@ -1986,7 +1996,7 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                                 Grap.SmoothingMode = SmoothingMode.AntiAlias;
                             }
 
-                            foreach (var Element in List)
+                            foreach (Meteor Element in List)
                             {
                                 if (Element.TotalSeconds >= 0)
                                 {
@@ -2015,10 +2025,12 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                                                     Path_Inner.AddLines(new PointF[] { (Loc + (_CR * 0.6) * new Com.PointD(Math.Cos(Angle + Math.PI / 2), Math.Sin(Angle + Math.PI / 2))).ToPointF(), (Loc + (_CLength * 0.6) * new Com.PointD(Math.Cos(Angle + Math.PI), Math.Sin(Angle + Math.PI))).ToPointF(), (Loc + (_CR * 0.6) * new Com.PointD(Math.Cos(Angle - Math.PI / 2), Math.Sin(Angle - Math.PI / 2))).ToPointF() });
                                                     Path_Inner.CloseFigure();
 
-                                                    PathGradientBrush PGB_Outer = new PathGradientBrush(Path_Outer_Outer);
-                                                    PGB_Outer.CenterColor = Element.CurrentColor;
-                                                    PGB_Outer.SurroundColors = new Color[] { Color.Transparent };
-                                                    PGB_Outer.FocusScales = new PointF(0.5F, 0.5F);
+                                                    PathGradientBrush PGB_Outer = new PathGradientBrush(Path_Outer_Outer)
+                                                    {
+                                                        CenterColor = Element.CurrentColor,
+                                                        SurroundColors = new Color[] { Color.Transparent },
+                                                        FocusScales = new PointF(0.5F, 0.5F)
+                                                    };
                                                     GraphicsPath Path_Outer = new GraphicsPath();
                                                     Path_Outer.AddPath(Path_Outer_Inner, false);
                                                     Path_Outer.AddPath(Path_Outer_Outer, false);
@@ -2026,10 +2038,12 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                                                     PGB_Outer.Dispose();
                                                     Path_Outer.Dispose();
 
-                                                    PathGradientBrush PGB_Inner = new PathGradientBrush(Path_Inner);
-                                                    PGB_Inner.CenterColor = Color.FromArgb(Element._Alpha, Color.White);
-                                                    PGB_Inner.SurroundColors = new Color[] { Color.Transparent };
-                                                    PGB_Inner.FocusScales = new PointF(0.8F, 0.8F);
+                                                    PathGradientBrush PGB_Inner = new PathGradientBrush(Path_Inner)
+                                                    {
+                                                        CenterColor = Color.FromArgb(Element._Alpha, Color.White),
+                                                        SurroundColors = new Color[] { Color.Transparent },
+                                                        FocusScales = new PointF(0.8F, 0.8F)
+                                                    };
                                                     Grap.FillPath(PGB_Inner, Path_Inner);
                                                     Path_Inner.Dispose();
                                                     PGB_Inner.Dispose();
@@ -2038,10 +2052,12 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
 
                                             case GlowModes.InnerGlow:
                                                 {
-                                                    PathGradientBrush PGB = new PathGradientBrush(Element.Path);
-                                                    PGB.CenterColor = Element.CurrentColor;
-                                                    PGB.SurroundColors = new Color[] { Color.Transparent };
-                                                    PGB.FocusScales = new PointF(0.5F, 0.5F);
+                                                    PathGradientBrush PGB = new PathGradientBrush(Element.Path)
+                                                    {
+                                                        CenterColor = Element.CurrentColor,
+                                                        SurroundColors = new Color[] { Color.Transparent },
+                                                        FocusScales = new PointF(0.5F, 0.5F)
+                                                    };
                                                     Grap.FillPath(PGB, Element.Path);
                                                     PGB.Dispose();
                                                 }
@@ -2302,7 +2318,7 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                         }
 
                         Com.PointD3D Cr3D_Now = Com.PointD3D.Max(new Com.PointD3D(0, 0, 0), Com.PointD3D.Min(Cr3D_From + DistNow * Cr3D_Dist.VectorNormalize, new Com.PointD3D(255, 255, 255)));
-                        _CurrentColor = Color.FromArgb((Int32)Cr3D_Now.X, (Int32)Cr3D_Now.Y, (Int32)Cr3D_Now.Z);
+                        _CurrentColor = Color.FromArgb((int)Cr3D_Now.X, (int)Cr3D_Now.Y, (int)Cr3D_Now.Z);
                     }
                     else
                     {
@@ -2427,14 +2443,13 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
             public class Snow
             {
                 // 列表
-                private static List<Snow> List = new List<Snow>(0);
+                private static List<Snow> List = new List<Snow>(Settings.Count_MaxValue);
                 // 设置列表容量
                 private static void _SetListCount(int Count)
                 {
                     if (Count <= 0)
                     {
                         List.Clear();
-                        List.TrimExcess();
                     }
                     else if (List.Count < Count)
                     {
@@ -2448,13 +2463,12 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                     else if (List.Count > Count)
                     {
                         List.RemoveRange(Count, List.Count - Count);
-                        List.TrimExcess();
                     }
                 }
                 // 更新列表
                 private static void _UpdateList()
                 {
-                    foreach (var Element in List)
+                    foreach (Snow Element in List)
                     {
                         Element.TotalSeconds += DeltaTime.Elapsed.TotalSeconds;
                         Element._UpdateColor();
@@ -2546,7 +2560,7 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                                 Grap.SmoothingMode = SmoothingMode.AntiAlias;
                             }
 
-                            foreach (var Element in List)
+                            foreach (Snow Element in List)
                             {
                                 if (Element.TotalSeconds >= 0)
                                 {
@@ -2565,10 +2579,12 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                                                     RectangleF Bounds_Outer_Inner = new RectangleF(Bounds_Outer_Outer.X + Bounds_Outer_Outer.Width * 0.25F, Bounds_Outer_Outer.Y + Bounds_Outer_Outer.Height * 0.25F, Bounds_Outer_Outer.Width * 0.5F, Bounds_Outer_Outer.Height * 0.5F);
                                                     RectangleF Bounds_Inner = new RectangleF(Bounds_Outer_Outer.X + Bounds_Outer_Outer.Width * 0.2F, Bounds_Outer_Outer.Y + Bounds_Outer_Outer.Height * 0.2F, Bounds_Outer_Outer.Width * 0.6F, Bounds_Outer_Outer.Height * 0.6F);
 
-                                                    PathGradientBrush PGB_Outer = new PathGradientBrush(Element.Path);
-                                                    PGB_Outer.CenterColor = Element.CurrentColor;
-                                                    PGB_Outer.SurroundColors = new Color[] { Color.Transparent };
-                                                    PGB_Outer.FocusScales = new PointF(0.5F, 0.5F);
+                                                    PathGradientBrush PGB_Outer = new PathGradientBrush(Element.Path)
+                                                    {
+                                                        CenterColor = Element.CurrentColor,
+                                                        SurroundColors = new Color[] { Color.Transparent },
+                                                        FocusScales = new PointF(0.5F, 0.5F)
+                                                    };
                                                     GraphicsPath Path_Outer = new GraphicsPath();
                                                     Path_Outer.AddEllipse(Bounds_Outer_Inner);
                                                     Path_Outer.AddEllipse(Bounds_Outer_Outer);
@@ -2578,10 +2594,12 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
 
                                                     GraphicsPath Path_Inner = new GraphicsPath();
                                                     Path_Inner.AddEllipse(Bounds_Inner);
-                                                    PathGradientBrush PGB_Inner = new PathGradientBrush(Path_Inner);
-                                                    PGB_Inner.CenterColor = Color.FromArgb(Element._Alpha, Color.White);
-                                                    PGB_Inner.SurroundColors = new Color[] { Color.Transparent };
-                                                    PGB_Inner.FocusScales = new PointF(0.8F, 0.8F);
+                                                    PathGradientBrush PGB_Inner = new PathGradientBrush(Path_Inner)
+                                                    {
+                                                        CenterColor = Color.FromArgb(Element._Alpha, Color.White),
+                                                        SurroundColors = new Color[] { Color.Transparent },
+                                                        FocusScales = new PointF(0.8F, 0.8F)
+                                                    };
                                                     Grap.FillPath(PGB_Inner, Path_Inner);
                                                     Path_Inner.Dispose();
                                                     PGB_Inner.Dispose();
@@ -2590,10 +2608,12 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
 
                                             case GlowModes.InnerGlow:
                                                 {
-                                                    PathGradientBrush PGB = new PathGradientBrush(Element.Path);
-                                                    PGB.CenterColor = Element.CurrentColor;
-                                                    PGB.SurroundColors = new Color[] { Color.Transparent };
-                                                    PGB.FocusScales = new PointF(0.5F, 0.5F);
+                                                    PathGradientBrush PGB = new PathGradientBrush(Element.Path)
+                                                    {
+                                                        CenterColor = Element.CurrentColor,
+                                                        SurroundColors = new Color[] { Color.Transparent },
+                                                        FocusScales = new PointF(0.5F, 0.5F)
+                                                    };
                                                     Grap.FillPath(PGB, Element.Path);
                                                     PGB.Dispose();
                                                 }
@@ -2803,7 +2823,7 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                         }
 
                         Com.PointD3D Cr3D_Now = Com.PointD3D.Max(new Com.PointD3D(0, 0, 0), Com.PointD3D.Min(Cr3D_From + DistNow * Cr3D_Dist.VectorNormalize, new Com.PointD3D(255, 255, 255)));
-                        _CurrentColor = Color.FromArgb((Int32)Cr3D_Now.X, (Int32)Cr3D_Now.Y, (Int32)Cr3D_Now.Z);
+                        _CurrentColor = Color.FromArgb((int)Cr3D_Now.X, (int)Cr3D_Now.Y, (int)Cr3D_Now.Z);
                     }
                     else
                     {
@@ -2901,14 +2921,13 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
             public class GravityParticle
             {
                 // 列表
-                private static List<GravityParticle> List = new List<GravityParticle>(0);
+                private static List<GravityParticle> List = new List<GravityParticle>(Settings.Count_MaxValue);
                 // 设置列表容量
                 private static void _SetListCount(int Count)
                 {
                     if (Count <= 0)
                     {
                         List.Clear();
-                        List.TrimExcess();
                     }
                     else if (List.Count < Count)
                     {
@@ -2922,14 +2941,13 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                     else if (List.Count > Count)
                     {
                         List.RemoveRange(Count, List.Count - Count);
-                        List.TrimExcess();
                     }
                 }
                 // 更新列表
                 private static void _UpdateList()
                 {
                     // 更新颜色
-                    foreach (var Element in List)
+                    foreach (GravityParticle Element in List)
                     {
                         Element._UpdateColor();
                     }
@@ -2966,7 +2984,7 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                     }
 
                     // 更新中心位置与速度
-                    foreach (var Element in List)
+                    foreach (GravityParticle Element in List)
                     {
                         Element._UpdateLocationAndVelocity();
                     }
@@ -3077,7 +3095,7 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                                 Grap.SmoothingMode = SmoothingMode.AntiAlias;
                             }
 
-                            foreach (var Element in List)
+                            foreach (GravityParticle Element in List)
                             {
                                 Com.PointD Loc = new Com.PointD(Element.Location);
                                 double _R = Element.Radius;
@@ -3092,10 +3110,12 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                                                 RectangleF Bounds_Outer_Inner = new RectangleF(Bounds_Outer_Outer.X + Bounds_Outer_Outer.Width * 0.25F, Bounds_Outer_Outer.Y + Bounds_Outer_Outer.Height * 0.25F, Bounds_Outer_Outer.Width * 0.5F, Bounds_Outer_Outer.Height * 0.5F);
                                                 RectangleF Bounds_Inner = new RectangleF(Bounds_Outer_Outer.X + Bounds_Outer_Outer.Width * 0.2F, Bounds_Outer_Outer.Y + Bounds_Outer_Outer.Height * 0.2F, Bounds_Outer_Outer.Width * 0.6F, Bounds_Outer_Outer.Height * 0.6F);
 
-                                                PathGradientBrush PGB_Outer = new PathGradientBrush(Element.Path);
-                                                PGB_Outer.CenterColor = Element.CurrentColor;
-                                                PGB_Outer.SurroundColors = new Color[] { Color.Transparent };
-                                                PGB_Outer.FocusScales = new PointF(0.5F, 0.5F);
+                                                PathGradientBrush PGB_Outer = new PathGradientBrush(Element.Path)
+                                                {
+                                                    CenterColor = Element.CurrentColor,
+                                                    SurroundColors = new Color[] { Color.Transparent },
+                                                    FocusScales = new PointF(0.5F, 0.5F)
+                                                };
                                                 GraphicsPath Path_Outer = new GraphicsPath();
                                                 Path_Outer.AddEllipse(Bounds_Outer_Inner);
                                                 Path_Outer.AddEllipse(Bounds_Outer_Outer);
@@ -3105,10 +3125,12 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
 
                                                 GraphicsPath Path_Inner = new GraphicsPath();
                                                 Path_Inner.AddEllipse(Bounds_Inner);
-                                                PathGradientBrush PGB_Inner = new PathGradientBrush(Path_Inner);
-                                                PGB_Inner.CenterColor = Color.FromArgb(Element._Alpha, Color.White);
-                                                PGB_Inner.SurroundColors = new Color[] { Color.Transparent };
-                                                PGB_Inner.FocusScales = new PointF(0.8F, 0.8F);
+                                                PathGradientBrush PGB_Inner = new PathGradientBrush(Path_Inner)
+                                                {
+                                                    CenterColor = Color.FromArgb(Element._Alpha, Color.White),
+                                                    SurroundColors = new Color[] { Color.Transparent },
+                                                    FocusScales = new PointF(0.8F, 0.8F)
+                                                };
                                                 Grap.FillPath(PGB_Inner, Path_Inner);
                                                 Path_Inner.Dispose();
                                                 PGB_Inner.Dispose();
@@ -3117,10 +3139,12 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
 
                                         case GlowModes.InnerGlow:
                                             {
-                                                PathGradientBrush PGB = new PathGradientBrush(Element.Path);
-                                                PGB.CenterColor = Element.CurrentColor;
-                                                PGB.SurroundColors = new Color[] { Color.Transparent };
-                                                PGB.FocusScales = new PointF(0.5F, 0.5F);
+                                                PathGradientBrush PGB = new PathGradientBrush(Element.Path)
+                                                {
+                                                    CenterColor = Element.CurrentColor,
+                                                    SurroundColors = new Color[] { Color.Transparent },
+                                                    FocusScales = new PointF(0.5F, 0.5F)
+                                                };
                                                 Grap.FillPath(PGB, Element.Path);
                                                 PGB.Dispose();
                                             }
@@ -3394,7 +3418,7 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                         }
 
                         Com.PointD3D Cr3D_Now = Com.PointD3D.Max(new Com.PointD3D(0, 0, 0), Com.PointD3D.Min(Cr3D_From + DistNow * Cr3D_Dist.VectorNormalize, new Com.PointD3D(255, 255, 255)));
-                        _CurrentColor = Color.FromArgb((Int32)Cr3D_Now.X, (Int32)Cr3D_Now.Y, (Int32)Cr3D_Now.Z);
+                        _CurrentColor = Color.FromArgb((int)Cr3D_Now.X, (int)Cr3D_Now.Y, (int)Cr3D_Now.Z);
                     }
                     else
                     {
@@ -3446,7 +3470,7 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                         }
 
                         // 计算所有粒子对此粒子产生的引力加速度
-                        foreach (var Element in List)
+                        foreach (GravityParticle Element in List)
                         {
                             Com.PointD ELoc = new Com.PointD(Element.Location);
                             double ER = Element.Radius;
@@ -3579,14 +3603,13 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
             public class GravityGrid
             {
                 // 列表
-                private static List<GravityGrid> List = new List<GravityGrid>(0);
+                private static List<GravityGrid> List = new List<GravityGrid>(Settings.Count_MaxValue);
                 // 设置列表容量
                 private static void _SetListCount(int Count)
                 {
                     if (Count <= 0)
                     {
                         List.Clear();
-                        List.TrimExcess();
                     }
                     else if (List.Count < Count)
                     {
@@ -3600,13 +3623,12 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                     else if (List.Count > Count)
                     {
                         List.RemoveRange(Count, List.Count - Count);
-                        List.TrimExcess();
                     }
                 }
                 // 更新列表
                 private static void _UpdateList()
                 {
-                    foreach (var Element in List)
+                    foreach (GravityGrid Element in List)
                     {
                         Element._UpdateColor();
                         Element._UpdateLocationAndVelocity();
@@ -3759,10 +3781,12 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                                                 RectangleF Bounds_Outer_Inner = new RectangleF(Bounds_Outer_Outer.X + Bounds_Outer_Outer.Width * 0.25F, Bounds_Outer_Outer.Y + Bounds_Outer_Outer.Height * 0.25F, Bounds_Outer_Outer.Width * 0.5F, Bounds_Outer_Outer.Height * 0.5F);
                                                 RectangleF Bounds_Inner = new RectangleF(Bounds_Outer_Outer.X + Bounds_Outer_Outer.Width * 0.2F, Bounds_Outer_Outer.Y + Bounds_Outer_Outer.Height * 0.2F, Bounds_Outer_Outer.Width * 0.6F, Bounds_Outer_Outer.Height * 0.6F);
 
-                                                PathGradientBrush PGB_Outer = new PathGradientBrush(Element1.Path);
-                                                PGB_Outer.CenterColor = Element1.CurrentColor;
-                                                PGB_Outer.SurroundColors = new Color[] { Color.Transparent };
-                                                PGB_Outer.FocusScales = new PointF(0.5F, 0.5F);
+                                                PathGradientBrush PGB_Outer = new PathGradientBrush(Element1.Path)
+                                                {
+                                                    CenterColor = Element1.CurrentColor,
+                                                    SurroundColors = new Color[] { Color.Transparent },
+                                                    FocusScales = new PointF(0.5F, 0.5F)
+                                                };
                                                 GraphicsPath Path_Outer = new GraphicsPath();
                                                 Path_Outer.AddEllipse(Bounds_Outer_Inner);
                                                 Path_Outer.AddEllipse(Bounds_Outer_Outer);
@@ -3772,10 +3796,12 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
 
                                                 GraphicsPath Path_Inner = new GraphicsPath();
                                                 Path_Inner.AddEllipse(Bounds_Inner);
-                                                PathGradientBrush PGB_Inner = new PathGradientBrush(Path_Inner);
-                                                PGB_Inner.CenterColor = Color.FromArgb(Element1._Alpha, Color.White);
-                                                PGB_Inner.SurroundColors = new Color[] { Color.Transparent };
-                                                PGB_Inner.FocusScales = new PointF(0.8F, 0.8F);
+                                                PathGradientBrush PGB_Inner = new PathGradientBrush(Path_Inner)
+                                                {
+                                                    CenterColor = Color.FromArgb(Element1._Alpha, Color.White),
+                                                    SurroundColors = new Color[] { Color.Transparent },
+                                                    FocusScales = new PointF(0.8F, 0.8F)
+                                                };
                                                 Grap.FillPath(PGB_Inner, Path_Inner);
                                                 Path_Inner.Dispose();
                                                 PGB_Inner.Dispose();
@@ -3784,10 +3810,12 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
 
                                         case GlowModes.InnerGlow:
                                             {
-                                                PathGradientBrush PGB = new PathGradientBrush(Element1.Path);
-                                                PGB.CenterColor = Element1.CurrentColor;
-                                                PGB.SurroundColors = new Color[] { Color.Transparent };
-                                                PGB.FocusScales = new PointF(0.5F, 0.5F);
+                                                PathGradientBrush PGB = new PathGradientBrush(Element1.Path)
+                                                {
+                                                    CenterColor = Element1.CurrentColor,
+                                                    SurroundColors = new Color[] { Color.Transparent },
+                                                    FocusScales = new PointF(0.5F, 0.5F)
+                                                };
                                                 Grap.FillPath(PGB, Element1.Path);
                                                 PGB.Dispose();
                                             }
@@ -4016,7 +4044,7 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                         }
 
                         Com.PointD3D Cr3D_Now = Com.PointD3D.Max(new Com.PointD3D(0, 0, 0), Com.PointD3D.Min(Cr3D_From + DistNow * Cr3D_Dist.VectorNormalize, new Com.PointD3D(255, 255, 255)));
-                        _CurrentColor = Color.FromArgb((Int32)Cr3D_Now.X, (Int32)Cr3D_Now.Y, (Int32)Cr3D_Now.Z);
+                        _CurrentColor = Color.FromArgb((int)Cr3D_Now.X, (int)Cr3D_Now.Y, (int)Cr3D_Now.Z);
                     }
                     else
                     {
@@ -4229,14 +4257,13 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
             public class SpreadSpot
             {
                 // 列表
-                private static List<SpreadSpot> List = new List<SpreadSpot>(0);
+                private static List<SpreadSpot> List = new List<SpreadSpot>(Settings.Count_MaxValue);
                 // 设置列表容量
                 private static void _SetListCount(int Count)
                 {
                     if (Count <= 0)
                     {
                         List.Clear();
-                        List.TrimExcess();
                     }
                     else if (List.Count < Count)
                     {
@@ -4250,13 +4277,12 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                     else if (List.Count > Count)
                     {
                         List.RemoveRange(Count, List.Count - Count);
-                        List.TrimExcess();
                     }
                 }
                 // 更新列表
                 private static void _UpdateList()
                 {
-                    foreach (var Element in List)
+                    foreach (SpreadSpot Element in List)
                     {
                         Element.TotalSeconds += DeltaTime.Elapsed.TotalSeconds;
                         Element._UpdateColor();
@@ -4348,7 +4374,7 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                                 Grap.SmoothingMode = SmoothingMode.AntiAlias;
                             }
 
-                            foreach (var Element in List)
+                            foreach (SpreadSpot Element in List)
                             {
                                 if (Element.TotalSeconds >= 0)
                                 {
@@ -4366,10 +4392,12 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                                                     RectangleF Bounds_Outer_Inner = new RectangleF(Bounds_Outer_Outer.X + Bounds_Outer_Outer.Width * 0.25F, Bounds_Outer_Outer.Y + Bounds_Outer_Outer.Height * 0.25F, Bounds_Outer_Outer.Width * 0.5F, Bounds_Outer_Outer.Height * 0.5F);
                                                     RectangleF Bounds_Inner = new RectangleF(Bounds_Outer_Outer.X + Bounds_Outer_Outer.Width * 0.2F, Bounds_Outer_Outer.Y + Bounds_Outer_Outer.Height * 0.2F, Bounds_Outer_Outer.Width * 0.6F, Bounds_Outer_Outer.Height * 0.6F);
 
-                                                    PathGradientBrush PGB_Outer = new PathGradientBrush(Element.Path);
-                                                    PGB_Outer.CenterColor = Element.CurrentColor;
-                                                    PGB_Outer.SurroundColors = new Color[] { Color.Transparent };
-                                                    PGB_Outer.FocusScales = new PointF(0.5F, 0.5F);
+                                                    PathGradientBrush PGB_Outer = new PathGradientBrush(Element.Path)
+                                                    {
+                                                        CenterColor = Element.CurrentColor,
+                                                        SurroundColors = new Color[] { Color.Transparent },
+                                                        FocusScales = new PointF(0.5F, 0.5F)
+                                                    };
                                                     GraphicsPath Path_Outer = new GraphicsPath();
                                                     Path_Outer.AddEllipse(Bounds_Outer_Inner);
                                                     Path_Outer.AddEllipse(Bounds_Outer_Outer);
@@ -4379,10 +4407,12 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
 
                                                     GraphicsPath Path_Inner = new GraphicsPath();
                                                     Path_Inner.AddEllipse(Bounds_Inner);
-                                                    PathGradientBrush PGB_Inner = new PathGradientBrush(Path_Inner);
-                                                    PGB_Inner.CenterColor = Color.FromArgb(Element._Alpha, Color.White);
-                                                    PGB_Inner.SurroundColors = new Color[] { Color.Transparent };
-                                                    PGB_Inner.FocusScales = new PointF(0.8F, 0.8F);
+                                                    PathGradientBrush PGB_Inner = new PathGradientBrush(Path_Inner)
+                                                    {
+                                                        CenterColor = Color.FromArgb(Element._Alpha, Color.White),
+                                                        SurroundColors = new Color[] { Color.Transparent },
+                                                        FocusScales = new PointF(0.8F, 0.8F)
+                                                    };
                                                     Grap.FillPath(PGB_Inner, Path_Inner);
                                                     Path_Inner.Dispose();
                                                     PGB_Inner.Dispose();
@@ -4391,10 +4421,12 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
 
                                             case GlowModes.InnerGlow:
                                                 {
-                                                    PathGradientBrush PGB = new PathGradientBrush(Element.Path);
-                                                    PGB.CenterColor = Element.CurrentColor;
-                                                    PGB.SurroundColors = new Color[] { Color.Transparent };
-                                                    PGB.FocusScales = new PointF(0.5F, 0.5F);
+                                                    PathGradientBrush PGB = new PathGradientBrush(Element.Path)
+                                                    {
+                                                        CenterColor = Element.CurrentColor,
+                                                        SurroundColors = new Color[] { Color.Transparent },
+                                                        FocusScales = new PointF(0.5F, 0.5F)
+                                                    };
                                                     Grap.FillPath(PGB, Element.Path);
                                                     PGB.Dispose();
                                                 }
@@ -4707,7 +4739,7 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                         }
 
                         Com.PointD3D Cr3D_Now = Com.PointD3D.Max(new Com.PointD3D(0, 0, 0), Com.PointD3D.Min(Cr3D_From + DistNow * Cr3D_Dist.VectorNormalize, new Com.PointD3D(255, 255, 255)));
-                        _CurrentColor = Color.FromArgb((Int32)Cr3D_Now.X, (Int32)Cr3D_Now.Y, (Int32)Cr3D_Now.Z);
+                        _CurrentColor = Color.FromArgb((int)Cr3D_Now.X, (int)Cr3D_Now.Y, (int)Cr3D_Now.Z);
                     }
                     else
                     {

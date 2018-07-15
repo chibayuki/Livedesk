@@ -600,6 +600,7 @@
             this.Panel_FunctionAreaOptionsBar.Size = new System.Drawing.Size(100, 370);
             this.Panel_FunctionAreaOptionsBar.TabIndex = 0;
             this.Panel_FunctionAreaOptionsBar.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_FunctionAreaOptionsBar_Paint);
+            this.Panel_FunctionAreaOptionsBar.MouseWheel += new System.Windows.Forms.MouseEventHandler(this.Panel_FunctionAreaOptionsBar_MouseWheel);
             // 
             // Label_Tab_Animation
             // 
@@ -675,6 +676,7 @@
             this.Panel_Animations_AnimationTypesContainer.Name = "Panel_Animations_AnimationTypesContainer";
             this.Panel_Animations_AnimationTypesContainer.Size = new System.Drawing.Size(100, 370);
             this.Panel_Animations_AnimationTypesContainer.TabIndex = 0;
+            this.Panel_Animations_AnimationTypesContainer.MouseWheel += new System.Windows.Forms.MouseEventHandler(this.Panel_Animations_AnimationTypesContainer_MouseWheel);
             // 
             // Panel_AnimationTypesOptionsBar
             // 
@@ -1208,11 +1210,6 @@
             this.Label_LightSpot_Color_Val.Size = new System.Drawing.Size(95, 17);
             this.Label_LightSpot_Color_Val.TabIndex = 0;
             this.Label_LightSpot_Color_Val.Text = "当前颜色: Value";
-            this.Label_LightSpot_Color_Val.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Label_LightSpot_Color_Val_MouseClick);
-            this.Label_LightSpot_Color_Val.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Label_MouseDown);
-            this.Label_LightSpot_Color_Val.MouseEnter += new System.EventHandler(this.Label_MouseEnter);
-            this.Label_LightSpot_Color_Val.MouseLeave += new System.EventHandler(this.Label_MouseLeave);
-            this.Label_LightSpot_Color_Val.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Label_MouseUp);
             // 
             // Panel_LightSpot_GlowMode
             // 
@@ -1686,11 +1683,6 @@
             this.Label_TrianglePiece_Color_Val.Size = new System.Drawing.Size(95, 17);
             this.Label_TrianglePiece_Color_Val.TabIndex = 0;
             this.Label_TrianglePiece_Color_Val.Text = "当前颜色: Value";
-            this.Label_TrianglePiece_Color_Val.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Label_TrianglePiece_Color_Val_MouseClick);
-            this.Label_TrianglePiece_Color_Val.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Label_MouseDown);
-            this.Label_TrianglePiece_Color_Val.MouseEnter += new System.EventHandler(this.Label_MouseEnter);
-            this.Label_TrianglePiece_Color_Val.MouseLeave += new System.EventHandler(this.Label_MouseLeave);
-            this.Label_TrianglePiece_Color_Val.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Label_MouseUp);
             // 
             // Panel_TrianglePiece_GlowMode
             // 
@@ -2166,11 +2158,6 @@
             this.Label_Shine_Color_Val.Size = new System.Drawing.Size(95, 17);
             this.Label_Shine_Color_Val.TabIndex = 0;
             this.Label_Shine_Color_Val.Text = "当前颜色: Value";
-            this.Label_Shine_Color_Val.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Label_Shine_Color_Val_MouseClick);
-            this.Label_Shine_Color_Val.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Label_MouseDown);
-            this.Label_Shine_Color_Val.MouseEnter += new System.EventHandler(this.Label_MouseEnter);
-            this.Label_Shine_Color_Val.MouseLeave += new System.EventHandler(this.Label_MouseLeave);
-            this.Label_Shine_Color_Val.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Label_MouseUp);
             // 
             // Panel_Shine_GlowMode
             // 
@@ -2688,11 +2675,6 @@
             this.Label_Meteor_Color_Val.Size = new System.Drawing.Size(95, 17);
             this.Label_Meteor_Color_Val.TabIndex = 0;
             this.Label_Meteor_Color_Val.Text = "当前颜色: Value";
-            this.Label_Meteor_Color_Val.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Label_Meteor_Color_Val_MouseClick);
-            this.Label_Meteor_Color_Val.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Label_MouseDown);
-            this.Label_Meteor_Color_Val.MouseEnter += new System.EventHandler(this.Label_MouseEnter);
-            this.Label_Meteor_Color_Val.MouseLeave += new System.EventHandler(this.Label_MouseLeave);
-            this.Label_Meteor_Color_Val.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Label_MouseUp);
             // 
             // Panel_Meteor_GlowMode
             // 
@@ -3078,11 +3060,6 @@
             this.Label_Snow_Color_Val.Size = new System.Drawing.Size(95, 17);
             this.Label_Snow_Color_Val.TabIndex = 0;
             this.Label_Snow_Color_Val.Text = "当前颜色: Value";
-            this.Label_Snow_Color_Val.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Label_Snow_Color_Val_MouseClick);
-            this.Label_Snow_Color_Val.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Label_MouseDown);
-            this.Label_Snow_Color_Val.MouseEnter += new System.EventHandler(this.Label_MouseEnter);
-            this.Label_Snow_Color_Val.MouseLeave += new System.EventHandler(this.Label_MouseLeave);
-            this.Label_Snow_Color_Val.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Label_MouseUp);
             // 
             // Panel_Snow_GlowMode
             // 
@@ -3556,11 +3533,6 @@
             this.Label_GravityParticle_Color_Val.Size = new System.Drawing.Size(95, 17);
             this.Label_GravityParticle_Color_Val.TabIndex = 0;
             this.Label_GravityParticle_Color_Val.Text = "当前颜色: Value";
-            this.Label_GravityParticle_Color_Val.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Label_GravityParticle_Color_Val_MouseClick);
-            this.Label_GravityParticle_Color_Val.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Label_MouseDown);
-            this.Label_GravityParticle_Color_Val.MouseEnter += new System.EventHandler(this.Label_MouseEnter);
-            this.Label_GravityParticle_Color_Val.MouseLeave += new System.EventHandler(this.Label_MouseLeave);
-            this.Label_GravityParticle_Color_Val.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Label_MouseUp);
             // 
             // Panel_GravityParticle_GlowMode
             // 
@@ -3988,11 +3960,6 @@
             this.Label_GravityGrid_Color_Val.Size = new System.Drawing.Size(95, 17);
             this.Label_GravityGrid_Color_Val.TabIndex = 0;
             this.Label_GravityGrid_Color_Val.Text = "当前颜色: Value";
-            this.Label_GravityGrid_Color_Val.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Label_GravityGrid_Color_Val_MouseClick);
-            this.Label_GravityGrid_Color_Val.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Label_MouseDown);
-            this.Label_GravityGrid_Color_Val.MouseEnter += new System.EventHandler(this.Label_MouseEnter);
-            this.Label_GravityGrid_Color_Val.MouseLeave += new System.EventHandler(this.Label_MouseLeave);
-            this.Label_GravityGrid_Color_Val.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Label_MouseUp);
             // 
             // Panel_GravityGrid_GlowMode
             // 
@@ -4546,11 +4513,6 @@
             this.Label_SpreadSpot_Color_Val.Size = new System.Drawing.Size(95, 17);
             this.Label_SpreadSpot_Color_Val.TabIndex = 0;
             this.Label_SpreadSpot_Color_Val.Text = "当前颜色: Value";
-            this.Label_SpreadSpot_Color_Val.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Label_SpreadSpot_Color_Val_MouseClick);
-            this.Label_SpreadSpot_Color_Val.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Label_MouseDown);
-            this.Label_SpreadSpot_Color_Val.MouseEnter += new System.EventHandler(this.Label_MouseEnter);
-            this.Label_SpreadSpot_Color_Val.MouseLeave += new System.EventHandler(this.Label_MouseLeave);
-            this.Label_SpreadSpot_Color_Val.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Label_MouseUp);
             // 
             // Panel_SpreadSpot_GlowMode
             // 
@@ -4924,7 +4886,6 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_Settings_FormClosing);
             this.Load += new System.EventHandler(this.Form_Settings_Load);
             this.SizeChanged += new System.EventHandler(this.Form_Settings_SizeChanged);
-            this.MouseWheel += new System.Windows.Forms.MouseEventHandler(this.Form_Main_MouseWheel);
             this.Panel_Main.ResumeLayout(false);
             this.Panel_FunctionArea.ResumeLayout(false);
             this.Panel_FunctionAreaOptionsBar.ResumeLayout(false);

@@ -220,11 +220,11 @@ namespace WinFormApp
                     try
                     {
                         string SubStr = Com.Text.GetIntervalString(Cfg, "<ColorMode>", "</ColorMode>", false, false);
-                        foreach (var V in Enum.GetValues(typeof(Animation.ColorModes)))
+                        foreach (object Obj in Enum.GetValues(typeof(Animation.ColorModes)))
                         {
-                            if (SubStr.Trim().ToUpper() == V.ToString().ToUpper())
+                            if (SubStr.Trim().ToUpper() == Obj.ToString().ToUpper())
                             {
-                                Animation.Animations.LightSpot.Settings.ColorMode = (Animation.ColorModes)V;
+                                Animation.Animations.LightSpot.Settings.ColorMode = (Animation.ColorModes)Obj;
                                 break;
                             }
                         }
@@ -258,11 +258,11 @@ namespace WinFormApp
                     try
                     {
                         string SubStr = Com.Text.GetIntervalString(Cfg, "<GlowMode>", "</GlowMode>", false, false);
-                        foreach (var V in Enum.GetValues(typeof(Animation.GlowModes)))
+                        foreach (object Obj in Enum.GetValues(typeof(Animation.GlowModes)))
                         {
-                            if (SubStr.Trim().ToUpper() == V.ToString().ToUpper())
+                            if (SubStr.Trim().ToUpper() == Obj.ToString().ToUpper())
                             {
-                                Animation.Animations.LightSpot.Settings.GlowMode = (Animation.GlowModes)V;
+                                Animation.Animations.LightSpot.Settings.GlowMode = (Animation.GlowModes)Obj;
                                 break;
                             }
                         }
@@ -350,11 +350,11 @@ namespace WinFormApp
                     try
                     {
                         string SubStr = Com.Text.GetIntervalString(Cfg, "<ColorMode>", "</ColorMode>", false, false);
-                        foreach (var V in Enum.GetValues(typeof(Animation.ColorModes)))
+                        foreach (object Obj in Enum.GetValues(typeof(Animation.ColorModes)))
                         {
-                            if (SubStr.Trim().ToUpper() == V.ToString().ToUpper())
+                            if (SubStr.Trim().ToUpper() == Obj.ToString().ToUpper())
                             {
-                                Animation.Animations.TrianglePiece.Settings.ColorMode = (Animation.ColorModes)V;
+                                Animation.Animations.TrianglePiece.Settings.ColorMode = (Animation.ColorModes)Obj;
                                 break;
                             }
                         }
@@ -388,11 +388,11 @@ namespace WinFormApp
                     try
                     {
                         string SubStr = Com.Text.GetIntervalString(Cfg, "<GlowMode>", "</GlowMode>", false, false);
-                        foreach (var V in Enum.GetValues(typeof(Animation.GlowModes)))
+                        foreach (object Obj in Enum.GetValues(typeof(Animation.GlowModes)))
                         {
-                            if (SubStr.Trim().ToUpper() == V.ToString().ToUpper())
+                            if (SubStr.Trim().ToUpper() == Obj.ToString().ToUpper())
                             {
-                                Animation.Animations.TrianglePiece.Settings.GlowMode = (Animation.GlowModes)V;
+                                Animation.Animations.TrianglePiece.Settings.GlowMode = (Animation.GlowModes)Obj;
                                 break;
                             }
                         }
@@ -480,11 +480,11 @@ namespace WinFormApp
                     try
                     {
                         string SubStr = Com.Text.GetIntervalString(Cfg, "<ColorMode>", "</ColorMode>", false, false);
-                        foreach (var V in Enum.GetValues(typeof(Animation.ColorModes)))
+                        foreach (object Obj in Enum.GetValues(typeof(Animation.ColorModes)))
                         {
-                            if (SubStr.Trim().ToUpper() == V.ToString().ToUpper())
+                            if (SubStr.Trim().ToUpper() == Obj.ToString().ToUpper())
                             {
-                                Animation.Animations.Shine.Settings.ColorMode = (Animation.ColorModes)V;
+                                Animation.Animations.Shine.Settings.ColorMode = (Animation.ColorModes)Obj;
                                 break;
                             }
                         }
@@ -518,11 +518,11 @@ namespace WinFormApp
                     try
                     {
                         string SubStr = Com.Text.GetIntervalString(Cfg, "<GlowMode>", "</GlowMode>", false, false);
-                        foreach (var V in Enum.GetValues(typeof(Animation.GlowModes)))
+                        foreach (object Obj in Enum.GetValues(typeof(Animation.GlowModes)))
                         {
-                            if (SubStr.Trim().ToUpper() == V.ToString().ToUpper())
+                            if (SubStr.Trim().ToUpper() == Obj.ToString().ToUpper())
                             {
-                                Animation.Animations.Shine.Settings.GlowMode = (Animation.GlowModes)V;
+                                Animation.Animations.Shine.Settings.GlowMode = (Animation.GlowModes)Obj;
                                 break;
                             }
                         }
@@ -621,11 +621,11 @@ namespace WinFormApp
                     try
                     {
                         string SubStr = Com.Text.GetIntervalString(Cfg, "<ColorMode>", "</ColorMode>", false, false);
-                        foreach (var V in Enum.GetValues(typeof(Animation.ColorModes)))
+                        foreach (object Obj in Enum.GetValues(typeof(Animation.ColorModes)))
                         {
-                            if (SubStr.Trim().ToUpper() == V.ToString().ToUpper())
+                            if (SubStr.Trim().ToUpper() == Obj.ToString().ToUpper())
                             {
-                                Animation.Animations.Meteor.Settings.ColorMode = (Animation.ColorModes)V;
+                                Animation.Animations.Meteor.Settings.ColorMode = (Animation.ColorModes)Obj;
                                 break;
                             }
                         }
@@ -659,11 +659,11 @@ namespace WinFormApp
                     try
                     {
                         string SubStr = Com.Text.GetIntervalString(Cfg, "<GlowMode>", "</GlowMode>", false, false);
-                        foreach (var V in Enum.GetValues(typeof(Animation.GlowModes)))
+                        foreach (object Obj in Enum.GetValues(typeof(Animation.GlowModes)))
                         {
-                            if (SubStr.Trim().ToUpper() == V.ToString().ToUpper())
+                            if (SubStr.Trim().ToUpper() == Obj.ToString().ToUpper())
                             {
-                                Animation.Animations.Meteor.Settings.GlowMode = (Animation.GlowModes)V;
+                                Animation.Animations.Meteor.Settings.GlowMode = (Animation.GlowModes)Obj;
                                 break;
                             }
                         }
@@ -729,11 +729,11 @@ namespace WinFormApp
                     try
                     {
                         string SubStr = Com.Text.GetIntervalString(Cfg, "<ColorMode>", "</ColorMode>", false, false);
-                        foreach (var V in Enum.GetValues(typeof(Animation.ColorModes)))
+                        foreach (object Obj in Enum.GetValues(typeof(Animation.ColorModes)))
                         {
-                            if (SubStr.Trim().ToUpper() == V.ToString().ToUpper())
+                            if (SubStr.Trim().ToUpper() == Obj.ToString().ToUpper())
                             {
-                                Animation.Animations.Snow.Settings.ColorMode = (Animation.ColorModes)V;
+                                Animation.Animations.Snow.Settings.ColorMode = (Animation.ColorModes)Obj;
                                 break;
                             }
                         }
@@ -767,11 +767,11 @@ namespace WinFormApp
                     try
                     {
                         string SubStr = Com.Text.GetIntervalString(Cfg, "<GlowMode>", "</GlowMode>", false, false);
-                        foreach (var V in Enum.GetValues(typeof(Animation.GlowModes)))
+                        foreach (object Obj in Enum.GetValues(typeof(Animation.GlowModes)))
                         {
-                            if (SubStr.Trim().ToUpper() == V.ToString().ToUpper())
+                            if (SubStr.Trim().ToUpper() == Obj.ToString().ToUpper())
                             {
-                                Animation.Animations.Snow.Settings.GlowMode = (Animation.GlowModes)V;
+                                Animation.Animations.Snow.Settings.GlowMode = (Animation.GlowModes)Obj;
                                 break;
                             }
                         }
@@ -859,11 +859,11 @@ namespace WinFormApp
                     try
                     {
                         string SubStr = Com.Text.GetIntervalString(Cfg, "<ColorMode>", "</ColorMode>", false, false);
-                        foreach (var V in Enum.GetValues(typeof(Animation.ColorModes)))
+                        foreach (object Obj in Enum.GetValues(typeof(Animation.ColorModes)))
                         {
-                            if (SubStr.Trim().ToUpper() == V.ToString().ToUpper())
+                            if (SubStr.Trim().ToUpper() == Obj.ToString().ToUpper())
                             {
-                                Animation.Animations.GravityParticle.Settings.ColorMode = (Animation.ColorModes)V;
+                                Animation.Animations.GravityParticle.Settings.ColorMode = (Animation.ColorModes)Obj;
                                 break;
                             }
                         }
@@ -897,11 +897,11 @@ namespace WinFormApp
                     try
                     {
                         string SubStr = Com.Text.GetIntervalString(Cfg, "<GlowMode>", "</GlowMode>", false, false);
-                        foreach (var V in Enum.GetValues(typeof(Animation.GlowModes)))
+                        foreach (object Obj in Enum.GetValues(typeof(Animation.GlowModes)))
                         {
-                            if (SubStr.Trim().ToUpper() == V.ToString().ToUpper())
+                            if (SubStr.Trim().ToUpper() == Obj.ToString().ToUpper())
                             {
-                                Animation.Animations.GravityParticle.Settings.GlowMode = (Animation.GlowModes)V;
+                                Animation.Animations.GravityParticle.Settings.GlowMode = (Animation.GlowModes)Obj;
                                 break;
                             }
                         }
@@ -978,11 +978,11 @@ namespace WinFormApp
                     try
                     {
                         string SubStr = Com.Text.GetIntervalString(Cfg, "<ColorMode>", "</ColorMode>", false, false);
-                        foreach (var V in Enum.GetValues(typeof(Animation.ColorModes)))
+                        foreach (object Obj in Enum.GetValues(typeof(Animation.ColorModes)))
                         {
-                            if (SubStr.Trim().ToUpper() == V.ToString().ToUpper())
+                            if (SubStr.Trim().ToUpper() == Obj.ToString().ToUpper())
                             {
-                                Animation.Animations.GravityGrid.Settings.ColorMode = (Animation.ColorModes)V;
+                                Animation.Animations.GravityGrid.Settings.ColorMode = (Animation.ColorModes)Obj;
                                 break;
                             }
                         }
@@ -1016,11 +1016,11 @@ namespace WinFormApp
                     try
                     {
                         string SubStr = Com.Text.GetIntervalString(Cfg, "<GlowMode>", "</GlowMode>", false, false);
-                        foreach (var V in Enum.GetValues(typeof(Animation.GlowModes)))
+                        foreach (object Obj in Enum.GetValues(typeof(Animation.GlowModes)))
                         {
-                            if (SubStr.Trim().ToUpper() == V.ToString().ToUpper())
+                            if (SubStr.Trim().ToUpper() == Obj.ToString().ToUpper())
                             {
-                                Animation.Animations.GravityGrid.Settings.GlowMode = (Animation.GlowModes)V;
+                                Animation.Animations.GravityGrid.Settings.GlowMode = (Animation.GlowModes)Obj;
                                 break;
                             }
                         }
@@ -1130,11 +1130,11 @@ namespace WinFormApp
                     try
                     {
                         string SubStr = Com.Text.GetIntervalString(Cfg, "<ColorMode>", "</ColorMode>", false, false);
-                        foreach (var V in Enum.GetValues(typeof(Animation.ColorModes)))
+                        foreach (object Obj in Enum.GetValues(typeof(Animation.ColorModes)))
                         {
-                            if (SubStr.Trim().ToUpper() == V.ToString().ToUpper())
+                            if (SubStr.Trim().ToUpper() == Obj.ToString().ToUpper())
                             {
-                                Animation.Animations.SpreadSpot.Settings.ColorMode = (Animation.ColorModes)V;
+                                Animation.Animations.SpreadSpot.Settings.ColorMode = (Animation.ColorModes)Obj;
                                 break;
                             }
                         }
@@ -1168,11 +1168,11 @@ namespace WinFormApp
                     try
                     {
                         string SubStr = Com.Text.GetIntervalString(Cfg, "<GlowMode>", "</GlowMode>", false, false);
-                        foreach (var V in Enum.GetValues(typeof(Animation.GlowModes)))
+                        foreach (object Obj in Enum.GetValues(typeof(Animation.GlowModes)))
                         {
-                            if (SubStr.Trim().ToUpper() == V.ToString().ToUpper())
+                            if (SubStr.Trim().ToUpper() == Obj.ToString().ToUpper())
                             {
-                                Animation.Animations.SpreadSpot.Settings.GlowMode = (Animation.GlowModes)V;
+                                Animation.Animations.SpreadSpot.Settings.GlowMode = (Animation.GlowModes)Obj;
                                 break;
                             }
                         }
@@ -1194,11 +1194,11 @@ namespace WinFormApp
                     try
                     {
                         string SubStr = Com.Text.GetIntervalString(Cfg, "<AnimationType>", "</AnimationType>", false, false);
-                        foreach (var V in Enum.GetValues(typeof(Animation.Types)))
+                        foreach (object Obj in Enum.GetValues(typeof(Animation.Types)))
                         {
-                            if (SubStr.Trim().ToUpper() == V.ToString().ToUpper())
+                            if (SubStr.Trim().ToUpper() == Obj.ToString().ToUpper())
                             {
-                                Animation.Type = (Animation.Types)V;
+                                Animation.Type = (Animation.Types)Obj;
                                 break;
                             }
                         }
