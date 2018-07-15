@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Settings));
-            this.Button_CloseSettings = new System.Windows.Forms.Button();
             this.Panel_Main = new System.Windows.Forms.Panel();
             this.Panel_FunctionArea = new System.Windows.Forms.Panel();
             this.Panel_FunctionAreaOptionsBar = new System.Windows.Forms.Panel();
@@ -89,8 +88,8 @@
             this.RadioButton_LightSpot_GlowMode_InnerGlow = new System.Windows.Forms.RadioButton();
             this.RadioButton_LightSpot_GlowMode_EvenGlow = new System.Windows.Forms.RadioButton();
             this.Panel_LightSpot_ResetToDefault = new System.Windows.Forms.Panel();
+            this.Label_LightSpot_Reset = new System.Windows.Forms.Label();
             this.Label_LightSpot_ResetToDefault = new System.Windows.Forms.Label();
-            this.Button_LightSpot_ResetToDefault = new System.Windows.Forms.Button();
             this.Panel_Animations_TrianglePiece = new System.Windows.Forms.Panel();
             this.Panel_TrianglePiece_Radius = new System.Windows.Forms.Panel();
             this.Label_TrianglePiece_Radius = new System.Windows.Forms.Label();
@@ -131,8 +130,8 @@
             this.RadioButton_TrianglePiece_GlowMode_InnerGlow = new System.Windows.Forms.RadioButton();
             this.RadioButton_TrianglePiece_GlowMode_EvenGlow = new System.Windows.Forms.RadioButton();
             this.Panel_TrianglePiece_ResetToDefault = new System.Windows.Forms.Panel();
+            this.Label_TrianglePiece_Reset = new System.Windows.Forms.Label();
             this.Label_TrianglePiece_ResetToDefault = new System.Windows.Forms.Label();
-            this.Button_TrianglePiece_ResetToDefault = new System.Windows.Forms.Button();
             this.Panel_Animations_Shine = new System.Windows.Forms.Panel();
             this.Panel_Shine_Radius = new System.Windows.Forms.Panel();
             this.Label_Shine_Radius = new System.Windows.Forms.Label();
@@ -173,8 +172,8 @@
             this.RadioButton_Shine_GlowMode_InnerGlow = new System.Windows.Forms.RadioButton();
             this.RadioButton_Shine_GlowMode_EvenGlow = new System.Windows.Forms.RadioButton();
             this.Panel_Shine_ResetToDefault = new System.Windows.Forms.Panel();
+            this.Label_Shine_Reset = new System.Windows.Forms.Label();
             this.Label_Shine_ResetToDefault = new System.Windows.Forms.Label();
-            this.Button_Shine_ResetToDefault = new System.Windows.Forms.Button();
             this.Panel_Animations_Meteor = new System.Windows.Forms.Panel();
             this.Panel_Meteor_Radius = new System.Windows.Forms.Panel();
             this.Label_Meteor_Radius = new System.Windows.Forms.Label();
@@ -219,8 +218,8 @@
             this.RadioButton_Meteor_GlowMode_InnerGlow = new System.Windows.Forms.RadioButton();
             this.RadioButton_Meteor_GlowMode_EvenGlow = new System.Windows.Forms.RadioButton();
             this.Panel_Meteor_ResetToDefault = new System.Windows.Forms.Panel();
+            this.Label_Meteor_Reset = new System.Windows.Forms.Label();
             this.Label_Meteor_ResetToDefault = new System.Windows.Forms.Label();
-            this.Button_Meteor_ResetToDefault = new System.Windows.Forms.Button();
             this.Panel_Animations_Snow = new System.Windows.Forms.Panel();
             this.Panel_Snow_Radius = new System.Windows.Forms.Panel();
             this.Label_Snow_Radius = new System.Windows.Forms.Label();
@@ -253,8 +252,8 @@
             this.RadioButton_Snow_GlowMode_InnerGlow = new System.Windows.Forms.RadioButton();
             this.RadioButton_Snow_GlowMode_EvenGlow = new System.Windows.Forms.RadioButton();
             this.Panel_Snow_ResetToDefault = new System.Windows.Forms.Panel();
+            this.Label_Snow_Reset = new System.Windows.Forms.Label();
             this.Label_Snow_ResetToDefault = new System.Windows.Forms.Label();
-            this.Button_Snow_ResetToDefault = new System.Windows.Forms.Button();
             this.Panel_Animations_GravityParticle = new System.Windows.Forms.Panel();
             this.Panel_GravityParticle_Mass = new System.Windows.Forms.Panel();
             this.Label_GravityParticle_Mass = new System.Windows.Forms.Label();
@@ -295,8 +294,8 @@
             this.RadioButton_GravityParticle_GlowMode_InnerGlow = new System.Windows.Forms.RadioButton();
             this.RadioButton_GravityParticle_GlowMode_EvenGlow = new System.Windows.Forms.RadioButton();
             this.Panel_GravityParticle_ResetToDefault = new System.Windows.Forms.Panel();
+            this.Label_GravityParticle_Reset = new System.Windows.Forms.Label();
             this.Label_GravityParticle_ResetToDefault = new System.Windows.Forms.Label();
-            this.Button_GravityParticle_ResetToDefault = new System.Windows.Forms.Button();
             this.Panel_Animations_GravityGrid = new System.Windows.Forms.Panel();
             this.Panel_GravityGrid_Radius = new System.Windows.Forms.Panel();
             this.Label_GravityGrid_Radius = new System.Windows.Forms.Label();
@@ -333,8 +332,8 @@
             this.RadioButton_GravityGrid_GlowMode_InnerGlow = new System.Windows.Forms.RadioButton();
             this.RadioButton_GravityGrid_GlowMode_EvenGlow = new System.Windows.Forms.RadioButton();
             this.Panel_GravityGrid_ResetToDefault = new System.Windows.Forms.Panel();
+            this.Label_GravityGrid_Reset = new System.Windows.Forms.Label();
             this.Label_GravityGrid_ResetToDefault = new System.Windows.Forms.Label();
-            this.Button_GravityGrid_ResetToDefault = new System.Windows.Forms.Button();
             this.Panel_Animations_SpreadSpot = new System.Windows.Forms.Panel();
             this.Panel_SpreadSpot_Radius = new System.Windows.Forms.Panel();
             this.Label_SpreadSpot_Radius = new System.Windows.Forms.Label();
@@ -382,8 +381,8 @@
             this.RadioButton_SpreadSpot_GlowMode_InnerGlow = new System.Windows.Forms.RadioButton();
             this.RadioButton_SpreadSpot_GlowMode_EvenGlow = new System.Windows.Forms.RadioButton();
             this.Panel_SpreadSpot_ResetToDefault = new System.Windows.Forms.Panel();
+            this.Label_SpreadSpot_Reset = new System.Windows.Forms.Label();
             this.Label_SpreadSpot_ResetToDefault = new System.Windows.Forms.Label();
-            this.Button_SpreadSpot_ResetToDefault = new System.Windows.Forms.Button();
             this.Panel_Tab_Common = new System.Windows.Forms.Panel();
             this.Panel_AntiAlias = new System.Windows.Forms.Panel();
             this.Label_AntiAlias = new System.Windows.Forms.Label();
@@ -413,6 +412,7 @@
             this.Label_GitHub_Part2 = new System.Windows.Forms.Label();
             this.Label_GitHub_Release = new System.Windows.Forms.Label();
             this.Panel_BottomArea = new System.Windows.Forms.Panel();
+            this.Label_Close = new System.Windows.Forms.Label();
             this.ColorDialog_Color = new System.Windows.Forms.ColorDialog();
             this.Panel_Main.SuspendLayout();
             this.Panel_FunctionArea.SuspendLayout();
@@ -560,20 +560,6 @@
             this.Panel_BottomArea.SuspendLayout();
             this.SuspendLayout();
             // 
-            // Button_CloseSettings
-            // 
-            this.Button_CloseSettings.FlatAppearance.BorderSize = 0;
-            this.Button_CloseSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_CloseSettings.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Button_CloseSettings.Location = new System.Drawing.Point(480, 10);
-            this.Button_CloseSettings.Name = "Button_CloseSettings";
-            this.Button_CloseSettings.Size = new System.Drawing.Size(90, 30);
-            this.Button_CloseSettings.TabIndex = 0;
-            this.Button_CloseSettings.TabStop = false;
-            this.Button_CloseSettings.Text = "完成";
-            this.Button_CloseSettings.UseVisualStyleBackColor = true;
-            this.Button_CloseSettings.Click += new System.EventHandler(this.Button_CloseSettings_Click);
-            // 
             // Panel_Main
             // 
             this.Panel_Main.BackColor = System.Drawing.Color.Transparent;
@@ -602,18 +588,18 @@
             this.Panel_FunctionAreaOptionsBar.Controls.Add(this.Label_Tab_About);
             this.Panel_FunctionAreaOptionsBar.Location = new System.Drawing.Point(0, 0);
             this.Panel_FunctionAreaOptionsBar.Name = "Panel_FunctionAreaOptionsBar";
-            this.Panel_FunctionAreaOptionsBar.Size = new System.Drawing.Size(100, 370);
+            this.Panel_FunctionAreaOptionsBar.Size = new System.Drawing.Size(120, 370);
             this.Panel_FunctionAreaOptionsBar.TabIndex = 0;
             this.Panel_FunctionAreaOptionsBar.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_FunctionAreaOptionsBar_Paint);
             this.Panel_FunctionAreaOptionsBar.MouseWheel += new System.Windows.Forms.MouseEventHandler(this.Panel_FunctionAreaOptionsBar_MouseWheel);
             // 
             // Label_Tab_Animation
             // 
-            this.Label_Tab_Animation.Font = new System.Drawing.Font("微软雅黑", 11.25F);
+            this.Label_Tab_Animation.Font = new System.Drawing.Font("微软雅黑", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Label_Tab_Animation.Location = new System.Drawing.Point(0, 0);
             this.Label_Tab_Animation.Name = "Label_Tab_Animation";
             this.Label_Tab_Animation.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.Label_Tab_Animation.Size = new System.Drawing.Size(100, 40);
+            this.Label_Tab_Animation.Size = new System.Drawing.Size(120, 42);
             this.Label_Tab_Animation.TabIndex = 0;
             this.Label_Tab_Animation.Text = "动画";
             this.Label_Tab_Animation.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -624,10 +610,10 @@
             // Label_Tab_Common
             // 
             this.Label_Tab_Common.Font = new System.Drawing.Font("微软雅黑", 11.25F);
-            this.Label_Tab_Common.Location = new System.Drawing.Point(0, 40);
+            this.Label_Tab_Common.Location = new System.Drawing.Point(0, 42);
             this.Label_Tab_Common.Name = "Label_Tab_Common";
             this.Label_Tab_Common.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.Label_Tab_Common.Size = new System.Drawing.Size(100, 40);
+            this.Label_Tab_Common.Size = new System.Drawing.Size(120, 42);
             this.Label_Tab_Common.TabIndex = 0;
             this.Label_Tab_Common.Text = "通用";
             this.Label_Tab_Common.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -638,10 +624,10 @@
             // Label_Tab_About
             // 
             this.Label_Tab_About.Font = new System.Drawing.Font("微软雅黑", 11.25F);
-            this.Label_Tab_About.Location = new System.Drawing.Point(0, 80);
+            this.Label_Tab_About.Location = new System.Drawing.Point(0, 84);
             this.Label_Tab_About.Name = "Label_Tab_About";
             this.Label_Tab_About.Padding = new System.Windows.Forms.Padding(10, 0, 10, 0);
-            this.Label_Tab_About.Size = new System.Drawing.Size(100, 40);
+            this.Label_Tab_About.Size = new System.Drawing.Size(120, 42);
             this.Label_Tab_About.TabIndex = 0;
             this.Label_Tab_About.Text = "关于";
             this.Label_Tab_About.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -656,9 +642,9 @@
             this.Panel_FunctionAreaTab.Controls.Add(this.Panel_Tab_Animations);
             this.Panel_FunctionAreaTab.Controls.Add(this.Panel_Tab_Common);
             this.Panel_FunctionAreaTab.Controls.Add(this.Panel_Tab_About);
-            this.Panel_FunctionAreaTab.Location = new System.Drawing.Point(100, 0);
+            this.Panel_FunctionAreaTab.Location = new System.Drawing.Point(120, 0);
             this.Panel_FunctionAreaTab.Name = "Panel_FunctionAreaTab";
-            this.Panel_FunctionAreaTab.Size = new System.Drawing.Size(480, 370);
+            this.Panel_FunctionAreaTab.Size = new System.Drawing.Size(460, 370);
             this.Panel_FunctionAreaTab.TabIndex = 0;
             // 
             // Panel_Tab_Animations
@@ -667,7 +653,7 @@
             this.Panel_Tab_Animations.Controls.Add(this.Panel_Animations_AnimationsContainer);
             this.Panel_Tab_Animations.Location = new System.Drawing.Point(0, 0);
             this.Panel_Tab_Animations.Name = "Panel_Tab_Animations";
-            this.Panel_Tab_Animations.Size = new System.Drawing.Size(480, 370);
+            this.Panel_Tab_Animations.Size = new System.Drawing.Size(460, 370);
             this.Panel_Tab_Animations.TabIndex = 0;
             // 
             // Panel_Animations_AnimationTypesContainer
@@ -698,11 +684,11 @@
             // 
             // Label_LightSpot
             // 
-            this.Label_LightSpot.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.Label_LightSpot.Font = new System.Drawing.Font("微软雅黑", 9.75F);
             this.Label_LightSpot.Location = new System.Drawing.Point(0, 0);
             this.Label_LightSpot.Name = "Label_LightSpot";
             this.Label_LightSpot.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.Label_LightSpot.Size = new System.Drawing.Size(100, 25);
+            this.Label_LightSpot.Size = new System.Drawing.Size(100, 28);
             this.Label_LightSpot.TabIndex = 0;
             this.Label_LightSpot.Text = "圆形光点";
             this.Label_LightSpot.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -712,11 +698,11 @@
             // 
             // Label_TrianglePiece
             // 
-            this.Label_TrianglePiece.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.Label_TrianglePiece.Location = new System.Drawing.Point(0, 25);
+            this.Label_TrianglePiece.Font = new System.Drawing.Font("微软雅黑", 9.75F);
+            this.Label_TrianglePiece.Location = new System.Drawing.Point(0, 28);
             this.Label_TrianglePiece.Name = "Label_TrianglePiece";
             this.Label_TrianglePiece.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.Label_TrianglePiece.Size = new System.Drawing.Size(100, 25);
+            this.Label_TrianglePiece.Size = new System.Drawing.Size(100, 28);
             this.Label_TrianglePiece.TabIndex = 0;
             this.Label_TrianglePiece.Text = "三角形碎片";
             this.Label_TrianglePiece.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -726,11 +712,11 @@
             // 
             // Label_Shine
             // 
-            this.Label_Shine.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.Label_Shine.Location = new System.Drawing.Point(0, 50);
+            this.Label_Shine.Font = new System.Drawing.Font("微软雅黑", 9.75F);
+            this.Label_Shine.Location = new System.Drawing.Point(0, 56);
             this.Label_Shine.Name = "Label_Shine";
             this.Label_Shine.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.Label_Shine.Size = new System.Drawing.Size(100, 25);
+            this.Label_Shine.Size = new System.Drawing.Size(100, 28);
             this.Label_Shine.TabIndex = 0;
             this.Label_Shine.Text = "光芒";
             this.Label_Shine.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -740,11 +726,11 @@
             // 
             // Label_Meteor
             // 
-            this.Label_Meteor.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.Label_Meteor.Location = new System.Drawing.Point(0, 75);
+            this.Label_Meteor.Font = new System.Drawing.Font("微软雅黑", 9.75F);
+            this.Label_Meteor.Location = new System.Drawing.Point(0, 84);
             this.Label_Meteor.Name = "Label_Meteor";
             this.Label_Meteor.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.Label_Meteor.Size = new System.Drawing.Size(100, 25);
+            this.Label_Meteor.Size = new System.Drawing.Size(100, 28);
             this.Label_Meteor.TabIndex = 0;
             this.Label_Meteor.Text = "流星";
             this.Label_Meteor.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -754,11 +740,11 @@
             // 
             // Label_Snow
             // 
-            this.Label_Snow.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.Label_Snow.Location = new System.Drawing.Point(0, 100);
+            this.Label_Snow.Font = new System.Drawing.Font("微软雅黑", 9.75F);
+            this.Label_Snow.Location = new System.Drawing.Point(0, 112);
             this.Label_Snow.Name = "Label_Snow";
             this.Label_Snow.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.Label_Snow.Size = new System.Drawing.Size(100, 25);
+            this.Label_Snow.Size = new System.Drawing.Size(100, 28);
             this.Label_Snow.TabIndex = 0;
             this.Label_Snow.Text = "雪";
             this.Label_Snow.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -768,11 +754,11 @@
             // 
             // Label_GravityParticle
             // 
-            this.Label_GravityParticle.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.Label_GravityParticle.Location = new System.Drawing.Point(0, 125);
+            this.Label_GravityParticle.Font = new System.Drawing.Font("微软雅黑", 9.75F);
+            this.Label_GravityParticle.Location = new System.Drawing.Point(0, 140);
             this.Label_GravityParticle.Name = "Label_GravityParticle";
             this.Label_GravityParticle.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.Label_GravityParticle.Size = new System.Drawing.Size(100, 25);
+            this.Label_GravityParticle.Size = new System.Drawing.Size(100, 28);
             this.Label_GravityParticle.TabIndex = 0;
             this.Label_GravityParticle.Text = "引力粒子";
             this.Label_GravityParticle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -782,11 +768,11 @@
             // 
             // Label_GravityGrid
             // 
-            this.Label_GravityGrid.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.Label_GravityGrid.Location = new System.Drawing.Point(0, 150);
+            this.Label_GravityGrid.Font = new System.Drawing.Font("微软雅黑", 9.75F);
+            this.Label_GravityGrid.Location = new System.Drawing.Point(0, 168);
             this.Label_GravityGrid.Name = "Label_GravityGrid";
             this.Label_GravityGrid.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.Label_GravityGrid.Size = new System.Drawing.Size(100, 25);
+            this.Label_GravityGrid.Size = new System.Drawing.Size(100, 28);
             this.Label_GravityGrid.TabIndex = 0;
             this.Label_GravityGrid.Text = "引力网";
             this.Label_GravityGrid.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -796,11 +782,11 @@
             // 
             // Label_SpreadSpot
             // 
-            this.Label_SpreadSpot.Font = new System.Drawing.Font("微软雅黑", 9F);
-            this.Label_SpreadSpot.Location = new System.Drawing.Point(0, 175);
+            this.Label_SpreadSpot.Font = new System.Drawing.Font("微软雅黑", 9.75F);
+            this.Label_SpreadSpot.Location = new System.Drawing.Point(0, 196);
             this.Label_SpreadSpot.Name = "Label_SpreadSpot";
             this.Label_SpreadSpot.Padding = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.Label_SpreadSpot.Size = new System.Drawing.Size(100, 25);
+            this.Label_SpreadSpot.Size = new System.Drawing.Size(100, 28);
             this.Label_SpreadSpot.TabIndex = 0;
             this.Label_SpreadSpot.Text = "扩散光点";
             this.Label_SpreadSpot.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -821,7 +807,7 @@
             this.Panel_Animations_AnimationsContainer.Controls.Add(this.Panel_Animations_SpreadSpot);
             this.Panel_Animations_AnimationsContainer.Location = new System.Drawing.Point(100, 0);
             this.Panel_Animations_AnimationsContainer.Name = "Panel_Animations_AnimationsContainer";
-            this.Panel_Animations_AnimationsContainer.Size = new System.Drawing.Size(380, 370);
+            this.Panel_Animations_AnimationsContainer.Size = new System.Drawing.Size(360, 370);
             this.Panel_Animations_AnimationsContainer.TabIndex = 0;
             // 
             // Panel_Animations_LightSpot
@@ -836,7 +822,7 @@
             this.Panel_Animations_LightSpot.Controls.Add(this.Panel_LightSpot_ResetToDefault);
             this.Panel_Animations_LightSpot.Location = new System.Drawing.Point(0, 0);
             this.Panel_Animations_LightSpot.Name = "Panel_Animations_LightSpot";
-            this.Panel_Animations_LightSpot.Size = new System.Drawing.Size(360, 650);
+            this.Panel_Animations_LightSpot.Size = new System.Drawing.Size(340, 650);
             this.Panel_Animations_LightSpot.TabIndex = 0;
             // 
             // Panel_LightSpot_Radius
@@ -850,7 +836,7 @@
             this.Panel_LightSpot_Radius.Controls.Add(this.Label_LightSpot_MaxRadius_Val);
             this.Panel_LightSpot_Radius.Location = new System.Drawing.Point(10, 10);
             this.Panel_LightSpot_Radius.Name = "Panel_LightSpot_Radius";
-            this.Panel_LightSpot_Radius.Size = new System.Drawing.Size(330, 140);
+            this.Panel_LightSpot_Radius.Size = new System.Drawing.Size(320, 140);
             this.Panel_LightSpot_Radius.TabIndex = 0;
             this.Panel_LightSpot_Radius.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_LightSpot_Radius_Paint);
             // 
@@ -935,7 +921,7 @@
             this.Panel_LightSpot_Count.Controls.Add(this.Label_LightSpot_Count_Val);
             this.Panel_LightSpot_Count.Location = new System.Drawing.Point(10, 150);
             this.Panel_LightSpot_Count.Name = "Panel_LightSpot_Count";
-            this.Panel_LightSpot_Count.Size = new System.Drawing.Size(330, 60);
+            this.Panel_LightSpot_Count.Size = new System.Drawing.Size(320, 60);
             this.Panel_LightSpot_Count.TabIndex = 0;
             this.Panel_LightSpot_Count.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_LightSpot_Count_Paint);
             // 
@@ -978,7 +964,7 @@
             this.Panel_LightSpot_Amplitude.Controls.Add(this.Label_LightSpot_Amplitude_Val);
             this.Panel_LightSpot_Amplitude.Location = new System.Drawing.Point(10, 210);
             this.Panel_LightSpot_Amplitude.Name = "Panel_LightSpot_Amplitude";
-            this.Panel_LightSpot_Amplitude.Size = new System.Drawing.Size(330, 60);
+            this.Panel_LightSpot_Amplitude.Size = new System.Drawing.Size(320, 60);
             this.Panel_LightSpot_Amplitude.TabIndex = 0;
             this.Panel_LightSpot_Amplitude.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_LightSpot_Amplitude_Paint);
             // 
@@ -1021,7 +1007,7 @@
             this.Panel_LightSpot_WaveLength.Controls.Add(this.Label_LightSpot_WaveLength_Val);
             this.Panel_LightSpot_WaveLength.Location = new System.Drawing.Point(10, 270);
             this.Panel_LightSpot_WaveLength.Name = "Panel_LightSpot_WaveLength";
-            this.Panel_LightSpot_WaveLength.Size = new System.Drawing.Size(330, 60);
+            this.Panel_LightSpot_WaveLength.Size = new System.Drawing.Size(320, 60);
             this.Panel_LightSpot_WaveLength.TabIndex = 0;
             this.Panel_LightSpot_WaveLength.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_LightSpot_WaveLength_Paint);
             // 
@@ -1064,7 +1050,7 @@
             this.Panel_LightSpot_WaveVelocity.Controls.Add(this.Label_LightSpot_WaveVelocity_Val);
             this.Panel_LightSpot_WaveVelocity.Location = new System.Drawing.Point(10, 330);
             this.Panel_LightSpot_WaveVelocity.Name = "Panel_LightSpot_WaveVelocity";
-            this.Panel_LightSpot_WaveVelocity.Size = new System.Drawing.Size(330, 60);
+            this.Panel_LightSpot_WaveVelocity.Size = new System.Drawing.Size(320, 60);
             this.Panel_LightSpot_WaveVelocity.TabIndex = 0;
             this.Panel_LightSpot_WaveVelocity.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_LightSpot_WaveVelocity_Paint);
             // 
@@ -1112,7 +1098,7 @@
             this.Panel_LightSpot_Color.Controls.Add(this.Label_LightSpot_Color_Val);
             this.Panel_LightSpot_Color.Location = new System.Drawing.Point(10, 390);
             this.Panel_LightSpot_Color.Name = "Panel_LightSpot_Color";
-            this.Panel_LightSpot_Color.Size = new System.Drawing.Size(330, 120);
+            this.Panel_LightSpot_Color.Size = new System.Drawing.Size(320, 120);
             this.Panel_LightSpot_Color.TabIndex = 0;
             this.Panel_LightSpot_Color.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_LightSpot_Color_Paint);
             // 
@@ -1201,9 +1187,9 @@
             this.Label_LightSpot_Color_Val.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Label_LightSpot_Color_Val.Location = new System.Drawing.Point(80, 92);
             this.Label_LightSpot_Color_Val.Name = "Label_LightSpot_Color_Val";
-            this.Label_LightSpot_Color_Val.Size = new System.Drawing.Size(95, 17);
+            this.Label_LightSpot_Color_Val.Size = new System.Drawing.Size(40, 17);
             this.Label_LightSpot_Color_Val.TabIndex = 0;
-            this.Label_LightSpot_Color_Val.Text = "当前颜色: Value";
+            this.Label_LightSpot_Color_Val.Text = "Value";
             // 
             // Panel_LightSpot_GlowMode
             // 
@@ -1213,7 +1199,7 @@
             this.Panel_LightSpot_GlowMode.Controls.Add(this.RadioButton_LightSpot_GlowMode_EvenGlow);
             this.Panel_LightSpot_GlowMode.Location = new System.Drawing.Point(10, 510);
             this.Panel_LightSpot_GlowMode.Name = "Panel_LightSpot_GlowMode";
-            this.Panel_LightSpot_GlowMode.Size = new System.Drawing.Size(330, 60);
+            this.Panel_LightSpot_GlowMode.Size = new System.Drawing.Size(320, 60);
             this.Panel_LightSpot_GlowMode.TabIndex = 0;
             this.Panel_LightSpot_GlowMode.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_LightSpot_GlowMode_Paint);
             // 
@@ -1225,7 +1211,7 @@
             this.Label_LightSpot_GlowMode.Name = "Label_LightSpot_GlowMode";
             this.Label_LightSpot_GlowMode.Size = new System.Drawing.Size(61, 19);
             this.Label_LightSpot_GlowMode.TabIndex = 0;
-            this.Label_LightSpot_GlowMode.Text = "着色模式";
+            this.Label_LightSpot_GlowMode.Text = "着色方式";
             // 
             // RadioButton_LightSpot_GlowMode_OuterGlow
             // 
@@ -1265,37 +1251,33 @@
             // 
             // Panel_LightSpot_ResetToDefault
             // 
+            this.Panel_LightSpot_ResetToDefault.Controls.Add(this.Label_LightSpot_Reset);
             this.Panel_LightSpot_ResetToDefault.Controls.Add(this.Label_LightSpot_ResetToDefault);
-            this.Panel_LightSpot_ResetToDefault.Controls.Add(this.Button_LightSpot_ResetToDefault);
             this.Panel_LightSpot_ResetToDefault.Location = new System.Drawing.Point(10, 570);
             this.Panel_LightSpot_ResetToDefault.Name = "Panel_LightSpot_ResetToDefault";
-            this.Panel_LightSpot_ResetToDefault.Size = new System.Drawing.Size(330, 70);
+            this.Panel_LightSpot_ResetToDefault.Size = new System.Drawing.Size(320, 70);
             this.Panel_LightSpot_ResetToDefault.TabIndex = 0;
             this.Panel_LightSpot_ResetToDefault.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_LightSpot_ResetToDefault_Paint);
             // 
+            // Label_LightSpot_Reset
+            // 
+            this.Label_LightSpot_Reset.AutoSize = true;
+            this.Label_LightSpot_Reset.Font = new System.Drawing.Font("微软雅黑", 9.75F);
+            this.Label_LightSpot_Reset.Location = new System.Drawing.Point(0, 0);
+            this.Label_LightSpot_Reset.Name = "Label_LightSpot_Reset";
+            this.Label_LightSpot_Reset.Size = new System.Drawing.Size(35, 19);
+            this.Label_LightSpot_Reset.TabIndex = 0;
+            this.Label_LightSpot_Reset.Text = "重置";
+            // 
             // Label_LightSpot_ResetToDefault
             // 
-            this.Label_LightSpot_ResetToDefault.AutoSize = true;
             this.Label_LightSpot_ResetToDefault.Font = new System.Drawing.Font("微软雅黑", 9.75F);
-            this.Label_LightSpot_ResetToDefault.Location = new System.Drawing.Point(0, 0);
+            this.Label_LightSpot_ResetToDefault.Location = new System.Drawing.Point(10, 30);
             this.Label_LightSpot_ResetToDefault.Name = "Label_LightSpot_ResetToDefault";
-            this.Label_LightSpot_ResetToDefault.Size = new System.Drawing.Size(35, 19);
+            this.Label_LightSpot_ResetToDefault.Size = new System.Drawing.Size(160, 30);
             this.Label_LightSpot_ResetToDefault.TabIndex = 0;
-            this.Label_LightSpot_ResetToDefault.Text = "重置";
-            // 
-            // Button_LightSpot_ResetToDefault
-            // 
-            this.Button_LightSpot_ResetToDefault.FlatAppearance.BorderSize = 0;
-            this.Button_LightSpot_ResetToDefault.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_LightSpot_ResetToDefault.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Button_LightSpot_ResetToDefault.Location = new System.Drawing.Point(10, 30);
-            this.Button_LightSpot_ResetToDefault.Name = "Button_LightSpot_ResetToDefault";
-            this.Button_LightSpot_ResetToDefault.Size = new System.Drawing.Size(160, 30);
-            this.Button_LightSpot_ResetToDefault.TabIndex = 0;
-            this.Button_LightSpot_ResetToDefault.TabStop = false;
-            this.Button_LightSpot_ResetToDefault.Text = "全部重置为默认值";
-            this.Button_LightSpot_ResetToDefault.UseVisualStyleBackColor = true;
-            this.Button_LightSpot_ResetToDefault.Click += new System.EventHandler(this.Button_LightSpot_ResetToDefault_Click);
+            this.Label_LightSpot_ResetToDefault.Text = "全部重置为默认值";
+            this.Label_LightSpot_ResetToDefault.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Panel_Animations_TrianglePiece
             // 
@@ -1309,7 +1291,7 @@
             this.Panel_Animations_TrianglePiece.Controls.Add(this.Panel_TrianglePiece_ResetToDefault);
             this.Panel_Animations_TrianglePiece.Location = new System.Drawing.Point(0, 0);
             this.Panel_Animations_TrianglePiece.Name = "Panel_Animations_TrianglePiece";
-            this.Panel_Animations_TrianglePiece.Size = new System.Drawing.Size(360, 650);
+            this.Panel_Animations_TrianglePiece.Size = new System.Drawing.Size(340, 650);
             this.Panel_Animations_TrianglePiece.TabIndex = 0;
             // 
             // Panel_TrianglePiece_Radius
@@ -1323,7 +1305,7 @@
             this.Panel_TrianglePiece_Radius.Controls.Add(this.Label_TrianglePiece_MaxRadius_Val);
             this.Panel_TrianglePiece_Radius.Location = new System.Drawing.Point(10, 10);
             this.Panel_TrianglePiece_Radius.Name = "Panel_TrianglePiece_Radius";
-            this.Panel_TrianglePiece_Radius.Size = new System.Drawing.Size(330, 140);
+            this.Panel_TrianglePiece_Radius.Size = new System.Drawing.Size(320, 140);
             this.Panel_TrianglePiece_Radius.TabIndex = 0;
             this.Panel_TrianglePiece_Radius.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_TrianglePiece_Radius_Paint);
             // 
@@ -1408,7 +1390,7 @@
             this.Panel_TrianglePiece_Count.Controls.Add(this.Label_TrianglePiece_Count_Val);
             this.Panel_TrianglePiece_Count.Location = new System.Drawing.Point(10, 150);
             this.Panel_TrianglePiece_Count.Name = "Panel_TrianglePiece_Count";
-            this.Panel_TrianglePiece_Count.Size = new System.Drawing.Size(330, 60);
+            this.Panel_TrianglePiece_Count.Size = new System.Drawing.Size(320, 60);
             this.Panel_TrianglePiece_Count.TabIndex = 0;
             this.Panel_TrianglePiece_Count.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_TrianglePiece_Count_Paint);
             // 
@@ -1451,7 +1433,7 @@
             this.Panel_TrianglePiece_Amplitude.Controls.Add(this.Label_TrianglePiece_Amplitude_Val);
             this.Panel_TrianglePiece_Amplitude.Location = new System.Drawing.Point(10, 210);
             this.Panel_TrianglePiece_Amplitude.Name = "Panel_TrianglePiece_Amplitude";
-            this.Panel_TrianglePiece_Amplitude.Size = new System.Drawing.Size(330, 60);
+            this.Panel_TrianglePiece_Amplitude.Size = new System.Drawing.Size(320, 60);
             this.Panel_TrianglePiece_Amplitude.TabIndex = 0;
             this.Panel_TrianglePiece_Amplitude.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_TrianglePiece_Amplitude_Paint);
             // 
@@ -1494,7 +1476,7 @@
             this.Panel_TrianglePiece_WaveLength.Controls.Add(this.Label_TrianglePiece_WaveLength_Val);
             this.Panel_TrianglePiece_WaveLength.Location = new System.Drawing.Point(10, 270);
             this.Panel_TrianglePiece_WaveLength.Name = "Panel_TrianglePiece_WaveLength";
-            this.Panel_TrianglePiece_WaveLength.Size = new System.Drawing.Size(330, 60);
+            this.Panel_TrianglePiece_WaveLength.Size = new System.Drawing.Size(320, 60);
             this.Panel_TrianglePiece_WaveLength.TabIndex = 0;
             this.Panel_TrianglePiece_WaveLength.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_TrianglePiece_WaveLength_Paint);
             // 
@@ -1537,7 +1519,7 @@
             this.Panel_TrianglePiece_WaveVelocity.Controls.Add(this.Label_TrianglePiece_WaveVelocity_Val);
             this.Panel_TrianglePiece_WaveVelocity.Location = new System.Drawing.Point(10, 330);
             this.Panel_TrianglePiece_WaveVelocity.Name = "Panel_TrianglePiece_WaveVelocity";
-            this.Panel_TrianglePiece_WaveVelocity.Size = new System.Drawing.Size(330, 60);
+            this.Panel_TrianglePiece_WaveVelocity.Size = new System.Drawing.Size(320, 60);
             this.Panel_TrianglePiece_WaveVelocity.TabIndex = 0;
             this.Panel_TrianglePiece_WaveVelocity.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_TrianglePiece_WaveVelocity_Paint);
             // 
@@ -1585,7 +1567,7 @@
             this.Panel_TrianglePiece_Color.Controls.Add(this.Label_TrianglePiece_Color_Val);
             this.Panel_TrianglePiece_Color.Location = new System.Drawing.Point(10, 390);
             this.Panel_TrianglePiece_Color.Name = "Panel_TrianglePiece_Color";
-            this.Panel_TrianglePiece_Color.Size = new System.Drawing.Size(330, 120);
+            this.Panel_TrianglePiece_Color.Size = new System.Drawing.Size(320, 120);
             this.Panel_TrianglePiece_Color.TabIndex = 0;
             this.Panel_TrianglePiece_Color.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_TrianglePiece_Color_Paint);
             // 
@@ -1674,9 +1656,9 @@
             this.Label_TrianglePiece_Color_Val.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Label_TrianglePiece_Color_Val.Location = new System.Drawing.Point(80, 92);
             this.Label_TrianglePiece_Color_Val.Name = "Label_TrianglePiece_Color_Val";
-            this.Label_TrianglePiece_Color_Val.Size = new System.Drawing.Size(95, 17);
+            this.Label_TrianglePiece_Color_Val.Size = new System.Drawing.Size(40, 17);
             this.Label_TrianglePiece_Color_Val.TabIndex = 0;
-            this.Label_TrianglePiece_Color_Val.Text = "当前颜色: Value";
+            this.Label_TrianglePiece_Color_Val.Text = "Value";
             // 
             // Panel_TrianglePiece_GlowMode
             // 
@@ -1686,7 +1668,7 @@
             this.Panel_TrianglePiece_GlowMode.Controls.Add(this.RadioButton_TrianglePiece_GlowMode_EvenGlow);
             this.Panel_TrianglePiece_GlowMode.Location = new System.Drawing.Point(10, 510);
             this.Panel_TrianglePiece_GlowMode.Name = "Panel_TrianglePiece_GlowMode";
-            this.Panel_TrianglePiece_GlowMode.Size = new System.Drawing.Size(330, 60);
+            this.Panel_TrianglePiece_GlowMode.Size = new System.Drawing.Size(320, 60);
             this.Panel_TrianglePiece_GlowMode.TabIndex = 0;
             this.Panel_TrianglePiece_GlowMode.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_TrianglePiece_GlowMode_Paint);
             // 
@@ -1698,7 +1680,7 @@
             this.Label_TrianglePiece_GlowMode.Name = "Label_TrianglePiece_GlowMode";
             this.Label_TrianglePiece_GlowMode.Size = new System.Drawing.Size(61, 19);
             this.Label_TrianglePiece_GlowMode.TabIndex = 0;
-            this.Label_TrianglePiece_GlowMode.Text = "着色模式";
+            this.Label_TrianglePiece_GlowMode.Text = "着色方式";
             // 
             // RadioButton_TrianglePiece_GlowMode_OuterGlow
             // 
@@ -1738,37 +1720,33 @@
             // 
             // Panel_TrianglePiece_ResetToDefault
             // 
+            this.Panel_TrianglePiece_ResetToDefault.Controls.Add(this.Label_TrianglePiece_Reset);
             this.Panel_TrianglePiece_ResetToDefault.Controls.Add(this.Label_TrianglePiece_ResetToDefault);
-            this.Panel_TrianglePiece_ResetToDefault.Controls.Add(this.Button_TrianglePiece_ResetToDefault);
             this.Panel_TrianglePiece_ResetToDefault.Location = new System.Drawing.Point(10, 570);
             this.Panel_TrianglePiece_ResetToDefault.Name = "Panel_TrianglePiece_ResetToDefault";
-            this.Panel_TrianglePiece_ResetToDefault.Size = new System.Drawing.Size(330, 70);
+            this.Panel_TrianglePiece_ResetToDefault.Size = new System.Drawing.Size(320, 70);
             this.Panel_TrianglePiece_ResetToDefault.TabIndex = 0;
             this.Panel_TrianglePiece_ResetToDefault.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_TrianglePiece_ResetToDefault_Paint);
             // 
+            // Label_TrianglePiece_Reset
+            // 
+            this.Label_TrianglePiece_Reset.AutoSize = true;
+            this.Label_TrianglePiece_Reset.Font = new System.Drawing.Font("微软雅黑", 9.75F);
+            this.Label_TrianglePiece_Reset.Location = new System.Drawing.Point(0, 0);
+            this.Label_TrianglePiece_Reset.Name = "Label_TrianglePiece_Reset";
+            this.Label_TrianglePiece_Reset.Size = new System.Drawing.Size(35, 19);
+            this.Label_TrianglePiece_Reset.TabIndex = 0;
+            this.Label_TrianglePiece_Reset.Text = "重置";
+            // 
             // Label_TrianglePiece_ResetToDefault
             // 
-            this.Label_TrianglePiece_ResetToDefault.AutoSize = true;
             this.Label_TrianglePiece_ResetToDefault.Font = new System.Drawing.Font("微软雅黑", 9.75F);
-            this.Label_TrianglePiece_ResetToDefault.Location = new System.Drawing.Point(0, 0);
+            this.Label_TrianglePiece_ResetToDefault.Location = new System.Drawing.Point(10, 30);
             this.Label_TrianglePiece_ResetToDefault.Name = "Label_TrianglePiece_ResetToDefault";
-            this.Label_TrianglePiece_ResetToDefault.Size = new System.Drawing.Size(35, 19);
+            this.Label_TrianglePiece_ResetToDefault.Size = new System.Drawing.Size(160, 30);
             this.Label_TrianglePiece_ResetToDefault.TabIndex = 0;
-            this.Label_TrianglePiece_ResetToDefault.Text = "重置";
-            // 
-            // Button_TrianglePiece_ResetToDefault
-            // 
-            this.Button_TrianglePiece_ResetToDefault.FlatAppearance.BorderSize = 0;
-            this.Button_TrianglePiece_ResetToDefault.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_TrianglePiece_ResetToDefault.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Button_TrianglePiece_ResetToDefault.Location = new System.Drawing.Point(10, 30);
-            this.Button_TrianglePiece_ResetToDefault.Name = "Button_TrianglePiece_ResetToDefault";
-            this.Button_TrianglePiece_ResetToDefault.Size = new System.Drawing.Size(160, 30);
-            this.Button_TrianglePiece_ResetToDefault.TabIndex = 0;
-            this.Button_TrianglePiece_ResetToDefault.TabStop = false;
-            this.Button_TrianglePiece_ResetToDefault.Text = "全部重置为默认值";
-            this.Button_TrianglePiece_ResetToDefault.UseVisualStyleBackColor = true;
-            this.Button_TrianglePiece_ResetToDefault.Click += new System.EventHandler(this.Button_TrianglePiece_ResetToDefault_Click);
+            this.Label_TrianglePiece_ResetToDefault.Text = "全部重置为默认值";
+            this.Label_TrianglePiece_ResetToDefault.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Panel_Animations_Shine
             // 
@@ -1781,7 +1759,7 @@
             this.Panel_Animations_Shine.Controls.Add(this.Panel_Shine_ResetToDefault);
             this.Panel_Animations_Shine.Location = new System.Drawing.Point(0, 0);
             this.Panel_Animations_Shine.Name = "Panel_Animations_Shine";
-            this.Panel_Animations_Shine.Size = new System.Drawing.Size(360, 670);
+            this.Panel_Animations_Shine.Size = new System.Drawing.Size(340, 670);
             this.Panel_Animations_Shine.TabIndex = 0;
             // 
             // Panel_Shine_Radius
@@ -1795,7 +1773,7 @@
             this.Panel_Shine_Radius.Controls.Add(this.Label_Shine_MaxRadius_Val);
             this.Panel_Shine_Radius.Location = new System.Drawing.Point(10, 10);
             this.Panel_Shine_Radius.Name = "Panel_Shine_Radius";
-            this.Panel_Shine_Radius.Size = new System.Drawing.Size(330, 140);
+            this.Panel_Shine_Radius.Size = new System.Drawing.Size(320, 140);
             this.Panel_Shine_Radius.TabIndex = 0;
             this.Panel_Shine_Radius.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_Shine_Radius_Paint);
             // 
@@ -1880,7 +1858,7 @@
             this.Panel_Shine_Count.Controls.Add(this.Label_Shine_Count_Val);
             this.Panel_Shine_Count.Location = new System.Drawing.Point(10, 150);
             this.Panel_Shine_Count.Name = "Panel_Shine_Count";
-            this.Panel_Shine_Count.Size = new System.Drawing.Size(330, 60);
+            this.Panel_Shine_Count.Size = new System.Drawing.Size(320, 60);
             this.Panel_Shine_Count.TabIndex = 0;
             this.Panel_Shine_Count.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_Shine_Count_Paint);
             // 
@@ -1923,7 +1901,7 @@
             this.Panel_Shine_Displacement.Controls.Add(this.Label_Shine_Displacement_Val);
             this.Panel_Shine_Displacement.Location = new System.Drawing.Point(10, 210);
             this.Panel_Shine_Displacement.Name = "Panel_Shine_Displacement";
-            this.Panel_Shine_Displacement.Size = new System.Drawing.Size(330, 60);
+            this.Panel_Shine_Displacement.Size = new System.Drawing.Size(320, 60);
             this.Panel_Shine_Displacement.TabIndex = 0;
             this.Panel_Shine_Displacement.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_Shine_Displacement_Paint);
             // 
@@ -1970,7 +1948,7 @@
             this.Panel_Shine_Period.Controls.Add(this.Label_Shine_MaxPeriod_Val);
             this.Panel_Shine_Period.Location = new System.Drawing.Point(10, 270);
             this.Panel_Shine_Period.Name = "Panel_Shine_Period";
-            this.Panel_Shine_Period.Size = new System.Drawing.Size(330, 140);
+            this.Panel_Shine_Period.Size = new System.Drawing.Size(320, 140);
             this.Panel_Shine_Period.TabIndex = 0;
             this.Panel_Shine_Period.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_Shine_Period_Paint);
             // 
@@ -2060,7 +2038,7 @@
             this.Panel_Shine_Color.Controls.Add(this.Label_Shine_Color_Val);
             this.Panel_Shine_Color.Location = new System.Drawing.Point(10, 410);
             this.Panel_Shine_Color.Name = "Panel_Shine_Color";
-            this.Panel_Shine_Color.Size = new System.Drawing.Size(330, 120);
+            this.Panel_Shine_Color.Size = new System.Drawing.Size(320, 120);
             this.Panel_Shine_Color.TabIndex = 0;
             this.Panel_Shine_Color.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_Shine_Color_Paint);
             // 
@@ -2149,9 +2127,9 @@
             this.Label_Shine_Color_Val.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Label_Shine_Color_Val.Location = new System.Drawing.Point(80, 92);
             this.Label_Shine_Color_Val.Name = "Label_Shine_Color_Val";
-            this.Label_Shine_Color_Val.Size = new System.Drawing.Size(95, 17);
+            this.Label_Shine_Color_Val.Size = new System.Drawing.Size(40, 17);
             this.Label_Shine_Color_Val.TabIndex = 0;
-            this.Label_Shine_Color_Val.Text = "当前颜色: Value";
+            this.Label_Shine_Color_Val.Text = "Value";
             // 
             // Panel_Shine_GlowMode
             // 
@@ -2161,7 +2139,7 @@
             this.Panel_Shine_GlowMode.Controls.Add(this.RadioButton_Shine_GlowMode_EvenGlow);
             this.Panel_Shine_GlowMode.Location = new System.Drawing.Point(10, 530);
             this.Panel_Shine_GlowMode.Name = "Panel_Shine_GlowMode";
-            this.Panel_Shine_GlowMode.Size = new System.Drawing.Size(330, 60);
+            this.Panel_Shine_GlowMode.Size = new System.Drawing.Size(320, 60);
             this.Panel_Shine_GlowMode.TabIndex = 0;
             this.Panel_Shine_GlowMode.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_Shine_GlowMode_Paint);
             // 
@@ -2173,7 +2151,7 @@
             this.Label_Shine_GlowMode.Name = "Label_Shine_GlowMode";
             this.Label_Shine_GlowMode.Size = new System.Drawing.Size(61, 19);
             this.Label_Shine_GlowMode.TabIndex = 0;
-            this.Label_Shine_GlowMode.Text = "着色模式";
+            this.Label_Shine_GlowMode.Text = "着色方式";
             // 
             // RadioButton_Shine_GlowMode_OuterGlow
             // 
@@ -2213,37 +2191,33 @@
             // 
             // Panel_Shine_ResetToDefault
             // 
+            this.Panel_Shine_ResetToDefault.Controls.Add(this.Label_Shine_Reset);
             this.Panel_Shine_ResetToDefault.Controls.Add(this.Label_Shine_ResetToDefault);
-            this.Panel_Shine_ResetToDefault.Controls.Add(this.Button_Shine_ResetToDefault);
             this.Panel_Shine_ResetToDefault.Location = new System.Drawing.Point(10, 590);
             this.Panel_Shine_ResetToDefault.Name = "Panel_Shine_ResetToDefault";
-            this.Panel_Shine_ResetToDefault.Size = new System.Drawing.Size(330, 70);
+            this.Panel_Shine_ResetToDefault.Size = new System.Drawing.Size(320, 70);
             this.Panel_Shine_ResetToDefault.TabIndex = 0;
             this.Panel_Shine_ResetToDefault.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_Shine_ResetToDefault_Paint);
             // 
+            // Label_Shine_Reset
+            // 
+            this.Label_Shine_Reset.AutoSize = true;
+            this.Label_Shine_Reset.Font = new System.Drawing.Font("微软雅黑", 9.75F);
+            this.Label_Shine_Reset.Location = new System.Drawing.Point(0, 0);
+            this.Label_Shine_Reset.Name = "Label_Shine_Reset";
+            this.Label_Shine_Reset.Size = new System.Drawing.Size(35, 19);
+            this.Label_Shine_Reset.TabIndex = 0;
+            this.Label_Shine_Reset.Text = "重置";
+            // 
             // Label_Shine_ResetToDefault
             // 
-            this.Label_Shine_ResetToDefault.AutoSize = true;
             this.Label_Shine_ResetToDefault.Font = new System.Drawing.Font("微软雅黑", 9.75F);
-            this.Label_Shine_ResetToDefault.Location = new System.Drawing.Point(0, 0);
+            this.Label_Shine_ResetToDefault.Location = new System.Drawing.Point(10, 30);
             this.Label_Shine_ResetToDefault.Name = "Label_Shine_ResetToDefault";
-            this.Label_Shine_ResetToDefault.Size = new System.Drawing.Size(35, 19);
+            this.Label_Shine_ResetToDefault.Size = new System.Drawing.Size(160, 30);
             this.Label_Shine_ResetToDefault.TabIndex = 0;
-            this.Label_Shine_ResetToDefault.Text = "重置";
-            // 
-            // Button_Shine_ResetToDefault
-            // 
-            this.Button_Shine_ResetToDefault.FlatAppearance.BorderSize = 0;
-            this.Button_Shine_ResetToDefault.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_Shine_ResetToDefault.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Button_Shine_ResetToDefault.Location = new System.Drawing.Point(10, 30);
-            this.Button_Shine_ResetToDefault.Name = "Button_Shine_ResetToDefault";
-            this.Button_Shine_ResetToDefault.Size = new System.Drawing.Size(160, 30);
-            this.Button_Shine_ResetToDefault.TabIndex = 0;
-            this.Button_Shine_ResetToDefault.TabStop = false;
-            this.Button_Shine_ResetToDefault.Text = "全部重置为默认值";
-            this.Button_Shine_ResetToDefault.UseVisualStyleBackColor = true;
-            this.Button_Shine_ResetToDefault.Click += new System.EventHandler(this.Button_Shine_ResetToDefault_Click);
+            this.Label_Shine_ResetToDefault.Text = "全部重置为默认值";
+            this.Label_Shine_ResetToDefault.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Panel_Animations_Meteor
             // 
@@ -2258,7 +2232,7 @@
             this.Panel_Animations_Meteor.Controls.Add(this.Panel_Meteor_ResetToDefault);
             this.Panel_Animations_Meteor.Location = new System.Drawing.Point(0, 0);
             this.Panel_Animations_Meteor.Name = "Panel_Animations_Meteor";
-            this.Panel_Animations_Meteor.Size = new System.Drawing.Size(360, 710);
+            this.Panel_Animations_Meteor.Size = new System.Drawing.Size(340, 710);
             this.Panel_Animations_Meteor.TabIndex = 0;
             // 
             // Panel_Meteor_Radius
@@ -2272,7 +2246,7 @@
             this.Panel_Meteor_Radius.Controls.Add(this.Label_Meteor_MaxRadius_Val);
             this.Panel_Meteor_Radius.Location = new System.Drawing.Point(10, 10);
             this.Panel_Meteor_Radius.Name = "Panel_Meteor_Radius";
-            this.Panel_Meteor_Radius.Size = new System.Drawing.Size(330, 140);
+            this.Panel_Meteor_Radius.Size = new System.Drawing.Size(320, 140);
             this.Panel_Meteor_Radius.TabIndex = 0;
             this.Panel_Meteor_Radius.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_Meteor_Radius_Paint);
             // 
@@ -2357,7 +2331,7 @@
             this.Panel_Meteor_Length.Controls.Add(this.Label_Meteor_Length_Val);
             this.Panel_Meteor_Length.Location = new System.Drawing.Point(10, 150);
             this.Panel_Meteor_Length.Name = "Panel_Meteor_Length";
-            this.Panel_Meteor_Length.Size = new System.Drawing.Size(330, 60);
+            this.Panel_Meteor_Length.Size = new System.Drawing.Size(320, 60);
             this.Panel_Meteor_Length.TabIndex = 0;
             this.Panel_Meteor_Length.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_Meteor_Length_Paint);
             // 
@@ -2400,7 +2374,7 @@
             this.Panel_Meteor_Count.Controls.Add(this.Label_Meteor_Count_Val);
             this.Panel_Meteor_Count.Location = new System.Drawing.Point(10, 210);
             this.Panel_Meteor_Count.Name = "Panel_Meteor_Count";
-            this.Panel_Meteor_Count.Size = new System.Drawing.Size(330, 60);
+            this.Panel_Meteor_Count.Size = new System.Drawing.Size(320, 60);
             this.Panel_Meteor_Count.TabIndex = 0;
             this.Panel_Meteor_Count.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_Meteor_Count_Paint);
             // 
@@ -2443,7 +2417,7 @@
             this.Panel_Meteor_Velocity.Controls.Add(this.Label_Meteor_Velocity_Val);
             this.Panel_Meteor_Velocity.Location = new System.Drawing.Point(10, 270);
             this.Panel_Meteor_Velocity.Name = "Panel_Meteor_Velocity";
-            this.Panel_Meteor_Velocity.Size = new System.Drawing.Size(330, 60);
+            this.Panel_Meteor_Velocity.Size = new System.Drawing.Size(320, 60);
             this.Panel_Meteor_Velocity.TabIndex = 0;
             this.Panel_Meteor_Velocity.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_Meteor_Velocity_Paint);
             // 
@@ -2486,7 +2460,7 @@
             this.Panel_Meteor_Angle.Controls.Add(this.Label_Meteor_Angle_Val);
             this.Panel_Meteor_Angle.Location = new System.Drawing.Point(10, 330);
             this.Panel_Meteor_Angle.Name = "Panel_Meteor_Angle";
-            this.Panel_Meteor_Angle.Size = new System.Drawing.Size(330, 60);
+            this.Panel_Meteor_Angle.Size = new System.Drawing.Size(320, 60);
             this.Panel_Meteor_Angle.TabIndex = 0;
             this.Panel_Meteor_Angle.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_Meteor_Angle_Paint);
             // 
@@ -2529,7 +2503,7 @@
             this.Panel_Meteor_GravitationalAcceleration.Controls.Add(this.Label_Meteor_GravitationalAcceleration_Val);
             this.Panel_Meteor_GravitationalAcceleration.Location = new System.Drawing.Point(10, 390);
             this.Panel_Meteor_GravitationalAcceleration.Name = "Panel_Meteor_GravitationalAcceleration";
-            this.Panel_Meteor_GravitationalAcceleration.Size = new System.Drawing.Size(330, 60);
+            this.Panel_Meteor_GravitationalAcceleration.Size = new System.Drawing.Size(320, 60);
             this.Panel_Meteor_GravitationalAcceleration.TabIndex = 0;
             this.Panel_Meteor_GravitationalAcceleration.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_Meteor_GravitationalAcceleration_Paint);
             // 
@@ -2577,7 +2551,7 @@
             this.Panel_Meteor_Color.Controls.Add(this.Label_Meteor_Color_Val);
             this.Panel_Meteor_Color.Location = new System.Drawing.Point(10, 450);
             this.Panel_Meteor_Color.Name = "Panel_Meteor_Color";
-            this.Panel_Meteor_Color.Size = new System.Drawing.Size(330, 120);
+            this.Panel_Meteor_Color.Size = new System.Drawing.Size(320, 120);
             this.Panel_Meteor_Color.TabIndex = 0;
             this.Panel_Meteor_Color.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_Meteor_Color_Paint);
             // 
@@ -2666,9 +2640,9 @@
             this.Label_Meteor_Color_Val.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Label_Meteor_Color_Val.Location = new System.Drawing.Point(80, 92);
             this.Label_Meteor_Color_Val.Name = "Label_Meteor_Color_Val";
-            this.Label_Meteor_Color_Val.Size = new System.Drawing.Size(95, 17);
+            this.Label_Meteor_Color_Val.Size = new System.Drawing.Size(40, 17);
             this.Label_Meteor_Color_Val.TabIndex = 0;
-            this.Label_Meteor_Color_Val.Text = "当前颜色: Value";
+            this.Label_Meteor_Color_Val.Text = "Value";
             // 
             // Panel_Meteor_GlowMode
             // 
@@ -2678,7 +2652,7 @@
             this.Panel_Meteor_GlowMode.Controls.Add(this.RadioButton_Meteor_GlowMode_EvenGlow);
             this.Panel_Meteor_GlowMode.Location = new System.Drawing.Point(10, 570);
             this.Panel_Meteor_GlowMode.Name = "Panel_Meteor_GlowMode";
-            this.Panel_Meteor_GlowMode.Size = new System.Drawing.Size(330, 60);
+            this.Panel_Meteor_GlowMode.Size = new System.Drawing.Size(320, 60);
             this.Panel_Meteor_GlowMode.TabIndex = 0;
             this.Panel_Meteor_GlowMode.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_Meteor_GlowMode_Paint);
             // 
@@ -2690,7 +2664,7 @@
             this.Label_Meteor_GlowMode.Name = "Label_Meteor_GlowMode";
             this.Label_Meteor_GlowMode.Size = new System.Drawing.Size(61, 19);
             this.Label_Meteor_GlowMode.TabIndex = 0;
-            this.Label_Meteor_GlowMode.Text = "着色模式";
+            this.Label_Meteor_GlowMode.Text = "着色方式";
             // 
             // RadioButton_Meteor_GlowMode_OuterGlow
             // 
@@ -2730,37 +2704,33 @@
             // 
             // Panel_Meteor_ResetToDefault
             // 
+            this.Panel_Meteor_ResetToDefault.Controls.Add(this.Label_Meteor_Reset);
             this.Panel_Meteor_ResetToDefault.Controls.Add(this.Label_Meteor_ResetToDefault);
-            this.Panel_Meteor_ResetToDefault.Controls.Add(this.Button_Meteor_ResetToDefault);
             this.Panel_Meteor_ResetToDefault.Location = new System.Drawing.Point(10, 630);
             this.Panel_Meteor_ResetToDefault.Name = "Panel_Meteor_ResetToDefault";
-            this.Panel_Meteor_ResetToDefault.Size = new System.Drawing.Size(330, 70);
+            this.Panel_Meteor_ResetToDefault.Size = new System.Drawing.Size(320, 70);
             this.Panel_Meteor_ResetToDefault.TabIndex = 0;
             this.Panel_Meteor_ResetToDefault.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_Meteor_ResetToDefault_Paint);
             // 
+            // Label_Meteor_Reset
+            // 
+            this.Label_Meteor_Reset.AutoSize = true;
+            this.Label_Meteor_Reset.Font = new System.Drawing.Font("微软雅黑", 9.75F);
+            this.Label_Meteor_Reset.Location = new System.Drawing.Point(0, 0);
+            this.Label_Meteor_Reset.Name = "Label_Meteor_Reset";
+            this.Label_Meteor_Reset.Size = new System.Drawing.Size(35, 19);
+            this.Label_Meteor_Reset.TabIndex = 0;
+            this.Label_Meteor_Reset.Text = "重置";
+            // 
             // Label_Meteor_ResetToDefault
             // 
-            this.Label_Meteor_ResetToDefault.AutoSize = true;
             this.Label_Meteor_ResetToDefault.Font = new System.Drawing.Font("微软雅黑", 9.75F);
-            this.Label_Meteor_ResetToDefault.Location = new System.Drawing.Point(0, 0);
+            this.Label_Meteor_ResetToDefault.Location = new System.Drawing.Point(10, 30);
             this.Label_Meteor_ResetToDefault.Name = "Label_Meteor_ResetToDefault";
-            this.Label_Meteor_ResetToDefault.Size = new System.Drawing.Size(35, 19);
+            this.Label_Meteor_ResetToDefault.Size = new System.Drawing.Size(160, 30);
             this.Label_Meteor_ResetToDefault.TabIndex = 0;
-            this.Label_Meteor_ResetToDefault.Text = "重置";
-            // 
-            // Button_Meteor_ResetToDefault
-            // 
-            this.Button_Meteor_ResetToDefault.FlatAppearance.BorderSize = 0;
-            this.Button_Meteor_ResetToDefault.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_Meteor_ResetToDefault.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Button_Meteor_ResetToDefault.Location = new System.Drawing.Point(10, 30);
-            this.Button_Meteor_ResetToDefault.Name = "Button_Meteor_ResetToDefault";
-            this.Button_Meteor_ResetToDefault.Size = new System.Drawing.Size(160, 30);
-            this.Button_Meteor_ResetToDefault.TabIndex = 0;
-            this.Button_Meteor_ResetToDefault.TabStop = false;
-            this.Button_Meteor_ResetToDefault.Text = "全部重置为默认值";
-            this.Button_Meteor_ResetToDefault.UseVisualStyleBackColor = true;
-            this.Button_Meteor_ResetToDefault.Click += new System.EventHandler(this.Button_Meteor_ResetToDefault_Click);
+            this.Label_Meteor_ResetToDefault.Text = "全部重置为默认值";
+            this.Label_Meteor_ResetToDefault.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Panel_Animations_Snow
             // 
@@ -2772,7 +2742,7 @@
             this.Panel_Animations_Snow.Controls.Add(this.Panel_Snow_ResetToDefault);
             this.Panel_Animations_Snow.Location = new System.Drawing.Point(0, 0);
             this.Panel_Animations_Snow.Name = "Panel_Animations_Snow";
-            this.Panel_Animations_Snow.Size = new System.Drawing.Size(360, 530);
+            this.Panel_Animations_Snow.Size = new System.Drawing.Size(340, 530);
             this.Panel_Animations_Snow.TabIndex = 0;
             // 
             // Panel_Snow_Radius
@@ -2786,7 +2756,7 @@
             this.Panel_Snow_Radius.Controls.Add(this.Label_Snow_MaxRadius_Val);
             this.Panel_Snow_Radius.Location = new System.Drawing.Point(10, 10);
             this.Panel_Snow_Radius.Name = "Panel_Snow_Radius";
-            this.Panel_Snow_Radius.Size = new System.Drawing.Size(330, 140);
+            this.Panel_Snow_Radius.Size = new System.Drawing.Size(320, 140);
             this.Panel_Snow_Radius.TabIndex = 0;
             this.Panel_Snow_Radius.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_Snow_Radius_Paint);
             // 
@@ -2871,7 +2841,7 @@
             this.Panel_Snow_Count.Controls.Add(this.Label_Snow_Count_Val);
             this.Panel_Snow_Count.Location = new System.Drawing.Point(10, 150);
             this.Panel_Snow_Count.Name = "Panel_Snow_Count";
-            this.Panel_Snow_Count.Size = new System.Drawing.Size(330, 60);
+            this.Panel_Snow_Count.Size = new System.Drawing.Size(320, 60);
             this.Panel_Snow_Count.TabIndex = 0;
             this.Panel_Snow_Count.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_Snow_Count_Paint);
             // 
@@ -2914,7 +2884,7 @@
             this.Panel_Snow_Velocity.Controls.Add(this.Label_Snow_Velocity_Val);
             this.Panel_Snow_Velocity.Location = new System.Drawing.Point(10, 210);
             this.Panel_Snow_Velocity.Name = "Panel_Snow_Velocity";
-            this.Panel_Snow_Velocity.Size = new System.Drawing.Size(330, 60);
+            this.Panel_Snow_Velocity.Size = new System.Drawing.Size(320, 60);
             this.Panel_Snow_Velocity.TabIndex = 0;
             this.Panel_Snow_Velocity.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_Snow_Velocity_Paint);
             // 
@@ -2962,7 +2932,7 @@
             this.Panel_Snow_Color.Controls.Add(this.Label_Snow_Color_Val);
             this.Panel_Snow_Color.Location = new System.Drawing.Point(10, 270);
             this.Panel_Snow_Color.Name = "Panel_Snow_Color";
-            this.Panel_Snow_Color.Size = new System.Drawing.Size(330, 120);
+            this.Panel_Snow_Color.Size = new System.Drawing.Size(320, 120);
             this.Panel_Snow_Color.TabIndex = 0;
             this.Panel_Snow_Color.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_Snow_Color_Paint);
             // 
@@ -3051,9 +3021,9 @@
             this.Label_Snow_Color_Val.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Label_Snow_Color_Val.Location = new System.Drawing.Point(80, 92);
             this.Label_Snow_Color_Val.Name = "Label_Snow_Color_Val";
-            this.Label_Snow_Color_Val.Size = new System.Drawing.Size(95, 17);
+            this.Label_Snow_Color_Val.Size = new System.Drawing.Size(40, 17);
             this.Label_Snow_Color_Val.TabIndex = 0;
-            this.Label_Snow_Color_Val.Text = "当前颜色: Value";
+            this.Label_Snow_Color_Val.Text = "Value";
             // 
             // Panel_Snow_GlowMode
             // 
@@ -3063,7 +3033,7 @@
             this.Panel_Snow_GlowMode.Controls.Add(this.RadioButton_Snow_GlowMode_EvenGlow);
             this.Panel_Snow_GlowMode.Location = new System.Drawing.Point(10, 390);
             this.Panel_Snow_GlowMode.Name = "Panel_Snow_GlowMode";
-            this.Panel_Snow_GlowMode.Size = new System.Drawing.Size(330, 60);
+            this.Panel_Snow_GlowMode.Size = new System.Drawing.Size(320, 60);
             this.Panel_Snow_GlowMode.TabIndex = 0;
             this.Panel_Snow_GlowMode.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_Snow_GlowMode_Paint);
             // 
@@ -3075,7 +3045,7 @@
             this.Label_Snow_GlowMode.Name = "Label_Snow_GlowMode";
             this.Label_Snow_GlowMode.Size = new System.Drawing.Size(61, 19);
             this.Label_Snow_GlowMode.TabIndex = 0;
-            this.Label_Snow_GlowMode.Text = "着色模式";
+            this.Label_Snow_GlowMode.Text = "着色方式";
             // 
             // RadioButton_Snow_GlowMode_OuterGlow
             // 
@@ -3115,37 +3085,33 @@
             // 
             // Panel_Snow_ResetToDefault
             // 
+            this.Panel_Snow_ResetToDefault.Controls.Add(this.Label_Snow_Reset);
             this.Panel_Snow_ResetToDefault.Controls.Add(this.Label_Snow_ResetToDefault);
-            this.Panel_Snow_ResetToDefault.Controls.Add(this.Button_Snow_ResetToDefault);
             this.Panel_Snow_ResetToDefault.Location = new System.Drawing.Point(10, 450);
             this.Panel_Snow_ResetToDefault.Name = "Panel_Snow_ResetToDefault";
-            this.Panel_Snow_ResetToDefault.Size = new System.Drawing.Size(330, 70);
+            this.Panel_Snow_ResetToDefault.Size = new System.Drawing.Size(320, 70);
             this.Panel_Snow_ResetToDefault.TabIndex = 0;
             this.Panel_Snow_ResetToDefault.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_Snow_ResetToDefault_Paint);
             // 
+            // Label_Snow_Reset
+            // 
+            this.Label_Snow_Reset.AutoSize = true;
+            this.Label_Snow_Reset.Font = new System.Drawing.Font("微软雅黑", 9.75F);
+            this.Label_Snow_Reset.Location = new System.Drawing.Point(0, 0);
+            this.Label_Snow_Reset.Name = "Label_Snow_Reset";
+            this.Label_Snow_Reset.Size = new System.Drawing.Size(35, 19);
+            this.Label_Snow_Reset.TabIndex = 0;
+            this.Label_Snow_Reset.Text = "重置";
+            // 
             // Label_Snow_ResetToDefault
             // 
-            this.Label_Snow_ResetToDefault.AutoSize = true;
             this.Label_Snow_ResetToDefault.Font = new System.Drawing.Font("微软雅黑", 9.75F);
-            this.Label_Snow_ResetToDefault.Location = new System.Drawing.Point(0, 0);
+            this.Label_Snow_ResetToDefault.Location = new System.Drawing.Point(10, 30);
             this.Label_Snow_ResetToDefault.Name = "Label_Snow_ResetToDefault";
-            this.Label_Snow_ResetToDefault.Size = new System.Drawing.Size(35, 19);
+            this.Label_Snow_ResetToDefault.Size = new System.Drawing.Size(160, 30);
             this.Label_Snow_ResetToDefault.TabIndex = 0;
-            this.Label_Snow_ResetToDefault.Text = "重置";
-            // 
-            // Button_Snow_ResetToDefault
-            // 
-            this.Button_Snow_ResetToDefault.FlatAppearance.BorderSize = 0;
-            this.Button_Snow_ResetToDefault.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_Snow_ResetToDefault.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Button_Snow_ResetToDefault.Location = new System.Drawing.Point(10, 30);
-            this.Button_Snow_ResetToDefault.Name = "Button_Snow_ResetToDefault";
-            this.Button_Snow_ResetToDefault.Size = new System.Drawing.Size(160, 30);
-            this.Button_Snow_ResetToDefault.TabIndex = 0;
-            this.Button_Snow_ResetToDefault.TabStop = false;
-            this.Button_Snow_ResetToDefault.Text = "全部重置为默认值";
-            this.Button_Snow_ResetToDefault.UseVisualStyleBackColor = true;
-            this.Button_Snow_ResetToDefault.Click += new System.EventHandler(this.Button_Snow_ResetToDefault_Click);
+            this.Label_Snow_ResetToDefault.Text = "全部重置为默认值";
+            this.Label_Snow_ResetToDefault.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Panel_Animations_GravityParticle
             // 
@@ -3159,7 +3125,7 @@
             this.Panel_Animations_GravityParticle.Controls.Add(this.Panel_GravityParticle_ResetToDefault);
             this.Panel_Animations_GravityParticle.Location = new System.Drawing.Point(0, 0);
             this.Panel_Animations_GravityParticle.Name = "Panel_Animations_GravityParticle";
-            this.Panel_Animations_GravityParticle.Size = new System.Drawing.Size(360, 650);
+            this.Panel_Animations_GravityParticle.Size = new System.Drawing.Size(340, 650);
             this.Panel_Animations_GravityParticle.TabIndex = 0;
             // 
             // Panel_GravityParticle_Mass
@@ -3173,7 +3139,7 @@
             this.Panel_GravityParticle_Mass.Controls.Add(this.Label_GravityParticle_MaxMass_Val);
             this.Panel_GravityParticle_Mass.Location = new System.Drawing.Point(10, 10);
             this.Panel_GravityParticle_Mass.Name = "Panel_GravityParticle_Mass";
-            this.Panel_GravityParticle_Mass.Size = new System.Drawing.Size(330, 140);
+            this.Panel_GravityParticle_Mass.Size = new System.Drawing.Size(320, 140);
             this.Panel_GravityParticle_Mass.TabIndex = 0;
             this.Panel_GravityParticle_Mass.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_GravityParticle_Mass_Paint);
             // 
@@ -3258,7 +3224,7 @@
             this.Panel_GravityParticle_Count.Controls.Add(this.Label_GravityParticle_Count_Val);
             this.Panel_GravityParticle_Count.Location = new System.Drawing.Point(10, 150);
             this.Panel_GravityParticle_Count.Name = "Panel_GravityParticle_Count";
-            this.Panel_GravityParticle_Count.Size = new System.Drawing.Size(330, 60);
+            this.Panel_GravityParticle_Count.Size = new System.Drawing.Size(320, 60);
             this.Panel_GravityParticle_Count.TabIndex = 0;
             this.Panel_GravityParticle_Count.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_GravityParticle_Count_Paint);
             // 
@@ -3301,7 +3267,7 @@
             this.Panel_GravityParticle_CursorMass.Controls.Add(this.Label_GravityParticle_CursorMass_Val);
             this.Panel_GravityParticle_CursorMass.Location = new System.Drawing.Point(10, 210);
             this.Panel_GravityParticle_CursorMass.Name = "Panel_GravityParticle_CursorMass";
-            this.Panel_GravityParticle_CursorMass.Size = new System.Drawing.Size(330, 60);
+            this.Panel_GravityParticle_CursorMass.Size = new System.Drawing.Size(320, 60);
             this.Panel_GravityParticle_CursorMass.TabIndex = 0;
             this.Panel_GravityParticle_CursorMass.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_GravityParticle_CursorMass_Paint);
             // 
@@ -3344,7 +3310,7 @@
             this.Panel_GravityParticle_GravityConstant.Controls.Add(this.Label_GravityParticle_GravityConstant_Val);
             this.Panel_GravityParticle_GravityConstant.Location = new System.Drawing.Point(10, 270);
             this.Panel_GravityParticle_GravityConstant.Name = "Panel_GravityParticle_GravityConstant";
-            this.Panel_GravityParticle_GravityConstant.Size = new System.Drawing.Size(330, 60);
+            this.Panel_GravityParticle_GravityConstant.Size = new System.Drawing.Size(320, 60);
             this.Panel_GravityParticle_GravityConstant.TabIndex = 0;
             this.Panel_GravityParticle_GravityConstant.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_GravityParticle_GravityConstant_Paint);
             // 
@@ -3387,7 +3353,7 @@
             this.Panel_GravityParticle_ElasticRestitutionCoefficient.Controls.Add(this.Label_GravityParticle_ElasticRestitutionCoefficient_Val);
             this.Panel_GravityParticle_ElasticRestitutionCoefficient.Location = new System.Drawing.Point(10, 330);
             this.Panel_GravityParticle_ElasticRestitutionCoefficient.Name = "Panel_GravityParticle_ElasticRestitutionCoefficient";
-            this.Panel_GravityParticle_ElasticRestitutionCoefficient.Size = new System.Drawing.Size(330, 60);
+            this.Panel_GravityParticle_ElasticRestitutionCoefficient.Size = new System.Drawing.Size(320, 60);
             this.Panel_GravityParticle_ElasticRestitutionCoefficient.TabIndex = 0;
             this.Panel_GravityParticle_ElasticRestitutionCoefficient.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_GravityParticle_ElasticRestitutionCoefficient_Paint);
             // 
@@ -3435,7 +3401,7 @@
             this.Panel_GravityParticle_Color.Controls.Add(this.Label_GravityParticle_Color_Val);
             this.Panel_GravityParticle_Color.Location = new System.Drawing.Point(10, 390);
             this.Panel_GravityParticle_Color.Name = "Panel_GravityParticle_Color";
-            this.Panel_GravityParticle_Color.Size = new System.Drawing.Size(330, 120);
+            this.Panel_GravityParticle_Color.Size = new System.Drawing.Size(320, 120);
             this.Panel_GravityParticle_Color.TabIndex = 0;
             this.Panel_GravityParticle_Color.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_GravityParticle_Color_Paint);
             // 
@@ -3524,9 +3490,9 @@
             this.Label_GravityParticle_Color_Val.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Label_GravityParticle_Color_Val.Location = new System.Drawing.Point(80, 92);
             this.Label_GravityParticle_Color_Val.Name = "Label_GravityParticle_Color_Val";
-            this.Label_GravityParticle_Color_Val.Size = new System.Drawing.Size(95, 17);
+            this.Label_GravityParticle_Color_Val.Size = new System.Drawing.Size(40, 17);
             this.Label_GravityParticle_Color_Val.TabIndex = 0;
-            this.Label_GravityParticle_Color_Val.Text = "当前颜色: Value";
+            this.Label_GravityParticle_Color_Val.Text = "Value";
             // 
             // Panel_GravityParticle_GlowMode
             // 
@@ -3536,7 +3502,7 @@
             this.Panel_GravityParticle_GlowMode.Controls.Add(this.RadioButton_GravityParticle_GlowMode_EvenGlow);
             this.Panel_GravityParticle_GlowMode.Location = new System.Drawing.Point(10, 510);
             this.Panel_GravityParticle_GlowMode.Name = "Panel_GravityParticle_GlowMode";
-            this.Panel_GravityParticle_GlowMode.Size = new System.Drawing.Size(330, 60);
+            this.Panel_GravityParticle_GlowMode.Size = new System.Drawing.Size(320, 60);
             this.Panel_GravityParticle_GlowMode.TabIndex = 0;
             this.Panel_GravityParticle_GlowMode.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_GravityParticle_GlowMode_Paint);
             // 
@@ -3548,7 +3514,7 @@
             this.Label_GravityParticle_GlowMode.Name = "Label_GravityParticle_GlowMode";
             this.Label_GravityParticle_GlowMode.Size = new System.Drawing.Size(61, 19);
             this.Label_GravityParticle_GlowMode.TabIndex = 0;
-            this.Label_GravityParticle_GlowMode.Text = "着色模式";
+            this.Label_GravityParticle_GlowMode.Text = "着色方式";
             // 
             // RadioButton_GravityParticle_GlowMode_OuterGlow
             // 
@@ -3588,37 +3554,33 @@
             // 
             // Panel_GravityParticle_ResetToDefault
             // 
+            this.Panel_GravityParticle_ResetToDefault.Controls.Add(this.Label_GravityParticle_Reset);
             this.Panel_GravityParticle_ResetToDefault.Controls.Add(this.Label_GravityParticle_ResetToDefault);
-            this.Panel_GravityParticle_ResetToDefault.Controls.Add(this.Button_GravityParticle_ResetToDefault);
             this.Panel_GravityParticle_ResetToDefault.Location = new System.Drawing.Point(10, 570);
             this.Panel_GravityParticle_ResetToDefault.Name = "Panel_GravityParticle_ResetToDefault";
-            this.Panel_GravityParticle_ResetToDefault.Size = new System.Drawing.Size(330, 70);
+            this.Panel_GravityParticle_ResetToDefault.Size = new System.Drawing.Size(320, 70);
             this.Panel_GravityParticle_ResetToDefault.TabIndex = 0;
             this.Panel_GravityParticle_ResetToDefault.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_GravityParticle_ResetToDefault_Paint);
             // 
+            // Label_GravityParticle_Reset
+            // 
+            this.Label_GravityParticle_Reset.AutoSize = true;
+            this.Label_GravityParticle_Reset.Font = new System.Drawing.Font("微软雅黑", 9.75F);
+            this.Label_GravityParticle_Reset.Location = new System.Drawing.Point(0, 0);
+            this.Label_GravityParticle_Reset.Name = "Label_GravityParticle_Reset";
+            this.Label_GravityParticle_Reset.Size = new System.Drawing.Size(35, 19);
+            this.Label_GravityParticle_Reset.TabIndex = 0;
+            this.Label_GravityParticle_Reset.Text = "重置";
+            // 
             // Label_GravityParticle_ResetToDefault
             // 
-            this.Label_GravityParticle_ResetToDefault.AutoSize = true;
             this.Label_GravityParticle_ResetToDefault.Font = new System.Drawing.Font("微软雅黑", 9.75F);
-            this.Label_GravityParticle_ResetToDefault.Location = new System.Drawing.Point(0, 0);
+            this.Label_GravityParticle_ResetToDefault.Location = new System.Drawing.Point(10, 30);
             this.Label_GravityParticle_ResetToDefault.Name = "Label_GravityParticle_ResetToDefault";
-            this.Label_GravityParticle_ResetToDefault.Size = new System.Drawing.Size(35, 19);
+            this.Label_GravityParticle_ResetToDefault.Size = new System.Drawing.Size(160, 30);
             this.Label_GravityParticle_ResetToDefault.TabIndex = 0;
-            this.Label_GravityParticle_ResetToDefault.Text = "重置";
-            // 
-            // Button_GravityParticle_ResetToDefault
-            // 
-            this.Button_GravityParticle_ResetToDefault.FlatAppearance.BorderSize = 0;
-            this.Button_GravityParticle_ResetToDefault.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_GravityParticle_ResetToDefault.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Button_GravityParticle_ResetToDefault.Location = new System.Drawing.Point(10, 30);
-            this.Button_GravityParticle_ResetToDefault.Name = "Button_GravityParticle_ResetToDefault";
-            this.Button_GravityParticle_ResetToDefault.Size = new System.Drawing.Size(160, 30);
-            this.Button_GravityParticle_ResetToDefault.TabIndex = 0;
-            this.Button_GravityParticle_ResetToDefault.TabStop = false;
-            this.Button_GravityParticle_ResetToDefault.Text = "全部重置为默认值";
-            this.Button_GravityParticle_ResetToDefault.UseVisualStyleBackColor = true;
-            this.Button_GravityParticle_ResetToDefault.Click += new System.EventHandler(this.Button_GravityParticle_ResetToDefault_Click);
+            this.Label_GravityParticle_ResetToDefault.Text = "全部重置为默认值";
+            this.Label_GravityParticle_ResetToDefault.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Panel_Animations_GravityGrid
             // 
@@ -3632,7 +3594,7 @@
             this.Panel_Animations_GravityGrid.Controls.Add(this.Panel_GravityGrid_ResetToDefault);
             this.Panel_Animations_GravityGrid.Location = new System.Drawing.Point(0, 0);
             this.Panel_Animations_GravityGrid.Name = "Panel_Animations_GravityGrid";
-            this.Panel_Animations_GravityGrid.Size = new System.Drawing.Size(360, 570);
+            this.Panel_Animations_GravityGrid.Size = new System.Drawing.Size(340, 570);
             this.Panel_Animations_GravityGrid.TabIndex = 0;
             // 
             // Panel_GravityGrid_Radius
@@ -3642,7 +3604,7 @@
             this.Panel_GravityGrid_Radius.Controls.Add(this.Label_GravityGrid_Radius_Val);
             this.Panel_GravityGrid_Radius.Location = new System.Drawing.Point(10, 10);
             this.Panel_GravityGrid_Radius.Name = "Panel_GravityGrid_Radius";
-            this.Panel_GravityGrid_Radius.Size = new System.Drawing.Size(330, 60);
+            this.Panel_GravityGrid_Radius.Size = new System.Drawing.Size(320, 60);
             this.Panel_GravityGrid_Radius.TabIndex = 0;
             this.Panel_GravityGrid_Radius.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_GravityGrid_Radius_Paint);
             // 
@@ -3685,7 +3647,7 @@
             this.Panel_GravityGrid_Count.Controls.Add(this.Label_GravityGrid_Count_Val);
             this.Panel_GravityGrid_Count.Location = new System.Drawing.Point(10, 70);
             this.Panel_GravityGrid_Count.Name = "Panel_GravityGrid_Count";
-            this.Panel_GravityGrid_Count.Size = new System.Drawing.Size(330, 60);
+            this.Panel_GravityGrid_Count.Size = new System.Drawing.Size(320, 60);
             this.Panel_GravityGrid_Count.TabIndex = 0;
             this.Panel_GravityGrid_Count.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_GravityGrid_Count_Paint);
             // 
@@ -3728,7 +3690,7 @@
             this.Panel_GravityGrid_LineWidth.Controls.Add(this.Label_GravityGrid_LineWidth_Val);
             this.Panel_GravityGrid_LineWidth.Location = new System.Drawing.Point(10, 130);
             this.Panel_GravityGrid_LineWidth.Name = "Panel_GravityGrid_LineWidth";
-            this.Panel_GravityGrid_LineWidth.Size = new System.Drawing.Size(330, 60);
+            this.Panel_GravityGrid_LineWidth.Size = new System.Drawing.Size(320, 60);
             this.Panel_GravityGrid_LineWidth.TabIndex = 0;
             this.Panel_GravityGrid_LineWidth.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_GravityGrid_LineWidth_Paint);
             // 
@@ -3771,7 +3733,7 @@
             this.Panel_GravityGrid_CursorMass.Controls.Add(this.Label_GravityGrid_CursorMass_Val);
             this.Panel_GravityGrid_CursorMass.Location = new System.Drawing.Point(10, 190);
             this.Panel_GravityGrid_CursorMass.Name = "Panel_GravityGrid_CursorMass";
-            this.Panel_GravityGrid_CursorMass.Size = new System.Drawing.Size(330, 60);
+            this.Panel_GravityGrid_CursorMass.Size = new System.Drawing.Size(320, 60);
             this.Panel_GravityGrid_CursorMass.TabIndex = 0;
             this.Panel_GravityGrid_CursorMass.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_GravityGrid_CursorMass_Paint);
             // 
@@ -3814,7 +3776,7 @@
             this.Panel_GravityGrid_CursorRepulsionRadius.Controls.Add(this.Label_GravityGrid_CursorRepulsionRadius_Val);
             this.Panel_GravityGrid_CursorRepulsionRadius.Location = new System.Drawing.Point(10, 250);
             this.Panel_GravityGrid_CursorRepulsionRadius.Name = "Panel_GravityGrid_CursorRepulsionRadius";
-            this.Panel_GravityGrid_CursorRepulsionRadius.Size = new System.Drawing.Size(330, 60);
+            this.Panel_GravityGrid_CursorRepulsionRadius.Size = new System.Drawing.Size(320, 60);
             this.Panel_GravityGrid_CursorRepulsionRadius.TabIndex = 0;
             this.Panel_GravityGrid_CursorRepulsionRadius.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_GravityGrid_CursorRepulsionRadius_Paint);
             // 
@@ -3862,7 +3824,7 @@
             this.Panel_GravityGrid_Color.Controls.Add(this.Label_GravityGrid_Color_Val);
             this.Panel_GravityGrid_Color.Location = new System.Drawing.Point(10, 310);
             this.Panel_GravityGrid_Color.Name = "Panel_GravityGrid_Color";
-            this.Panel_GravityGrid_Color.Size = new System.Drawing.Size(330, 120);
+            this.Panel_GravityGrid_Color.Size = new System.Drawing.Size(320, 120);
             this.Panel_GravityGrid_Color.TabIndex = 0;
             this.Panel_GravityGrid_Color.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_GravityGrid_Color_Paint);
             // 
@@ -3951,9 +3913,9 @@
             this.Label_GravityGrid_Color_Val.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Label_GravityGrid_Color_Val.Location = new System.Drawing.Point(80, 92);
             this.Label_GravityGrid_Color_Val.Name = "Label_GravityGrid_Color_Val";
-            this.Label_GravityGrid_Color_Val.Size = new System.Drawing.Size(95, 17);
+            this.Label_GravityGrid_Color_Val.Size = new System.Drawing.Size(40, 17);
             this.Label_GravityGrid_Color_Val.TabIndex = 0;
-            this.Label_GravityGrid_Color_Val.Text = "当前颜色: Value";
+            this.Label_GravityGrid_Color_Val.Text = "Value";
             // 
             // Panel_GravityGrid_GlowMode
             // 
@@ -3963,7 +3925,7 @@
             this.Panel_GravityGrid_GlowMode.Controls.Add(this.RadioButton_GravityGrid_GlowMode_EvenGlow);
             this.Panel_GravityGrid_GlowMode.Location = new System.Drawing.Point(10, 430);
             this.Panel_GravityGrid_GlowMode.Name = "Panel_GravityGrid_GlowMode";
-            this.Panel_GravityGrid_GlowMode.Size = new System.Drawing.Size(330, 60);
+            this.Panel_GravityGrid_GlowMode.Size = new System.Drawing.Size(320, 60);
             this.Panel_GravityGrid_GlowMode.TabIndex = 0;
             this.Panel_GravityGrid_GlowMode.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_GravityGrid_GlowMode_Paint);
             // 
@@ -3975,7 +3937,7 @@
             this.Label_GravityGrid_GlowMode.Name = "Label_GravityGrid_GlowMode";
             this.Label_GravityGrid_GlowMode.Size = new System.Drawing.Size(61, 19);
             this.Label_GravityGrid_GlowMode.TabIndex = 0;
-            this.Label_GravityGrid_GlowMode.Text = "着色模式";
+            this.Label_GravityGrid_GlowMode.Text = "着色方式";
             // 
             // RadioButton_GravityGrid_GlowMode_OuterGlow
             // 
@@ -4014,37 +3976,33 @@
             // 
             // Panel_GravityGrid_ResetToDefault
             // 
+            this.Panel_GravityGrid_ResetToDefault.Controls.Add(this.Label_GravityGrid_Reset);
             this.Panel_GravityGrid_ResetToDefault.Controls.Add(this.Label_GravityGrid_ResetToDefault);
-            this.Panel_GravityGrid_ResetToDefault.Controls.Add(this.Button_GravityGrid_ResetToDefault);
             this.Panel_GravityGrid_ResetToDefault.Location = new System.Drawing.Point(10, 490);
             this.Panel_GravityGrid_ResetToDefault.Name = "Panel_GravityGrid_ResetToDefault";
-            this.Panel_GravityGrid_ResetToDefault.Size = new System.Drawing.Size(330, 70);
+            this.Panel_GravityGrid_ResetToDefault.Size = new System.Drawing.Size(320, 70);
             this.Panel_GravityGrid_ResetToDefault.TabIndex = 0;
             this.Panel_GravityGrid_ResetToDefault.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_GravityGrid_ResetToDefault_Paint);
             // 
+            // Label_GravityGrid_Reset
+            // 
+            this.Label_GravityGrid_Reset.AutoSize = true;
+            this.Label_GravityGrid_Reset.Font = new System.Drawing.Font("微软雅黑", 9.75F);
+            this.Label_GravityGrid_Reset.Location = new System.Drawing.Point(0, 0);
+            this.Label_GravityGrid_Reset.Name = "Label_GravityGrid_Reset";
+            this.Label_GravityGrid_Reset.Size = new System.Drawing.Size(35, 19);
+            this.Label_GravityGrid_Reset.TabIndex = 0;
+            this.Label_GravityGrid_Reset.Text = "重置";
+            // 
             // Label_GravityGrid_ResetToDefault
             // 
-            this.Label_GravityGrid_ResetToDefault.AutoSize = true;
             this.Label_GravityGrid_ResetToDefault.Font = new System.Drawing.Font("微软雅黑", 9.75F);
-            this.Label_GravityGrid_ResetToDefault.Location = new System.Drawing.Point(0, 0);
+            this.Label_GravityGrid_ResetToDefault.Location = new System.Drawing.Point(10, 30);
             this.Label_GravityGrid_ResetToDefault.Name = "Label_GravityGrid_ResetToDefault";
-            this.Label_GravityGrid_ResetToDefault.Size = new System.Drawing.Size(35, 19);
+            this.Label_GravityGrid_ResetToDefault.Size = new System.Drawing.Size(160, 30);
             this.Label_GravityGrid_ResetToDefault.TabIndex = 0;
-            this.Label_GravityGrid_ResetToDefault.Text = "重置";
-            // 
-            // Button_GravityGrid_ResetToDefault
-            // 
-            this.Button_GravityGrid_ResetToDefault.FlatAppearance.BorderSize = 0;
-            this.Button_GravityGrid_ResetToDefault.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_GravityGrid_ResetToDefault.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Button_GravityGrid_ResetToDefault.Location = new System.Drawing.Point(10, 30);
-            this.Button_GravityGrid_ResetToDefault.Name = "Button_GravityGrid_ResetToDefault";
-            this.Button_GravityGrid_ResetToDefault.Size = new System.Drawing.Size(160, 30);
-            this.Button_GravityGrid_ResetToDefault.TabIndex = 0;
-            this.Button_GravityGrid_ResetToDefault.TabStop = false;
-            this.Button_GravityGrid_ResetToDefault.Text = "全部重置为默认值";
-            this.Button_GravityGrid_ResetToDefault.UseVisualStyleBackColor = true;
-            this.Button_GravityGrid_ResetToDefault.Click += new System.EventHandler(this.Button_GravityGrid_ResetToDefault_Click);
+            this.Label_GravityGrid_ResetToDefault.Text = "全部重置为默认值";
+            this.Label_GravityGrid_ResetToDefault.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Panel_Animations_SpreadSpot
             // 
@@ -4058,7 +4016,7 @@
             this.Panel_Animations_SpreadSpot.Controls.Add(this.Panel_SpreadSpot_ResetToDefault);
             this.Panel_Animations_SpreadSpot.Location = new System.Drawing.Point(0, 0);
             this.Panel_Animations_SpreadSpot.Name = "Panel_Animations_SpreadSpot";
-            this.Panel_Animations_SpreadSpot.Size = new System.Drawing.Size(360, 785);
+            this.Panel_Animations_SpreadSpot.Size = new System.Drawing.Size(340, 785);
             this.Panel_Animations_SpreadSpot.TabIndex = 0;
             // 
             // Panel_SpreadSpot_Radius
@@ -4072,7 +4030,7 @@
             this.Panel_SpreadSpot_Radius.Controls.Add(this.Label_SpreadSpot_MaxRadius_Val);
             this.Panel_SpreadSpot_Radius.Location = new System.Drawing.Point(10, 10);
             this.Panel_SpreadSpot_Radius.Name = "Panel_SpreadSpot_Radius";
-            this.Panel_SpreadSpot_Radius.Size = new System.Drawing.Size(330, 140);
+            this.Panel_SpreadSpot_Radius.Size = new System.Drawing.Size(320, 140);
             this.Panel_SpreadSpot_Radius.TabIndex = 0;
             this.Panel_SpreadSpot_Radius.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_SpreadSpot_Radius_Paint);
             // 
@@ -4157,7 +4115,7 @@
             this.Panel_SpreadSpot_Count.Controls.Add(this.Label_SpreadSpot_Count_Val);
             this.Panel_SpreadSpot_Count.Location = new System.Drawing.Point(10, 150);
             this.Panel_SpreadSpot_Count.Name = "Panel_SpreadSpot_Count";
-            this.Panel_SpreadSpot_Count.Size = new System.Drawing.Size(330, 60);
+            this.Panel_SpreadSpot_Count.Size = new System.Drawing.Size(320, 60);
             this.Panel_SpreadSpot_Count.TabIndex = 0;
             this.Panel_SpreadSpot_Count.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_SpreadSpot_Count_Paint);
             // 
@@ -4207,7 +4165,7 @@
             this.Panel_SpreadSpot_SourceLocation.Controls.Add(this.Label_SpreadSpot_SourceZ_Val);
             this.Panel_SpreadSpot_SourceLocation.Location = new System.Drawing.Point(10, 210);
             this.Panel_SpreadSpot_SourceLocation.Name = "Panel_SpreadSpot_SourceLocation";
-            this.Panel_SpreadSpot_SourceLocation.Size = new System.Drawing.Size(330, 195);
+            this.Panel_SpreadSpot_SourceLocation.Size = new System.Drawing.Size(320, 195);
             this.Panel_SpreadSpot_SourceLocation.TabIndex = 0;
             this.Panel_SpreadSpot_SourceLocation.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_SpreadSpot_SourceLocation_Paint);
             // 
@@ -4324,7 +4282,7 @@
             this.Panel_SpreadSpot_SourceSize.Controls.Add(this.Label_SpreadSpot_SourceSize_Val);
             this.Panel_SpreadSpot_SourceSize.Location = new System.Drawing.Point(10, 405);
             this.Panel_SpreadSpot_SourceSize.Name = "Panel_SpreadSpot_SourceSize";
-            this.Panel_SpreadSpot_SourceSize.Size = new System.Drawing.Size(330, 60);
+            this.Panel_SpreadSpot_SourceSize.Size = new System.Drawing.Size(320, 60);
             this.Panel_SpreadSpot_SourceSize.TabIndex = 0;
             this.Panel_SpreadSpot_SourceSize.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_SpreadSpot_SourceSize_Paint);
             // 
@@ -4367,7 +4325,7 @@
             this.Panel_SpreadSpot_Velocity.Controls.Add(this.Label_SpreadSpot_Velocity_Val);
             this.Panel_SpreadSpot_Velocity.Location = new System.Drawing.Point(10, 465);
             this.Panel_SpreadSpot_Velocity.Name = "Panel_SpreadSpot_Velocity";
-            this.Panel_SpreadSpot_Velocity.Size = new System.Drawing.Size(330, 60);
+            this.Panel_SpreadSpot_Velocity.Size = new System.Drawing.Size(320, 60);
             this.Panel_SpreadSpot_Velocity.TabIndex = 0;
             this.Panel_SpreadSpot_Velocity.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_SpreadSpot_Velocity_Paint);
             // 
@@ -4415,7 +4373,7 @@
             this.Panel_SpreadSpot_Color.Controls.Add(this.Label_SpreadSpot_Color_Val);
             this.Panel_SpreadSpot_Color.Location = new System.Drawing.Point(10, 525);
             this.Panel_SpreadSpot_Color.Name = "Panel_SpreadSpot_Color";
-            this.Panel_SpreadSpot_Color.Size = new System.Drawing.Size(330, 120);
+            this.Panel_SpreadSpot_Color.Size = new System.Drawing.Size(320, 120);
             this.Panel_SpreadSpot_Color.TabIndex = 0;
             this.Panel_SpreadSpot_Color.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_SpreadSpot_Color_Paint);
             // 
@@ -4504,9 +4462,9 @@
             this.Label_SpreadSpot_Color_Val.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Label_SpreadSpot_Color_Val.Location = new System.Drawing.Point(80, 92);
             this.Label_SpreadSpot_Color_Val.Name = "Label_SpreadSpot_Color_Val";
-            this.Label_SpreadSpot_Color_Val.Size = new System.Drawing.Size(95, 17);
+            this.Label_SpreadSpot_Color_Val.Size = new System.Drawing.Size(40, 17);
             this.Label_SpreadSpot_Color_Val.TabIndex = 0;
-            this.Label_SpreadSpot_Color_Val.Text = "当前颜色: Value";
+            this.Label_SpreadSpot_Color_Val.Text = "Value";
             // 
             // Panel_SpreadSpot_GlowMode
             // 
@@ -4516,7 +4474,7 @@
             this.Panel_SpreadSpot_GlowMode.Controls.Add(this.RadioButton_SpreadSpot_GlowMode_EvenGlow);
             this.Panel_SpreadSpot_GlowMode.Location = new System.Drawing.Point(10, 645);
             this.Panel_SpreadSpot_GlowMode.Name = "Panel_SpreadSpot_GlowMode";
-            this.Panel_SpreadSpot_GlowMode.Size = new System.Drawing.Size(330, 60);
+            this.Panel_SpreadSpot_GlowMode.Size = new System.Drawing.Size(320, 60);
             this.Panel_SpreadSpot_GlowMode.TabIndex = 0;
             this.Panel_SpreadSpot_GlowMode.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_SpreadSpot_GlowMode_Paint);
             // 
@@ -4528,7 +4486,7 @@
             this.Label_SpreadSpot_GlowMode.Name = "Label_SpreadSpot_GlowMode";
             this.Label_SpreadSpot_GlowMode.Size = new System.Drawing.Size(61, 19);
             this.Label_SpreadSpot_GlowMode.TabIndex = 0;
-            this.Label_SpreadSpot_GlowMode.Text = "着色模式";
+            this.Label_SpreadSpot_GlowMode.Text = "着色方式";
             // 
             // RadioButton_SpreadSpot_GlowMode_OuterGlow
             // 
@@ -4568,37 +4526,33 @@
             // 
             // Panel_SpreadSpot_ResetToDefault
             // 
+            this.Panel_SpreadSpot_ResetToDefault.Controls.Add(this.Label_SpreadSpot_Reset);
             this.Panel_SpreadSpot_ResetToDefault.Controls.Add(this.Label_SpreadSpot_ResetToDefault);
-            this.Panel_SpreadSpot_ResetToDefault.Controls.Add(this.Button_SpreadSpot_ResetToDefault);
             this.Panel_SpreadSpot_ResetToDefault.Location = new System.Drawing.Point(10, 705);
             this.Panel_SpreadSpot_ResetToDefault.Name = "Panel_SpreadSpot_ResetToDefault";
-            this.Panel_SpreadSpot_ResetToDefault.Size = new System.Drawing.Size(330, 70);
+            this.Panel_SpreadSpot_ResetToDefault.Size = new System.Drawing.Size(320, 70);
             this.Panel_SpreadSpot_ResetToDefault.TabIndex = 0;
             this.Panel_SpreadSpot_ResetToDefault.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_SpreadSpot_ResetToDefault_Paint);
             // 
+            // Label_SpreadSpot_Reset
+            // 
+            this.Label_SpreadSpot_Reset.AutoSize = true;
+            this.Label_SpreadSpot_Reset.Font = new System.Drawing.Font("微软雅黑", 9.75F);
+            this.Label_SpreadSpot_Reset.Location = new System.Drawing.Point(0, 0);
+            this.Label_SpreadSpot_Reset.Name = "Label_SpreadSpot_Reset";
+            this.Label_SpreadSpot_Reset.Size = new System.Drawing.Size(35, 19);
+            this.Label_SpreadSpot_Reset.TabIndex = 0;
+            this.Label_SpreadSpot_Reset.Text = "重置";
+            // 
             // Label_SpreadSpot_ResetToDefault
             // 
-            this.Label_SpreadSpot_ResetToDefault.AutoSize = true;
             this.Label_SpreadSpot_ResetToDefault.Font = new System.Drawing.Font("微软雅黑", 9.75F);
-            this.Label_SpreadSpot_ResetToDefault.Location = new System.Drawing.Point(0, 0);
+            this.Label_SpreadSpot_ResetToDefault.Location = new System.Drawing.Point(10, 30);
             this.Label_SpreadSpot_ResetToDefault.Name = "Label_SpreadSpot_ResetToDefault";
-            this.Label_SpreadSpot_ResetToDefault.Size = new System.Drawing.Size(35, 19);
+            this.Label_SpreadSpot_ResetToDefault.Size = new System.Drawing.Size(160, 30);
             this.Label_SpreadSpot_ResetToDefault.TabIndex = 0;
-            this.Label_SpreadSpot_ResetToDefault.Text = "重置";
-            // 
-            // Button_SpreadSpot_ResetToDefault
-            // 
-            this.Button_SpreadSpot_ResetToDefault.FlatAppearance.BorderSize = 0;
-            this.Button_SpreadSpot_ResetToDefault.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_SpreadSpot_ResetToDefault.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Button_SpreadSpot_ResetToDefault.Location = new System.Drawing.Point(10, 30);
-            this.Button_SpreadSpot_ResetToDefault.Name = "Button_SpreadSpot_ResetToDefault";
-            this.Button_SpreadSpot_ResetToDefault.Size = new System.Drawing.Size(160, 30);
-            this.Button_SpreadSpot_ResetToDefault.TabIndex = 0;
-            this.Button_SpreadSpot_ResetToDefault.TabStop = false;
-            this.Button_SpreadSpot_ResetToDefault.Text = "全部重置为默认值";
-            this.Button_SpreadSpot_ResetToDefault.UseVisualStyleBackColor = true;
-            this.Button_SpreadSpot_ResetToDefault.Click += new System.EventHandler(this.Button_SpreadSpot_ResetToDefault_Click);
+            this.Label_SpreadSpot_ResetToDefault.Text = "全部重置为默认值";
+            this.Label_SpreadSpot_ResetToDefault.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Panel_Tab_Common
             // 
@@ -4608,7 +4562,7 @@
             this.Panel_Tab_Common.Controls.Add(this.Panel_Shortcut);
             this.Panel_Tab_Common.Location = new System.Drawing.Point(0, 0);
             this.Panel_Tab_Common.Name = "Panel_Tab_Common";
-            this.Panel_Tab_Common.Size = new System.Drawing.Size(480, 370);
+            this.Panel_Tab_Common.Size = new System.Drawing.Size(460, 370);
             this.Panel_Tab_Common.TabIndex = 0;
             // 
             // Panel_AntiAlias
@@ -4617,7 +4571,7 @@
             this.Panel_AntiAlias.Controls.Add(this.CheckBox_AntiAlias);
             this.Panel_AntiAlias.Location = new System.Drawing.Point(10, 10);
             this.Panel_AntiAlias.Name = "Panel_AntiAlias";
-            this.Panel_AntiAlias.Size = new System.Drawing.Size(460, 65);
+            this.Panel_AntiAlias.Size = new System.Drawing.Size(440, 65);
             this.Panel_AntiAlias.TabIndex = 0;
             this.Panel_AntiAlias.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_AntiAlias_Paint);
             // 
@@ -4653,7 +4607,7 @@
             this.Panel_LimitFPS.Controls.Add(this.Label_FPS_Val);
             this.Panel_LimitFPS.Location = new System.Drawing.Point(10, 75);
             this.Panel_LimitFPS.Name = "Panel_LimitFPS";
-            this.Panel_LimitFPS.Size = new System.Drawing.Size(460, 110);
+            this.Panel_LimitFPS.Size = new System.Drawing.Size(440, 110);
             this.Panel_LimitFPS.TabIndex = 0;
             this.Panel_LimitFPS.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_LimitFPS_Paint);
             // 
@@ -4718,7 +4672,7 @@
             this.Panel_AutoStart.Controls.Add(this.CheckBox_AutoStart);
             this.Panel_AutoStart.Location = new System.Drawing.Point(10, 185);
             this.Panel_AutoStart.Name = "Panel_AutoStart";
-            this.Panel_AutoStart.Size = new System.Drawing.Size(460, 65);
+            this.Panel_AutoStart.Size = new System.Drawing.Size(440, 65);
             this.Panel_AutoStart.TabIndex = 0;
             this.Panel_AutoStart.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_AutoStart_Paint);
             // 
@@ -4752,7 +4706,7 @@
             this.Panel_Shortcut.Controls.Add(this.CheckBox_DesktopShortcut);
             this.Panel_Shortcut.Location = new System.Drawing.Point(10, 250);
             this.Panel_Shortcut.Name = "Panel_Shortcut";
-            this.Panel_Shortcut.Size = new System.Drawing.Size(460, 90);
+            this.Panel_Shortcut.Size = new System.Drawing.Size(440, 90);
             this.Panel_Shortcut.TabIndex = 0;
             this.Panel_Shortcut.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_Shortcut_Paint);
             // 
@@ -4797,7 +4751,7 @@
             this.Panel_Tab_About.Controls.Add(this.Panel_AppInfo);
             this.Panel_Tab_About.Location = new System.Drawing.Point(0, 0);
             this.Panel_Tab_About.Name = "Panel_Tab_About";
-            this.Panel_Tab_About.Size = new System.Drawing.Size(480, 370);
+            this.Panel_Tab_About.Size = new System.Drawing.Size(460, 370);
             this.Panel_Tab_About.TabIndex = 0;
             // 
             // Panel_AppInfo
@@ -4813,7 +4767,7 @@
             this.Panel_AppInfo.Controls.Add(this.Label_GitHub_Release);
             this.Panel_AppInfo.Location = new System.Drawing.Point(20, 20);
             this.Panel_AppInfo.Name = "Panel_AppInfo";
-            this.Panel_AppInfo.Size = new System.Drawing.Size(440, 215);
+            this.Panel_AppInfo.Size = new System.Drawing.Size(420, 215);
             this.Panel_AppInfo.TabIndex = 0;
             // 
             // PictureBox_AppLogo
@@ -4851,20 +4805,20 @@
             // Label_Version
             // 
             this.Label_Version.AutoSize = true;
-            this.Label_Version.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Label_Version.Font = new System.Drawing.Font("微软雅黑", 9.75F);
             this.Label_Version.Location = new System.Drawing.Point(20, 125);
             this.Label_Version.Name = "Label_Version";
-            this.Label_Version.Size = new System.Drawing.Size(83, 17);
+            this.Label_Version.Size = new System.Drawing.Size(88, 19);
             this.Label_Version.TabIndex = 0;
             this.Label_Version.Text = "版本: Version";
             // 
             // Label_Copyright
             // 
             this.Label_Copyright.AutoSize = true;
-            this.Label_Copyright.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Label_Copyright.Font = new System.Drawing.Font("微软雅黑", 9.75F);
             this.Label_Copyright.Location = new System.Drawing.Point(20, 150);
             this.Label_Copyright.Name = "Label_Copyright";
-            this.Label_Copyright.Size = new System.Drawing.Size(253, 17);
+            this.Label_Copyright.Size = new System.Drawing.Size(272, 19);
             this.Label_Copyright.TabIndex = 0;
             this.Label_Copyright.Text = "Copyright © 2018 chibayuki@foxmail.com";
             // 
@@ -4910,11 +4864,21 @@
             // 
             // Panel_BottomArea
             // 
-            this.Panel_BottomArea.Controls.Add(this.Button_CloseSettings);
+            this.Panel_BottomArea.Controls.Add(this.Label_Close);
             this.Panel_BottomArea.Location = new System.Drawing.Point(0, 370);
             this.Panel_BottomArea.Name = "Panel_BottomArea";
             this.Panel_BottomArea.Size = new System.Drawing.Size(580, 50);
             this.Panel_BottomArea.TabIndex = 0;
+            // 
+            // Label_Close
+            // 
+            this.Label_Close.Font = new System.Drawing.Font("微软雅黑", 9.75F);
+            this.Label_Close.Location = new System.Drawing.Point(480, 10);
+            this.Label_Close.Name = "Label_Close";
+            this.Label_Close.Size = new System.Drawing.Size(90, 30);
+            this.Label_Close.TabIndex = 0;
+            this.Label_Close.Text = "确定";
+            this.Label_Close.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // ColorDialog_Color
             // 
@@ -5151,8 +5115,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button Button_CloseSettings;
         private System.Windows.Forms.Panel Panel_Main;
         private System.Windows.Forms.Panel Panel_BottomArea;
         private System.Windows.Forms.Panel Panel_FunctionAreaOptionsBar;
@@ -5272,13 +5234,9 @@
         private System.Windows.Forms.CheckBox CheckBox_AntiAlias;
         private System.Windows.Forms.Panel Panel_AppInfo;
         private System.Windows.Forms.Panel Panel_LightSpot_ResetToDefault;
-        private System.Windows.Forms.Button Button_LightSpot_ResetToDefault;
         private System.Windows.Forms.Panel Panel_GravityParticle_ResetToDefault;
-        private System.Windows.Forms.Button Button_GravityParticle_ResetToDefault;
         private System.Windows.Forms.Panel Panel_TrianglePiece_ResetToDefault;
-        private System.Windows.Forms.Button Button_TrianglePiece_ResetToDefault;
         private System.Windows.Forms.Panel Panel_GravityGrid_ResetToDefault;
-        private System.Windows.Forms.Button Button_GravityGrid_ResetToDefault;
         private System.Windows.Forms.Panel Panel_LimitFPS;
         private System.Windows.Forms.Label Label_LimitFPS;
         private System.Windows.Forms.TrackBar TrackBar_FPS;
@@ -5307,7 +5265,6 @@
         private System.Windows.Forms.RadioButton RadioButton_Shine_GlowMode_InnerGlow;
         private System.Windows.Forms.RadioButton RadioButton_Shine_GlowMode_EvenGlow;
         private System.Windows.Forms.Panel Panel_Shine_ResetToDefault;
-        private System.Windows.Forms.Button Button_Shine_ResetToDefault;
         private System.Windows.Forms.Panel Panel_Shine_Period;
         private System.Windows.Forms.Label Label_Shine_Period;
         private System.Windows.Forms.Label Label_Shine_MinPeriod;
@@ -5341,7 +5298,6 @@
         private System.Windows.Forms.RadioButton RadioButton_Meteor_GlowMode_InnerGlow;
         private System.Windows.Forms.RadioButton RadioButton_Meteor_GlowMode_EvenGlow;
         private System.Windows.Forms.Panel Panel_Meteor_ResetToDefault;
-        private System.Windows.Forms.Button Button_Meteor_ResetToDefault;
         private System.Windows.Forms.Panel Panel_Meteor_Length;
         private System.Windows.Forms.Label Label_Meteor_Length;
         private System.Windows.Forms.TrackBar TrackBar_Meteor_Length;
@@ -5382,12 +5338,12 @@
         private System.Windows.Forms.Label Label_TrianglePiece_WaveVelocity;
         private System.Windows.Forms.TrackBar TrackBar_TrianglePiece_WaveVelocity;
         private System.Windows.Forms.Label Label_TrianglePiece_WaveVelocity_Val;
-        private System.Windows.Forms.Label Label_LightSpot_ResetToDefault;
-        private System.Windows.Forms.Label Label_TrianglePiece_ResetToDefault;
-        private System.Windows.Forms.Label Label_Shine_ResetToDefault;
-        private System.Windows.Forms.Label Label_Meteor_ResetToDefault;
-        private System.Windows.Forms.Label Label_GravityParticle_ResetToDefault;
-        private System.Windows.Forms.Label Label_GravityGrid_ResetToDefault;
+        private System.Windows.Forms.Label Label_LightSpot_Reset;
+        private System.Windows.Forms.Label Label_TrianglePiece_Reset;
+        private System.Windows.Forms.Label Label_Shine_Reset;
+        private System.Windows.Forms.Label Label_Meteor_Reset;
+        private System.Windows.Forms.Label Label_GravityParticle_Reset;
+        private System.Windows.Forms.Label Label_GravityGrid_Reset;
         private System.Windows.Forms.PictureBox PictureBox_AppLogo;
         private System.Windows.Forms.Panel Panel_Animations_Snow;
         private System.Windows.Forms.Panel Panel_Snow_Radius;
@@ -5415,8 +5371,7 @@
         private System.Windows.Forms.RadioButton RadioButton_Snow_GlowMode_InnerGlow;
         private System.Windows.Forms.RadioButton RadioButton_Snow_GlowMode_EvenGlow;
         private System.Windows.Forms.Panel Panel_Snow_ResetToDefault;
-        private System.Windows.Forms.Label Label_Snow_ResetToDefault;
-        private System.Windows.Forms.Button Button_Snow_ResetToDefault;
+        private System.Windows.Forms.Label Label_Snow_Reset;
         private System.Windows.Forms.Panel Panel_Shine_Displacement;
         private System.Windows.Forms.Label Label_Shine_Displacement;
         private System.Windows.Forms.TrackBar TrackBar_Shine_Displacement;
@@ -5461,8 +5416,7 @@
         private System.Windows.Forms.RadioButton RadioButton_SpreadSpot_GlowMode_InnerGlow;
         private System.Windows.Forms.RadioButton RadioButton_SpreadSpot_GlowMode_EvenGlow;
         private System.Windows.Forms.Panel Panel_SpreadSpot_ResetToDefault;
-        private System.Windows.Forms.Label Label_SpreadSpot_ResetToDefault;
-        private System.Windows.Forms.Button Button_SpreadSpot_ResetToDefault;
+        private System.Windows.Forms.Label Label_SpreadSpot_Reset;
         private System.Windows.Forms.Label Label_SpreadSpot_SourceZ;
         private System.Windows.Forms.TrackBar TrackBar_SpreadSpot_SourceZ;
         private System.Windows.Forms.Label Label_SpreadSpot_SourceZ_Val;
@@ -5537,5 +5491,14 @@
         private System.Windows.Forms.Label Label_GitHub_Base;
         private System.Windows.Forms.Label Label_GitHub_Part2;
         private System.Windows.Forms.Label Label_GitHub_Release;
+        private System.Windows.Forms.Label Label_Close;
+        private System.Windows.Forms.Label Label_LightSpot_ResetToDefault;
+        private System.Windows.Forms.Label Label_Shine_ResetToDefault;
+        private System.Windows.Forms.Label Label_Meteor_ResetToDefault;
+        private System.Windows.Forms.Label Label_SpreadSpot_ResetToDefault;
+        private System.Windows.Forms.Label Label_TrianglePiece_ResetToDefault;
+        private System.Windows.Forms.Label Label_Snow_ResetToDefault;
+        private System.Windows.Forms.Label Label_GravityParticle_ResetToDefault;
+        private System.Windows.Forms.Label Label_GravityGrid_ResetToDefault;
     }
 }

@@ -214,11 +214,7 @@ namespace WinFormApp
             // 底部区域
 
             Panel_BottomArea.BackColor = FormManager.RecommendColors.Background_INC.ToColor();
-            Button_CloseSettings.ForeColor = FormManager.RecommendColors.Text_INC.ToColor();
-            Button_CloseSettings.BackColor = FormManager.RecommendColors.Button.ToColor();
-            Button_CloseSettings.FlatAppearance.BorderColor = FormManager.RecommendColors.Button.ToColor();
-            Button_CloseSettings.FlatAppearance.MouseOverBackColor = FormManager.RecommendColors.Button_DEC.ToColor();
-            Button_CloseSettings.FlatAppearance.MouseDownBackColor = FormManager.RecommendColors.Button_INC.ToColor();
+            Label_Close.ForeColor = FormManager.RecommendColors.Text_INC.ToColor();
 
             // 功能区选项卡
 
@@ -265,12 +261,8 @@ namespace WinFormApp
             Label_LightSpot_GlowMode.ForeColor = FormManager.RecommendColors.Text_INC.ToColor();
             RadioButton_LightSpot_GlowMode_OuterGlow.ForeColor = RadioButton_LightSpot_GlowMode_InnerGlow.ForeColor = RadioButton_LightSpot_GlowMode_EvenGlow.ForeColor = FormManager.RecommendColors.Text.ToColor();
 
+            Label_LightSpot_Reset.ForeColor = FormManager.RecommendColors.Text_INC.ToColor();
             Label_LightSpot_ResetToDefault.ForeColor = FormManager.RecommendColors.Text_INC.ToColor();
-            Button_LightSpot_ResetToDefault.ForeColor = FormManager.RecommendColors.Text_INC.ToColor();
-            Button_LightSpot_ResetToDefault.BackColor = FormManager.RecommendColors.Button.ToColor();
-            Button_LightSpot_ResetToDefault.FlatAppearance.BorderColor = FormManager.RecommendColors.Button.ToColor();
-            Button_LightSpot_ResetToDefault.FlatAppearance.MouseOverBackColor = FormManager.RecommendColors.Button_DEC.ToColor();
-            Button_LightSpot_ResetToDefault.FlatAppearance.MouseDownBackColor = FormManager.RecommendColors.Button_INC.ToColor();
 
             // 三角形碎片
 
@@ -306,12 +298,8 @@ namespace WinFormApp
             Label_TrianglePiece_GlowMode.ForeColor = FormManager.RecommendColors.Text_INC.ToColor();
             RadioButton_TrianglePiece_GlowMode_OuterGlow.ForeColor = RadioButton_TrianglePiece_GlowMode_InnerGlow.ForeColor = RadioButton_TrianglePiece_GlowMode_EvenGlow.ForeColor = FormManager.RecommendColors.Text.ToColor();
 
+            Label_TrianglePiece_Reset.ForeColor = FormManager.RecommendColors.Text_INC.ToColor();
             Label_TrianglePiece_ResetToDefault.ForeColor = FormManager.RecommendColors.Text_INC.ToColor();
-            Button_TrianglePiece_ResetToDefault.ForeColor = FormManager.RecommendColors.Text_INC.ToColor();
-            Button_TrianglePiece_ResetToDefault.BackColor = FormManager.RecommendColors.Button.ToColor();
-            Button_TrianglePiece_ResetToDefault.FlatAppearance.BorderColor = FormManager.RecommendColors.Button.ToColor();
-            Button_TrianglePiece_ResetToDefault.FlatAppearance.MouseOverBackColor = FormManager.RecommendColors.Button_DEC.ToColor();
-            Button_TrianglePiece_ResetToDefault.FlatAppearance.MouseDownBackColor = FormManager.RecommendColors.Button_INC.ToColor();
 
             // 光芒
 
@@ -344,12 +332,8 @@ namespace WinFormApp
             Label_Shine_GlowMode.ForeColor = FormManager.RecommendColors.Text_INC.ToColor();
             RadioButton_Shine_GlowMode_OuterGlow.ForeColor = RadioButton_Shine_GlowMode_InnerGlow.ForeColor = RadioButton_Shine_GlowMode_EvenGlow.ForeColor = FormManager.RecommendColors.Text.ToColor();
 
+            Label_Shine_Reset.ForeColor = FormManager.RecommendColors.Text_INC.ToColor();
             Label_Shine_ResetToDefault.ForeColor = FormManager.RecommendColors.Text_INC.ToColor();
-            Button_Shine_ResetToDefault.ForeColor = FormManager.RecommendColors.Text_INC.ToColor();
-            Button_Shine_ResetToDefault.BackColor = FormManager.RecommendColors.Button.ToColor();
-            Button_Shine_ResetToDefault.FlatAppearance.BorderColor = FormManager.RecommendColors.Button.ToColor();
-            Button_Shine_ResetToDefault.FlatAppearance.MouseOverBackColor = FormManager.RecommendColors.Button_DEC.ToColor();
-            Button_Shine_ResetToDefault.FlatAppearance.MouseDownBackColor = FormManager.RecommendColors.Button_INC.ToColor();
 
             // 流星
 
@@ -389,12 +373,8 @@ namespace WinFormApp
             Label_Meteor_GlowMode.ForeColor = FormManager.RecommendColors.Text_INC.ToColor();
             RadioButton_Meteor_GlowMode_OuterGlow.ForeColor = RadioButton_Meteor_GlowMode_InnerGlow.ForeColor = RadioButton_Meteor_GlowMode_EvenGlow.ForeColor = FormManager.RecommendColors.Text.ToColor();
 
+            Label_Meteor_Reset.ForeColor = FormManager.RecommendColors.Text_INC.ToColor();
             Label_Meteor_ResetToDefault.ForeColor = FormManager.RecommendColors.Text_INC.ToColor();
-            Button_Meteor_ResetToDefault.ForeColor = FormManager.RecommendColors.Text_INC.ToColor();
-            Button_Meteor_ResetToDefault.BackColor = FormManager.RecommendColors.Button.ToColor();
-            Button_Meteor_ResetToDefault.FlatAppearance.BorderColor = FormManager.RecommendColors.Button.ToColor();
-            Button_Meteor_ResetToDefault.FlatAppearance.MouseOverBackColor = FormManager.RecommendColors.Button_DEC.ToColor();
-            Button_Meteor_ResetToDefault.FlatAppearance.MouseDownBackColor = FormManager.RecommendColors.Button_INC.ToColor();
 
             // 雪
 
@@ -422,12 +402,8 @@ namespace WinFormApp
             Label_Snow_GlowMode.ForeColor = FormManager.RecommendColors.Text_INC.ToColor();
             RadioButton_Snow_GlowMode_OuterGlow.ForeColor = RadioButton_Snow_GlowMode_InnerGlow.ForeColor = RadioButton_Snow_GlowMode_EvenGlow.ForeColor = FormManager.RecommendColors.Text.ToColor();
 
+            Label_Snow_Reset.ForeColor = FormManager.RecommendColors.Text_INC.ToColor();
             Label_Snow_ResetToDefault.ForeColor = FormManager.RecommendColors.Text_INC.ToColor();
-            Button_Snow_ResetToDefault.ForeColor = FormManager.RecommendColors.Text_INC.ToColor();
-            Button_Snow_ResetToDefault.BackColor = FormManager.RecommendColors.Button.ToColor();
-            Button_Snow_ResetToDefault.FlatAppearance.BorderColor = FormManager.RecommendColors.Button.ToColor();
-            Button_Snow_ResetToDefault.FlatAppearance.MouseOverBackColor = FormManager.RecommendColors.Button_DEC.ToColor();
-            Button_Snow_ResetToDefault.FlatAppearance.MouseDownBackColor = FormManager.RecommendColors.Button_INC.ToColor();
 
             // 引力粒子
 
@@ -463,12 +439,8 @@ namespace WinFormApp
             Label_GravityParticle_GlowMode.ForeColor = FormManager.RecommendColors.Text_INC.ToColor();
             RadioButton_GravityParticle_GlowMode_OuterGlow.ForeColor = RadioButton_GravityParticle_GlowMode_InnerGlow.ForeColor = RadioButton_GravityParticle_GlowMode_EvenGlow.ForeColor = FormManager.RecommendColors.Text.ToColor();
 
+            Label_GravityParticle_Reset.ForeColor = FormManager.RecommendColors.Text_INC.ToColor();
             Label_GravityParticle_ResetToDefault.ForeColor = FormManager.RecommendColors.Text_INC.ToColor();
-            Button_GravityParticle_ResetToDefault.ForeColor = FormManager.RecommendColors.Text_INC.ToColor();
-            Button_GravityParticle_ResetToDefault.BackColor = FormManager.RecommendColors.Button.ToColor();
-            Button_GravityParticle_ResetToDefault.FlatAppearance.BorderColor = FormManager.RecommendColors.Button.ToColor();
-            Button_GravityParticle_ResetToDefault.FlatAppearance.MouseOverBackColor = FormManager.RecommendColors.Button_DEC.ToColor();
-            Button_GravityParticle_ResetToDefault.FlatAppearance.MouseDownBackColor = FormManager.RecommendColors.Button_INC.ToColor();
 
             // 引力网
 
@@ -503,12 +475,8 @@ namespace WinFormApp
             Label_GravityGrid_GlowMode.ForeColor = FormManager.RecommendColors.Text_INC.ToColor();
             RadioButton_GravityGrid_GlowMode_OuterGlow.ForeColor = RadioButton_GravityGrid_GlowMode_InnerGlow.ForeColor = RadioButton_GravityGrid_GlowMode_EvenGlow.ForeColor = FormManager.RecommendColors.Text.ToColor();
 
+            Label_GravityGrid_Reset.ForeColor = FormManager.RecommendColors.Text_INC.ToColor();
             Label_GravityGrid_ResetToDefault.ForeColor = FormManager.RecommendColors.Text_INC.ToColor();
-            Button_GravityGrid_ResetToDefault.ForeColor = FormManager.RecommendColors.Text_INC.ToColor();
-            Button_GravityGrid_ResetToDefault.BackColor = FormManager.RecommendColors.Button.ToColor();
-            Button_GravityGrid_ResetToDefault.FlatAppearance.BorderColor = FormManager.RecommendColors.Button.ToColor();
-            Button_GravityGrid_ResetToDefault.FlatAppearance.MouseOverBackColor = FormManager.RecommendColors.Button_DEC.ToColor();
-            Button_GravityGrid_ResetToDefault.FlatAppearance.MouseDownBackColor = FormManager.RecommendColors.Button_INC.ToColor();
 
             // 扩散光点
 
@@ -545,12 +513,8 @@ namespace WinFormApp
             Label_SpreadSpot_GlowMode.ForeColor = FormManager.RecommendColors.Text_INC.ToColor();
             RadioButton_SpreadSpot_GlowMode_OuterGlow.ForeColor = RadioButton_SpreadSpot_GlowMode_InnerGlow.ForeColor = RadioButton_SpreadSpot_GlowMode_EvenGlow.ForeColor = FormManager.RecommendColors.Text.ToColor();
 
+            Label_SpreadSpot_Reset.ForeColor = FormManager.RecommendColors.Text_INC.ToColor();
             Label_SpreadSpot_ResetToDefault.ForeColor = FormManager.RecommendColors.Text_INC.ToColor();
-            Button_SpreadSpot_ResetToDefault.ForeColor = FormManager.RecommendColors.Text_INC.ToColor();
-            Button_SpreadSpot_ResetToDefault.BackColor = FormManager.RecommendColors.Button.ToColor();
-            Button_SpreadSpot_ResetToDefault.FlatAppearance.BorderColor = FormManager.RecommendColors.Button.ToColor();
-            Button_SpreadSpot_ResetToDefault.FlatAppearance.MouseOverBackColor = FormManager.RecommendColors.Button_DEC.ToColor();
-            Button_SpreadSpot_ResetToDefault.FlatAppearance.MouseDownBackColor = FormManager.RecommendColors.Button_INC.ToColor();
 
             // "通用"区域
 
@@ -576,17 +540,28 @@ namespace WinFormApp
             Label_GitHub_Part1.ForeColor = Label_GitHub_Base.ForeColor = Label_GitHub_Part2.ForeColor = Label_GitHub_Release.ForeColor = FormManager.RecommendColors.Text.ToColor();
 
             // 控件替代
-            Com.WinForm.ControlSubstitution.LabelAsButton(Label_LightSpot_Color_Val, Label_LightSpot_Color_Val_Click, Color.Transparent, FormManager.RecommendColors.Button_DEC.ToColor(), FormManager.RecommendColors.Button_INC.ToColor(), new Font("微软雅黑", 9.75F, FontStyle.Underline, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134));
-            Com.WinForm.ControlSubstitution.LabelAsButton(Label_TrianglePiece_Color_Val, Label_TrianglePiece_Color_Val_Click, Color.Transparent, FormManager.RecommendColors.Button_DEC.ToColor(), FormManager.RecommendColors.Button_INC.ToColor(), new Font("微软雅黑", 9.75F, FontStyle.Underline, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134));
-            Com.WinForm.ControlSubstitution.LabelAsButton(Label_Shine_Color_Val, Label_Shine_Color_Val_Click, Color.Transparent, FormManager.RecommendColors.Button_DEC.ToColor(), FormManager.RecommendColors.Button_INC.ToColor(), new Font("微软雅黑", 9.75F, FontStyle.Underline, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134));
-            Com.WinForm.ControlSubstitution.LabelAsButton(Label_Meteor_Color_Val, Label_Meteor_Color_Val_Click, Color.Transparent, FormManager.RecommendColors.Button_DEC.ToColor(), FormManager.RecommendColors.Button_INC.ToColor(), new Font("微软雅黑", 9.75F, FontStyle.Underline, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134));
-            Com.WinForm.ControlSubstitution.LabelAsButton(Label_Snow_Color_Val, Label_Snow_Color_Val_Click, Color.Transparent, FormManager.RecommendColors.Button_DEC.ToColor(), FormManager.RecommendColors.Button_INC.ToColor(), new Font("微软雅黑", 9.75F, FontStyle.Underline, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134));
-            Com.WinForm.ControlSubstitution.LabelAsButton(Label_GravityParticle_Color_Val, Label_GravityParticle_Color_Val_Click, Color.Transparent, FormManager.RecommendColors.Button_DEC.ToColor(), FormManager.RecommendColors.Button_INC.ToColor(), new Font("微软雅黑", 9.75F, FontStyle.Underline, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134));
-            Com.WinForm.ControlSubstitution.LabelAsButton(Label_GravityGrid_Color_Val, Label_GravityGrid_Color_Val_Click, Color.Transparent, FormManager.RecommendColors.Button_DEC.ToColor(), FormManager.RecommendColors.Button_INC.ToColor(), new Font("微软雅黑", 9.75F, FontStyle.Underline, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134));
-            Com.WinForm.ControlSubstitution.LabelAsButton(Label_SpreadSpot_Color_Val, Label_SpreadSpot_Color_Val_Click, Color.Transparent, FormManager.RecommendColors.Button_DEC.ToColor(), FormManager.RecommendColors.Button_INC.ToColor(), new Font("微软雅黑", 9.75F, FontStyle.Underline, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134));
+            Com.WinForm.ControlSubstitution.LabelAsButton(Label_LightSpot_Color_Val, Label_LightSpot_Color_Val_Click, Color.Transparent, FormManager.RecommendColors.Button_DEC.ToColor(), FormManager.RecommendColors.Button_INC.ToColor(), new Font("微软雅黑", 9F, FontStyle.Underline, GraphicsUnit.Point, 134), new Font("微软雅黑", 9F, FontStyle.Regular, GraphicsUnit.Point, 134), new Font("微软雅黑", 9F, FontStyle.Regular, GraphicsUnit.Point, 134));
+            Com.WinForm.ControlSubstitution.LabelAsButton(Label_TrianglePiece_Color_Val, Label_TrianglePiece_Color_Val_Click, Color.Transparent, FormManager.RecommendColors.Button_DEC.ToColor(), FormManager.RecommendColors.Button_INC.ToColor(), new Font("微软雅黑", 9F, FontStyle.Underline, GraphicsUnit.Point, 134), new Font("微软雅黑", 9F, FontStyle.Regular, GraphicsUnit.Point, 134), new Font("微软雅黑", 9F, FontStyle.Regular, GraphicsUnit.Point, 134));
+            Com.WinForm.ControlSubstitution.LabelAsButton(Label_Shine_Color_Val, Label_Shine_Color_Val_Click, Color.Transparent, FormManager.RecommendColors.Button_DEC.ToColor(), FormManager.RecommendColors.Button_INC.ToColor(), new Font("微软雅黑", 9F, FontStyle.Underline, GraphicsUnit.Point, 134), new Font("微软雅黑", 9F, FontStyle.Regular, GraphicsUnit.Point, 134), new Font("微软雅黑", 9F, FontStyle.Regular, GraphicsUnit.Point, 134));
+            Com.WinForm.ControlSubstitution.LabelAsButton(Label_Meteor_Color_Val, Label_Meteor_Color_Val_Click, Color.Transparent, FormManager.RecommendColors.Button_DEC.ToColor(), FormManager.RecommendColors.Button_INC.ToColor(), new Font("微软雅黑", 9F, FontStyle.Underline, GraphicsUnit.Point, 134), new Font("微软雅黑", 9F, FontStyle.Regular, GraphicsUnit.Point, 134), new Font("微软雅黑", 9F, FontStyle.Regular, GraphicsUnit.Point, 134));
+            Com.WinForm.ControlSubstitution.LabelAsButton(Label_Snow_Color_Val, Label_Snow_Color_Val_Click, Color.Transparent, FormManager.RecommendColors.Button_DEC.ToColor(), FormManager.RecommendColors.Button_INC.ToColor(), new Font("微软雅黑", 9F, FontStyle.Underline, GraphicsUnit.Point, 134), new Font("微软雅黑", 9F, FontStyle.Regular, GraphicsUnit.Point, 134), new Font("微软雅黑", 9F, FontStyle.Regular, GraphicsUnit.Point, 134));
+            Com.WinForm.ControlSubstitution.LabelAsButton(Label_GravityParticle_Color_Val, Label_GravityParticle_Color_Val_Click, Color.Transparent, FormManager.RecommendColors.Button_DEC.ToColor(), FormManager.RecommendColors.Button_INC.ToColor(), new Font("微软雅黑", 9F, FontStyle.Underline, GraphicsUnit.Point, 134), new Font("微软雅黑", 9F, FontStyle.Regular, GraphicsUnit.Point, 134), new Font("微软雅黑", 9F, FontStyle.Regular, GraphicsUnit.Point, 134));
+            Com.WinForm.ControlSubstitution.LabelAsButton(Label_GravityGrid_Color_Val, Label_GravityGrid_Color_Val_Click, Color.Transparent, FormManager.RecommendColors.Button_DEC.ToColor(), FormManager.RecommendColors.Button_INC.ToColor(), new Font("微软雅黑", 9F, FontStyle.Underline, GraphicsUnit.Point, 134), new Font("微软雅黑", 9F, FontStyle.Regular, GraphicsUnit.Point, 134), new Font("微软雅黑", 9F, FontStyle.Regular, GraphicsUnit.Point, 134));
+            Com.WinForm.ControlSubstitution.LabelAsButton(Label_SpreadSpot_Color_Val, Label_SpreadSpot_Color_Val_Click, Color.Transparent, FormManager.RecommendColors.Button_DEC.ToColor(), FormManager.RecommendColors.Button_INC.ToColor(), new Font("微软雅黑", 9F, FontStyle.Underline, GraphicsUnit.Point, 134), new Font("微软雅黑", 9F, FontStyle.Regular, GraphicsUnit.Point, 134), new Font("微软雅黑", 9F, FontStyle.Regular, GraphicsUnit.Point, 134));
+
+            Com.WinForm.ControlSubstitution.LabelAsButton(Label_LightSpot_ResetToDefault, Label_LightSpot_ResetToDefault_Click, FormManager.RecommendColors.Button.ToColor(), FormManager.RecommendColors.Button_DEC.ToColor(), FormManager.RecommendColors.Button_INC.ToColor());
+            Com.WinForm.ControlSubstitution.LabelAsButton(Label_TrianglePiece_ResetToDefault, Label_TrianglePiece_ResetToDefault_Click, FormManager.RecommendColors.Button.ToColor(), FormManager.RecommendColors.Button_DEC.ToColor(), FormManager.RecommendColors.Button_INC.ToColor());
+            Com.WinForm.ControlSubstitution.LabelAsButton(Label_Shine_ResetToDefault, Label_Shine_ResetToDefault_Click, FormManager.RecommendColors.Button.ToColor(), FormManager.RecommendColors.Button_DEC.ToColor(), FormManager.RecommendColors.Button_INC.ToColor());
+            Com.WinForm.ControlSubstitution.LabelAsButton(Label_Meteor_ResetToDefault, Label_Meteor_ResetToDefault_Click, FormManager.RecommendColors.Button.ToColor(), FormManager.RecommendColors.Button_DEC.ToColor(), FormManager.RecommendColors.Button_INC.ToColor());
+            Com.WinForm.ControlSubstitution.LabelAsButton(Label_Snow_ResetToDefault, Label_Snow_ResetToDefault_Click, FormManager.RecommendColors.Button.ToColor(), FormManager.RecommendColors.Button_DEC.ToColor(), FormManager.RecommendColors.Button_INC.ToColor());
+            Com.WinForm.ControlSubstitution.LabelAsButton(Label_GravityParticle_ResetToDefault, Label_GravityParticle_ResetToDefault_Click, FormManager.RecommendColors.Button.ToColor(), FormManager.RecommendColors.Button_DEC.ToColor(), FormManager.RecommendColors.Button_INC.ToColor());
+            Com.WinForm.ControlSubstitution.LabelAsButton(Label_GravityGrid_ResetToDefault, Label_GravityGrid_ResetToDefault_Click, FormManager.RecommendColors.Button.ToColor(), FormManager.RecommendColors.Button_DEC.ToColor(), FormManager.RecommendColors.Button_INC.ToColor());
+            Com.WinForm.ControlSubstitution.LabelAsButton(Label_SpreadSpot_ResetToDefault, Label_SpreadSpot_ResetToDefault_Click, FormManager.RecommendColors.Button.ToColor(), FormManager.RecommendColors.Button_DEC.ToColor(), FormManager.RecommendColors.Button_INC.ToColor());
 
             Com.WinForm.ControlSubstitution.LabelAsButton(Label_GitHub_Base, Label_GitHub_Base_Click, Color.Transparent, FormManager.RecommendColors.Button_DEC.ToColor(), FormManager.RecommendColors.Button_INC.ToColor(), new Font("微软雅黑", 9.75F, FontStyle.Underline, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134));
             Com.WinForm.ControlSubstitution.LabelAsButton(Label_GitHub_Release, Label_GitHub_Release_Click, Color.Transparent, FormManager.RecommendColors.Button_DEC.ToColor(), FormManager.RecommendColors.Button_INC.ToColor(), new Font("微软雅黑", 9.75F, FontStyle.Underline, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134), new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134));
+
+            Com.WinForm.ControlSubstitution.LabelAsButton(Label_Close, Label_Close_Click, FormManager.RecommendColors.Button.ToColor(), FormManager.RecommendColors.Button_DEC.ToColor(), FormManager.RecommendColors.Button_INC.ToColor());
         }
 
         #endregion
@@ -680,73 +655,105 @@ namespace WinFormApp
         // Panel_LightSpot_Radius 绘图
         private void Panel_LightSpot_Radius_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_LightSpot_Radius, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_LightSpot_Radius;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_LightSpot_Count 绘图
         private void Panel_LightSpot_Count_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_LightSpot_Count, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_LightSpot_Count;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_LightSpot_Amplitude 绘图
         private void Panel_LightSpot_Amplitude_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_LightSpot_Amplitude, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_LightSpot_Amplitude;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_LightSpot_WaveLength 绘图
         private void Panel_LightSpot_WaveLength_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_LightSpot_WaveLength, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_LightSpot_WaveLength;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_LightSpot_WaveVelocity 绘图
         private void Panel_LightSpot_WaveVelocity_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_LightSpot_WaveVelocity, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_LightSpot_WaveVelocity;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_LightSpot_Color 绘图
         private void Panel_LightSpot_Color_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_LightSpot_Color, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_LightSpot_Color;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_LightSpot_GlowMode 绘图
         private void Panel_LightSpot_GlowMode_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_LightSpot_GlowMode, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_LightSpot_GlowMode;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_LightSpot_ResetToDefault 绘图
         private void Panel_LightSpot_ResetToDefault_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_LightSpot_ResetToDefault, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_LightSpot_Reset;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         #endregion
@@ -756,73 +763,105 @@ namespace WinFormApp
         // Panel_TrianglePiece_Radius 绘图
         private void Panel_TrianglePiece_Radius_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_TrianglePiece_Radius, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_TrianglePiece_Radius;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_TrianglePiece_Count 绘图
         private void Panel_TrianglePiece_Count_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_TrianglePiece_Count, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_TrianglePiece_Count;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_TrianglePiece_Amplitude 绘图
         private void Panel_TrianglePiece_Amplitude_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_TrianglePiece_Amplitude, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_TrianglePiece_Amplitude;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_TrianglePiece_WaveLength 绘图
         private void Panel_TrianglePiece_WaveLength_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_TrianglePiece_WaveLength, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_TrianglePiece_WaveLength;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_TrianglePiece_WaveVelocity 绘图
         private void Panel_TrianglePiece_WaveVelocity_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_TrianglePiece_WaveVelocity, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_TrianglePiece_WaveVelocity;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_TrianglePiece_Color 绘图
         private void Panel_TrianglePiece_Color_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_TrianglePiece_Color, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_TrianglePiece_Color;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_TrianglePiece_GlowMode 绘图
         private void Panel_TrianglePiece_GlowMode_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_TrianglePiece_GlowMode, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_TrianglePiece_GlowMode;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_TrianglePiece_ResetToDefault 绘图
         private void Panel_TrianglePiece_ResetToDefault_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_TrianglePiece_ResetToDefault, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_TrianglePiece_Reset;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         #endregion
@@ -832,64 +871,92 @@ namespace WinFormApp
         // Panel_Shine_Radius 绘图
         private void Panel_Shine_Radius_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_Shine_Radius, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_Shine_Radius;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_Shine_Count 绘图
         private void Panel_Shine_Count_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_Shine_Count, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_Shine_Count;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_Shine_Displacement 绘图
         private void Panel_Shine_Displacement_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_Shine_Displacement, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_Shine_Displacement;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_Shine_Period 绘图
         private void Panel_Shine_Period_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_Shine_Period, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_Shine_Period;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_Shine_Color 绘图
         private void Panel_Shine_Color_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_Shine_Color, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_Shine_Color;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_Shine_GlowMode 绘图
         private void Panel_Shine_GlowMode_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_Shine_GlowMode, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_Shine_GlowMode;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_Shine_ResetToDefault 绘图
         private void Panel_Shine_ResetToDefault_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_Shine_ResetToDefault, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_Shine_Reset;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         #endregion
@@ -899,82 +966,118 @@ namespace WinFormApp
         // Panel_Meteor_Radius 绘图
         private void Panel_Meteor_Radius_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_Meteor_Radius, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_Meteor_Radius;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_Meteor_Length 绘图
         private void Panel_Meteor_Length_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_Meteor_Length, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_Meteor_Length;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_Meteor_Count 绘图
         private void Panel_Meteor_Count_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_Meteor_Count, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_Meteor_Count;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_Meteor_Velocity 绘图
         private void Panel_Meteor_Velocity_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_Meteor_Velocity, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_Meteor_Velocity;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_Meteor_Angle 绘图
         private void Panel_Meteor_Angle_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_Meteor_Angle, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_Meteor_Angle;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_Meteor_GravitationalAcceleration 绘图
         private void Panel_Meteor_GravitationalAcceleration_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_Meteor_GravitationalAcceleration, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_Meteor_GravitationalAcceleration;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_Meteor_Color 绘图
         private void Panel_Meteor_Color_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_Meteor_Color, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_Meteor_Color;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_Meteor_GlowMode 绘图
         private void Panel_Meteor_GlowMode_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_Meteor_GlowMode, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_Meteor_GlowMode;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_Meteor_ResetToDefault 绘图
         private void Panel_Meteor_ResetToDefault_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_Meteor_ResetToDefault, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_Meteor_Reset;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         #endregion
@@ -984,55 +1087,79 @@ namespace WinFormApp
         // Panel_Snow_Radius 绘图
         private void Panel_Snow_Radius_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_Snow_Radius, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_Snow_Radius;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_Snow_Count 绘图
         private void Panel_Snow_Count_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_Snow_Count, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_Snow_Count;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_Snow_Velocity 绘图
         private void Panel_Snow_Velocity_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_Snow_Velocity, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_Snow_Velocity;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_Snow_Color 绘图
         private void Panel_Snow_Color_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_Snow_Color, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_Snow_Color;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_Snow_GlowMode 绘图
         private void Panel_Snow_GlowMode_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_Snow_GlowMode, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_Snow_GlowMode;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_Snow_ResetToDefault 绘图
         private void Panel_Snow_ResetToDefault_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_Snow_ResetToDefault, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_Snow_Reset;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         #endregion
@@ -1042,73 +1169,105 @@ namespace WinFormApp
         // Panel_GravityParticle_Mass 绘图
         private void Panel_GravityParticle_Mass_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_GravityParticle_Mass, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_GravityParticle_Mass;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_GravityParticle_Count 绘图
         private void Panel_GravityParticle_Count_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_GravityParticle_Count, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_GravityParticle_Count;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_GravityParticle_CursorMass 绘图
         private void Panel_GravityParticle_CursorMass_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_GravityParticle_CursorMass, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_GravityParticle_CursorMass;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_GravityParticle_GravityConstant 绘图
         private void Panel_GravityParticle_GravityConstant_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_GravityParticle_GravityConstant, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_GravityParticle_GravityConstant;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_GravityParticle_ElasticRestitutionCoefficient 绘图
         private void Panel_GravityParticle_ElasticRestitutionCoefficient_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_GravityParticle_ElasticRestitutionCoefficient, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_GravityParticle_ElasticRestitutionCoefficient;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_GravityParticle_Color 绘图
         private void Panel_GravityParticle_Color_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_GravityParticle_Color, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_GravityParticle_Color;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_GravityParticle_GlowMode 绘图
         private void Panel_GravityParticle_GlowMode_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_GravityParticle_GlowMode, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_GravityParticle_GlowMode;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_GravityParticle_ResetToDefault 绘图
         private void Panel_GravityParticle_ResetToDefault_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_GravityParticle_ResetToDefault, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_GravityParticle_Reset;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         #endregion
@@ -1118,73 +1277,105 @@ namespace WinFormApp
         // Panel_GravityGrid_Radius 绘图
         private void Panel_GravityGrid_Radius_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_GravityGrid_Radius, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_GravityGrid_Radius;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_GravityGrid_Count 绘图
         private void Panel_GravityGrid_Count_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_GravityGrid_Count, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_GravityGrid_Count;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_GravityGrid_LineWidth 绘图
         private void Panel_GravityGrid_LineWidth_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_GravityGrid_LineWidth, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_GravityGrid_LineWidth;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_GravityGrid_CursorMass 绘图
         private void Panel_GravityGrid_CursorMass_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_GravityGrid_CursorMass, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_GravityGrid_CursorMass;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_GravityGrid_CursorRepulsionRadius 绘图
         private void Panel_GravityGrid_CursorRepulsionRadius_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_GravityGrid_CursorRepulsionRadius, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_GravityGrid_CursorRepulsionRadius;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_GravityGrid_Color 绘图
         private void Panel_GravityGrid_Color_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_GravityGrid_Color, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_GravityGrid_Color;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_GravityGrid_GlowMode 绘图
         private void Panel_GravityGrid_GlowMode_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_GravityGrid_GlowMode, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_GravityGrid_GlowMode;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_GravityGrid_ResetToDefault 绘图
         private void Panel_GravityGrid_ResetToDefault_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_GravityGrid_ResetToDefault, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_GravityGrid_Reset;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         #endregion
@@ -1194,73 +1385,105 @@ namespace WinFormApp
         // Panel_SpreadSpot_Radius 绘图
         private void Panel_SpreadSpot_Radius_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_SpreadSpot_Radius, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_SpreadSpot_Radius;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_SpreadSpot_Count 绘图
         private void Panel_SpreadSpot_Count_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_SpreadSpot_Count, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_SpreadSpot_Count;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_SpreadSpot_SourceLocation 绘图
         private void Panel_SpreadSpot_SourceLocation_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_SpreadSpot_SourceLocation, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_SpreadSpot_SourceLocation;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_SpreadSpot_SourceSize 绘图
         private void Panel_SpreadSpot_SourceSize_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_SpreadSpot_SourceSize, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_SpreadSpot_SourceSize;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_SpreadSpot_Velocity 绘图
         private void Panel_SpreadSpot_Velocity_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_SpreadSpot_Velocity, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_SpreadSpot_Velocity;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_SpreadSpot_Color 绘图
         private void Panel_SpreadSpot_Color_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_SpreadSpot_Color, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_SpreadSpot_Color;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_SpreadSpot_GlowMode 绘图
         private void Panel_SpreadSpot_GlowMode_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_SpreadSpot_GlowMode, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_SpreadSpot_GlowMode;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_SpreadSpot_ResetToDefault 绘图
         private void Panel_SpreadSpot_ResetToDefault_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_SpreadSpot_ResetToDefault, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_SpreadSpot_Reset;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         #endregion
@@ -1270,37 +1493,53 @@ namespace WinFormApp
         // Panel_AntiAlias 绘图
         private void Panel_AntiAlias_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_AntiAlias, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_AntiAlias;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_LimitFPS 绘图
         private void Panel_LimitFPS_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_LimitFPS, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_LimitFPS;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_AutoStart 绘图
         private void Panel_AutoStart_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_AutoStart, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_AutoStart;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         // Panel_Shortcut 绘图
         private void Panel_Shortcut_Paint(object sender, PaintEventArgs e)
         {
-            Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
-            Control Ctrl = Label_Shortcut, Cntr = sender as Control;
-            e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
-            P.Dispose();
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_Shortcut;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
         }
 
         #endregion
@@ -1466,7 +1705,7 @@ namespace WinFormApp
 
                 Color TabBtnCr_Fr_Seld = FormManager.RecommendColors.Text_INC.ToColor(), TabBtnCr_Fr_Uns = FormManager.RecommendColors.Text.ToColor();
                 Color TabBtnCr_Bk_Seld = Color.Transparent, TabBtnCr_Bk_Uns = Color.Transparent;
-                Font TabBtnFt_Seld = new Font("微软雅黑", 9F, FontStyle.Bold, GraphicsUnit.Point, 134), TabBtnFt_Uns = new Font("微软雅黑", 9F, FontStyle.Regular, GraphicsUnit.Point, 134);
+                Font TabBtnFt_Seld = new Font("微软雅黑", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 134), TabBtnFt_Uns = new Font("微软雅黑", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 134);
 
                 Label_LightSpot.ForeColor = (_AnimationTab == AnimationTabs.LightSpot ? TabBtnCr_Fr_Seld : TabBtnCr_Fr_Uns);
                 Label_LightSpot.BackColor = (_AnimationTab == AnimationTabs.LightSpot ? TabBtnCr_Bk_Seld : TabBtnCr_Bk_Uns);
@@ -1684,7 +1923,7 @@ namespace WinFormApp
             TrackBar_LightSpot_GradientVelocity.Value = (int)(Animation.Animations.LightSpot.Settings.GradientVelocity * 10);
             TrackBar_LightSpot_GradientVelocity.Enabled = (Animation.Animations.LightSpot.Settings.ColorMode == Animation.ColorModes.Random && Animation.Animations.LightSpot.Settings.GradientWhenRandom);
 
-            Label_LightSpot_Color_Val.Text = "当前颜色: " + Com.ColorManipulation.GetColorName(Animation.Animations.LightSpot.Settings.Color);
+            Label_LightSpot_Color_Val.Text = Com.ColorManipulation.GetColorName(Animation.Animations.LightSpot.Settings.Color);
             Label_LightSpot_Color_Val.Enabled = (Animation.Animations.LightSpot.Settings.ColorMode == Animation.ColorModes.Custom);
 
             RadioButton_LightSpot_GlowMode_OuterGlow.CheckedChanged -= RadioButton_LightSpot_GlowMode_OuterGlow_CheckedChanged;
@@ -1789,7 +2028,7 @@ namespace WinFormApp
             if (ColorDialog_Color.ShowDialog() == DialogResult.OK)
             {
                 Animation.Animations.LightSpot.Settings.Color = ColorDialog_Color.Color;
-                Label_LightSpot_Color_Val.Text = "当前颜色: " + Com.ColorManipulation.GetColorName(Animation.Animations.LightSpot.Settings.Color);
+                Label_LightSpot_Color_Val.Text = Com.ColorManipulation.GetColorName(Animation.Animations.LightSpot.Settings.Color);
             }
         }
 
@@ -1820,8 +2059,8 @@ namespace WinFormApp
             }
         }
 
-        // 单击 Button_LightSpot_ResetToDefault
-        private void Button_LightSpot_ResetToDefault_Click(object sender, EventArgs e)
+        // 单击 Label_LightSpot_ResetToDefault
+        private void Label_LightSpot_ResetToDefault_Click(object sender, EventArgs e)
         {
             Animation.Animations.LightSpot.Settings.ResetToDefault();
 
@@ -1878,7 +2117,7 @@ namespace WinFormApp
             TrackBar_TrianglePiece_GradientVelocity.Value = (int)(Animation.Animations.TrianglePiece.Settings.GradientVelocity * 10);
             TrackBar_TrianglePiece_GradientVelocity.Enabled = (Animation.Animations.TrianglePiece.Settings.ColorMode == Animation.ColorModes.Random && Animation.Animations.TrianglePiece.Settings.GradientWhenRandom);
 
-            Label_TrianglePiece_Color_Val.Text = "当前颜色: " + Com.ColorManipulation.GetColorName(Animation.Animations.TrianglePiece.Settings.Color);
+            Label_TrianglePiece_Color_Val.Text = Com.ColorManipulation.GetColorName(Animation.Animations.TrianglePiece.Settings.Color);
             Label_TrianglePiece_Color_Val.Enabled = (Animation.Animations.TrianglePiece.Settings.ColorMode == Animation.ColorModes.Custom);
 
             RadioButton_TrianglePiece_GlowMode_OuterGlow.CheckedChanged -= RadioButton_TrianglePiece_GlowMode_OuterGlow_CheckedChanged;
@@ -1977,7 +2216,7 @@ namespace WinFormApp
             if (ColorDialog_Color.ShowDialog() == DialogResult.OK)
             {
                 Animation.Animations.TrianglePiece.Settings.Color = ColorDialog_Color.Color;
-                Label_TrianglePiece_Color_Val.Text = "当前颜色: " + Com.ColorManipulation.GetColorName(Animation.Animations.TrianglePiece.Settings.Color);
+                Label_TrianglePiece_Color_Val.Text = Com.ColorManipulation.GetColorName(Animation.Animations.TrianglePiece.Settings.Color);
             }
         }
 
@@ -2008,8 +2247,8 @@ namespace WinFormApp
             }
         }
 
-        // 单击 Button_TrianglePiece_ResetToDefault
-        private void Button_TrianglePiece_ResetToDefault_Click(object sender, EventArgs e)
+        // 单击 Label_TrianglePiece_ResetToDefault
+        private void Label_TrianglePiece_ResetToDefault_Click(object sender, EventArgs e)
         {
             Animation.Animations.TrianglePiece.Settings.ResetToDefault();
 
@@ -2065,7 +2304,7 @@ namespace WinFormApp
             TrackBar_Shine_GradientVelocity.Value = (int)(Animation.Animations.Shine.Settings.GradientVelocity * 10);
             TrackBar_Shine_GradientVelocity.Enabled = (Animation.Animations.Shine.Settings.ColorMode == Animation.ColorModes.Random && Animation.Animations.Shine.Settings.GradientWhenRandom);
 
-            Label_Shine_Color_Val.Text = "当前颜色: " + Com.ColorManipulation.GetColorName(Animation.Animations.Shine.Settings.Color);
+            Label_Shine_Color_Val.Text = Com.ColorManipulation.GetColorName(Animation.Animations.Shine.Settings.Color);
             Label_Shine_Color_Val.Enabled = (Animation.Animations.Shine.Settings.ColorMode == Animation.ColorModes.Custom);
 
             RadioButton_Shine_GlowMode_OuterGlow.CheckedChanged -= RadioButton_Shine_GlowMode_OuterGlow_CheckedChanged;
@@ -2170,7 +2409,7 @@ namespace WinFormApp
             if (ColorDialog_Color.ShowDialog() == DialogResult.OK)
             {
                 Animation.Animations.Shine.Settings.Color = ColorDialog_Color.Color;
-                Label_Shine_Color_Val.Text = "当前颜色: " + Com.ColorManipulation.GetColorName(Animation.Animations.Shine.Settings.Color);
+                Label_Shine_Color_Val.Text = Com.ColorManipulation.GetColorName(Animation.Animations.Shine.Settings.Color);
             }
         }
 
@@ -2201,8 +2440,8 @@ namespace WinFormApp
             }
         }
 
-        // 单击 Button_Shine_ResetToDefault
-        private void Button_Shine_ResetToDefault_Click(object sender, EventArgs e)
+        // 单击 Label_Shine_ResetToDefault
+        private void Label_Shine_ResetToDefault_Click(object sender, EventArgs e)
         {
             Animation.Animations.Shine.Settings.ResetToDefault();
 
@@ -2263,7 +2502,7 @@ namespace WinFormApp
             TrackBar_Meteor_GradientVelocity.Value = (int)(Animation.Animations.Meteor.Settings.GradientVelocity * 10);
             TrackBar_Meteor_GradientVelocity.Enabled = (Animation.Animations.Meteor.Settings.ColorMode == Animation.ColorModes.Random && Animation.Animations.Meteor.Settings.GradientWhenRandom);
 
-            Label_Meteor_Color_Val.Text = "当前颜色: " + Com.ColorManipulation.GetColorName(Animation.Animations.Meteor.Settings.Color);
+            Label_Meteor_Color_Val.Text = Com.ColorManipulation.GetColorName(Animation.Animations.Meteor.Settings.Color);
             Label_Meteor_Color_Val.Enabled = (Animation.Animations.Meteor.Settings.ColorMode == Animation.ColorModes.Custom);
 
             RadioButton_Meteor_GlowMode_OuterGlow.CheckedChanged -= RadioButton_Meteor_GlowMode_OuterGlow_CheckedChanged;
@@ -2368,7 +2607,7 @@ namespace WinFormApp
             if (ColorDialog_Color.ShowDialog() == DialogResult.OK)
             {
                 Animation.Animations.Meteor.Settings.Color = ColorDialog_Color.Color;
-                Label_Meteor_Color_Val.Text = "当前颜色: " + Com.ColorManipulation.GetColorName(Animation.Animations.Meteor.Settings.Color);
+                Label_Meteor_Color_Val.Text = Com.ColorManipulation.GetColorName(Animation.Animations.Meteor.Settings.Color);
             }
         }
 
@@ -2399,8 +2638,8 @@ namespace WinFormApp
             }
         }
 
-        // 单击 Button_Meteor_ResetToDefault
-        private void Button_Meteor_ResetToDefault_Click(object sender, EventArgs e)
+        // 单击 Label_Meteor_ResetToDefault
+        private void Label_Meteor_ResetToDefault_Click(object sender, EventArgs e)
         {
             Animation.Animations.Meteor.Settings.ResetToDefault();
 
@@ -2449,7 +2688,7 @@ namespace WinFormApp
             TrackBar_Snow_GradientVelocity.Value = (int)(Animation.Animations.Snow.Settings.GradientVelocity * 10);
             TrackBar_Snow_GradientVelocity.Enabled = (Animation.Animations.Snow.Settings.ColorMode == Animation.ColorModes.Random && Animation.Animations.Snow.Settings.GradientWhenRandom);
 
-            Label_Snow_Color_Val.Text = "当前颜色: " + Com.ColorManipulation.GetColorName(Animation.Animations.Snow.Settings.Color);
+            Label_Snow_Color_Val.Text = Com.ColorManipulation.GetColorName(Animation.Animations.Snow.Settings.Color);
             Label_Snow_Color_Val.Enabled = (Animation.Animations.Snow.Settings.ColorMode == Animation.ColorModes.Custom);
 
             RadioButton_Snow_GlowMode_OuterGlow.CheckedChanged -= RadioButton_Snow_GlowMode_OuterGlow_CheckedChanged;
@@ -2536,7 +2775,7 @@ namespace WinFormApp
             if (ColorDialog_Color.ShowDialog() == DialogResult.OK)
             {
                 Animation.Animations.Snow.Settings.Color = ColorDialog_Color.Color;
-                Label_Snow_Color_Val.Text = "当前颜色: " + Com.ColorManipulation.GetColorName(Animation.Animations.Snow.Settings.Color);
+                Label_Snow_Color_Val.Text = Com.ColorManipulation.GetColorName(Animation.Animations.Snow.Settings.Color);
             }
         }
 
@@ -2567,8 +2806,8 @@ namespace WinFormApp
             }
         }
 
-        // 单击 Button_Snow_ResetToDefault
-        private void Button_Snow_ResetToDefault_Click(object sender, EventArgs e)
+        // 单击 Label_Snow_ResetToDefault
+        private void Label_Snow_ResetToDefault_Click(object sender, EventArgs e)
         {
             Animation.Animations.Snow.Settings.ResetToDefault();
 
@@ -2625,7 +2864,7 @@ namespace WinFormApp
             TrackBar_GravityParticle_GradientVelocity.Value = (int)(Animation.Animations.GravityParticle.Settings.GradientVelocity * 10);
             TrackBar_GravityParticle_GradientVelocity.Enabled = (Animation.Animations.GravityParticle.Settings.ColorMode == Animation.ColorModes.Random && Animation.Animations.GravityParticle.Settings.GradientWhenRandom);
 
-            Label_GravityParticle_Color_Val.Text = "当前颜色: " + Com.ColorManipulation.GetColorName(Animation.Animations.GravityParticle.Settings.Color);
+            Label_GravityParticle_Color_Val.Text = Com.ColorManipulation.GetColorName(Animation.Animations.GravityParticle.Settings.Color);
             Label_GravityParticle_Color_Val.Enabled = (Animation.Animations.GravityParticle.Settings.ColorMode == Animation.ColorModes.Custom);
 
             RadioButton_GravityParticle_GlowMode_OuterGlow.CheckedChanged -= RadioButton_GravityParticle_GlowMode_OuterGlow_CheckedChanged;
@@ -2724,7 +2963,7 @@ namespace WinFormApp
             if (ColorDialog_Color.ShowDialog() == DialogResult.OK)
             {
                 Animation.Animations.GravityParticle.Settings.Color = ColorDialog_Color.Color;
-                Label_GravityParticle_Color_Val.Text = "当前颜色: " + Com.ColorManipulation.GetColorName(Animation.Animations.GravityParticle.Settings.Color);
+                Label_GravityParticle_Color_Val.Text = Com.ColorManipulation.GetColorName(Animation.Animations.GravityParticle.Settings.Color);
             }
         }
 
@@ -2755,8 +2994,8 @@ namespace WinFormApp
             }
         }
 
-        // 单击 Button_GravityParticle_ResetToDefault
-        private void Button_GravityParticle_ResetToDefault_Click(object sender, EventArgs e)
+        // 单击 Label_GravityParticle_ResetToDefault
+        private void Label_GravityParticle_ResetToDefault_Click(object sender, EventArgs e)
         {
             Animation.Animations.GravityParticle.Settings.ResetToDefault();
 
@@ -2810,7 +3049,7 @@ namespace WinFormApp
             TrackBar_GravityGrid_GradientVelocity.Value = (int)(Animation.Animations.GravityGrid.Settings.GradientVelocity * 10);
             TrackBar_GravityGrid_GradientVelocity.Enabled = (Animation.Animations.GravityGrid.Settings.ColorMode == Animation.ColorModes.Random && Animation.Animations.GravityGrid.Settings.GradientWhenRandom);
 
-            Label_GravityGrid_Color_Val.Text = "当前颜色: " + Com.ColorManipulation.GetColorName(Animation.Animations.GravityGrid.Settings.Color);
+            Label_GravityGrid_Color_Val.Text = Com.ColorManipulation.GetColorName(Animation.Animations.GravityGrid.Settings.Color);
             Label_GravityGrid_Color_Val.Enabled = (Animation.Animations.GravityGrid.Settings.ColorMode == Animation.ColorModes.Custom);
 
             RadioButton_GravityGrid_GlowMode_OuterGlow.CheckedChanged -= RadioButton_GravityGrid_GlowMode_OuterGlow_CheckedChanged;
@@ -2899,7 +3138,7 @@ namespace WinFormApp
             if (ColorDialog_Color.ShowDialog() == DialogResult.OK)
             {
                 Animation.Animations.GravityGrid.Settings.Color = ColorDialog_Color.Color;
-                Label_GravityGrid_Color_Val.Text = "当前颜色: " + Com.ColorManipulation.GetColorName(Animation.Animations.GravityGrid.Settings.Color);
+                Label_GravityGrid_Color_Val.Text = Com.ColorManipulation.GetColorName(Animation.Animations.GravityGrid.Settings.Color);
             }
         }
 
@@ -2930,8 +3169,8 @@ namespace WinFormApp
             }
         }
 
-        // 单击 Button_GravityGrid_ResetToDefault
-        private void Button_GravityGrid_ResetToDefault_Click(object sender, EventArgs e)
+        // 单击 Label_GravityGrid_ResetToDefault
+        private void Label_GravityGrid_ResetToDefault_Click(object sender, EventArgs e)
         {
             Animation.Animations.GravityGrid.Settings.ResetToDefault();
 
@@ -2994,7 +3233,7 @@ namespace WinFormApp
             TrackBar_SpreadSpot_GradientVelocity.Value = (int)(Animation.Animations.SpreadSpot.Settings.GradientVelocity * 10);
             TrackBar_SpreadSpot_GradientVelocity.Enabled = (Animation.Animations.SpreadSpot.Settings.ColorMode == Animation.ColorModes.Random && Animation.Animations.SpreadSpot.Settings.GradientWhenRandom);
 
-            Label_SpreadSpot_Color_Val.Text = "当前颜色: " + Com.ColorManipulation.GetColorName(Animation.Animations.SpreadSpot.Settings.Color);
+            Label_SpreadSpot_Color_Val.Text = Com.ColorManipulation.GetColorName(Animation.Animations.SpreadSpot.Settings.Color);
             Label_SpreadSpot_Color_Val.Enabled = (Animation.Animations.SpreadSpot.Settings.ColorMode == Animation.ColorModes.Custom);
 
             RadioButton_SpreadSpot_GlowMode_OuterGlow.CheckedChanged -= RadioButton_SpreadSpot_GlowMode_OuterGlow_CheckedChanged;
@@ -3105,7 +3344,7 @@ namespace WinFormApp
             if (ColorDialog_Color.ShowDialog() == DialogResult.OK)
             {
                 Animation.Animations.SpreadSpot.Settings.Color = ColorDialog_Color.Color;
-                Label_SpreadSpot_Color_Val.Text = "当前颜色: " + Com.ColorManipulation.GetColorName(Animation.Animations.SpreadSpot.Settings.Color);
+                Label_SpreadSpot_Color_Val.Text = Com.ColorManipulation.GetColorName(Animation.Animations.SpreadSpot.Settings.Color);
             }
         }
 
@@ -3136,8 +3375,8 @@ namespace WinFormApp
             }
         }
 
-        // 单击 Button_SpreadSpot_ResetToDefault
-        private void Button_SpreadSpot_ResetToDefault_Click(object sender, EventArgs e)
+        // 单击 Label_SpreadSpot_ResetToDefault
+        private void Label_SpreadSpot_ResetToDefault_Click(object sender, EventArgs e)
         {
             Animation.Animations.SpreadSpot.Settings.ResetToDefault();
 
@@ -3222,8 +3461,8 @@ namespace WinFormApp
 
         #region 底部区域
 
-        // 单击 Button_CloseSettings
-        private void Button_CloseSettings_Click(object sender, EventArgs e)
+        // 单击 Label_Close
+        private void Label_Close_Click(object sender, EventArgs e)
         {
             // 关闭设置窗体
             this.Close();

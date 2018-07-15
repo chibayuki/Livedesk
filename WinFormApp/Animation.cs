@@ -103,7 +103,7 @@ namespace WinFormApp
         // 颜色模式
         public enum ColorModes { NULL = -1, Random, Custom, COUNT }
 
-        // 着色模式
+        // 着色方式
         public enum GlowModes { NULL = -1, OuterGlow, InnerGlow, EvenGlow, COUNT }
 
         // 全局设置
@@ -550,9 +550,9 @@ namespace WinFormApp
                     // 颜色
                     public static Color Color = Color_DefaultValue;
 
-                    // 着色模式的默认值
+                    // 着色方式的默认值
                     public static readonly GlowModes GlowMode_DefaultValue = GlowModes.OuterGlow;
-                    // 着色模式
+                    // 着色方式
                     public static GlowModes GlowMode = GlowMode_DefaultValue;
 
                     // 将所有设置重置为默认值
@@ -1083,9 +1083,9 @@ namespace WinFormApp
                     // 颜色
                     public static Color Color = Color_DefaultValue;
 
-                    // 着色模式的默认值
+                    // 着色方式的默认值
                     public static readonly GlowModes GlowMode_DefaultValue = GlowModes.OuterGlow;
-                    // 着色模式
+                    // 着色方式
                     public static GlowModes GlowMode = GlowMode_DefaultValue;
 
                     // 将所有设置重置为默认值
@@ -1666,9 +1666,9 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                     // 颜色
                     public static Color Color = Color_DefaultValue;
 
-                    // 着色模式的默认值
+                    // 着色方式的默认值
                     public static readonly GlowModes GlowMode_DefaultValue = GlowModes.OuterGlow;
-                    // 着色模式
+                    // 着色方式
                     public static GlowModes GlowMode = GlowMode_DefaultValue;
 
                     // 将所有设置重置为默认值
@@ -2222,9 +2222,9 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                     // 颜色
                     public static Color Color = Color_DefaultValue;
 
-                    // 着色模式的默认值
+                    // 着色方式的默认值
                     public static readonly GlowModes GlowMode_DefaultValue = GlowModes.OuterGlow;
-                    // 着色模式
+                    // 着色方式
                     public static GlowModes GlowMode = GlowMode_DefaultValue;
 
                     // 重力加速度的取值范围与默认值
@@ -2746,9 +2746,9 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                     // 颜色
                     public static Color Color = Color_DefaultValue;
 
-                    // 着色模式的默认值
+                    // 着色方式的默认值
                     public static readonly GlowModes GlowMode_DefaultValue = GlowModes.OuterGlow;
-                    // 着色模式
+                    // 着色方式
                     public static GlowModes GlowMode = GlowMode_DefaultValue;
 
                     // 将所有设置重置为默认值
@@ -3268,9 +3268,9 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                     // 颜色
                     public static Color Color = Color_DefaultValue;
 
-                    // 着色模式的默认值
+                    // 着色方式的默认值
                     public static readonly GlowModes GlowMode_DefaultValue = GlowModes.OuterGlow;
-                    // 着色模式
+                    // 着色方式
                     public static GlowModes GlowMode = GlowMode_DefaultValue;
 
                     // 鼠标指针质量的取值范围与默认值
@@ -3929,9 +3929,9 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                     // 颜色
                     public static Color Color = Color_DefaultValue;
 
-                    // 着色模式的默认值
+                    // 着色方式的默认值
                     public static readonly GlowModes GlowMode_DefaultValue = GlowModes.OuterGlow;
-                    // 着色模式
+                    // 着色方式
                     public static GlowModes GlowMode = GlowMode_DefaultValue;
 
                     // 鼠标指针质量的取值范围与默认值
@@ -4626,9 +4626,9 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                     // 颜色
                     public static Color Color = Color_DefaultValue;
 
-                    // 着色模式的默认值
+                    // 着色方式的默认值
                     public static readonly GlowModes GlowMode_DefaultValue = GlowModes.OuterGlow;
-                    // 着色模式
+                    // 着色方式
                     public static GlowModes GlowMode = GlowMode_DefaultValue;
 
                     // 将所有设置重置为默认值
