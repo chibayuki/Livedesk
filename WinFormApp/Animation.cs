@@ -2,7 +2,7 @@
 Copyright © 2018 chibayuki@foxmail.com
 
 动态桌面
-Version 1.0.1807.0.R1.180710-0000
+Version 1.0.1807.0.R1.180720-1450
 
 This file is part of "动态桌面" (Livedesk)
 
@@ -4077,7 +4077,7 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                         {
                             if (_MSOfNearByCursor < _RepulsionAfterThisMS)
                             {
-                                // 在同一计时周期内，若多次引用 Acceleration 将导致 _MSOfNearByCursor 严重偏大。
+                                // 在同一计时周期内，若多次引用 Acceleration 将导致 _MSOfNearByCursor 严重偏大
                                 _MSOfNearByCursor += DeltaTime.Elapsed.TotalMilliseconds;
                             }
                         }

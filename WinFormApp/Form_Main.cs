@@ -2,7 +2,7 @@
 Copyright © 2018 chibayuki@foxmail.com
 
 动态桌面
-Version 1.0.1807.0.R1.180710-0000
+Version 1.0.1807.0.R1.180720-1450
 
 This file is part of "动态桌面" (Livedesk)
 
@@ -28,13 +28,11 @@ namespace WinFormApp
 {
     public partial class Form_Main : Form
     {
-        #region DLL加载
+        #region API声明
 
         // User32
         private static class User32
         {
-            public const int SE_SHUTDOWN_PRIVILEGE = 0x13;
-
             [DllImport("user32.dll")]
             public static extern IntPtr FindWindow(string lpClassName, string lpWindowName);
 
@@ -79,7 +77,7 @@ namespace WinFormApp
             // 将窗体置于底层
             if (Environment.OSVersion.Version.Major >= 6)
             {
-                User32.SetWindowPos(base.Handle, 1, 0, 0, 0, 0, User32.SE_SHUTDOWN_PRIVILEGE);
+                User32.SetWindowPos(base.Handle, 1, 0, 0, 0, 0, 19U);
             }
             else
             {
@@ -121,7 +119,7 @@ namespace WinFormApp
             // 将窗体置于底层
             if (Environment.OSVersion.Version.Major >= 6)
             {
-                User32.SetWindowPos(base.Handle, 1, 0, 0, 0, 0, User32.SE_SHUTDOWN_PRIVILEGE);
+                User32.SetWindowPos(base.Handle, 1, 0, 0, 0, 0, 19U);
             }
         }
 
@@ -131,7 +129,7 @@ namespace WinFormApp
             // 将窗体置于底层
             if (Environment.OSVersion.Version.Major >= 6)
             {
-                User32.SetWindowPos(base.Handle, 1, 0, 0, 0, 0, User32.SE_SHUTDOWN_PRIVILEGE);
+                User32.SetWindowPos(base.Handle, 1, 0, 0, 0, 0, 19U);
             }
         }
 
@@ -165,6 +163,12 @@ namespace WinFormApp
         // 在 UI 线程重绘位图
         private void RedrawBitmap()
         {
+            // 当屏幕分辨率发生变化时重新设置窗体边界
+            if (this.Bounds != Animation.FormBounds)
+            {
+                this.Bounds = Animation.FormBounds;
+            }
+
             if (Bmp != null)
             {
                 // 在透明窗体上绘制位图
@@ -172,12 +176,6 @@ namespace WinFormApp
 
                 // 释放资源
                 Bmp.Dispose();
-            }
-
-            // 当屏幕分辨率发生变化时重新设置窗体边界
-            if (this.Bounds != Animation.FormBounds)
-            {
-                this.Bounds = Animation.FormBounds;
             }
         }
 

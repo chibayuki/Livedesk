@@ -2,7 +2,7 @@
 Copyright © 2018 chibayuki@foxmail.com
 
 动态桌面
-Version 1.0.1807.0.R1.180710-0000
+Version 1.0.1807.0.R1.180720-1450
 
 This file is part of "动态桌面" (Livedesk)
 
@@ -45,6 +45,8 @@ namespace WinFormApp
             this.TopMost = true;
             // 使窗体显示在屏幕正中
             this.StartPosition = FormStartPosition.CenterScreen;
+            // 窗体标题
+            this.Text = "\"" + Application.ProductName + "\" 设置";
 
             // 构造 FormManager
             FormManager = new Com.WinForm.FormManager(new Form());
@@ -130,9 +132,6 @@ namespace WinFormApp
         // 窗体加载
         private void Form_Settings_Load(object sender, EventArgs e)
         {
-            // 窗体标题
-            this.Text = "\"" + Application.ProductName + "\" 设置";
-
             // 设置主题与颜色
             SetThemeAndColor();
 
@@ -181,7 +180,7 @@ namespace WinFormApp
 
             // "关于"区域
             Label_ApplicationName.Text = Application.ProductName;
-            Label_ApplicationEdition.Text = "Build " + new Version(Application.ProductVersion).Build;
+            Label_ApplicationEdition.Text = BuildString;
             Label_Version.Text = "版本: " + Application.ProductVersion;
         }
 
@@ -540,6 +539,7 @@ namespace WinFormApp
             Label_GitHub_Part1.ForeColor = Label_GitHub_Base.ForeColor = Label_GitHub_Part2.ForeColor = Label_GitHub_Release.ForeColor = FormManager.RecommendColors.Text.ToColor();
 
             // 控件替代
+
             Com.WinForm.ControlSubstitution.LabelAsButton(Label_LightSpot_Color_Val, Label_LightSpot_Color_Val_Click, Color.Transparent, FormManager.RecommendColors.Button_DEC.ToColor(), FormManager.RecommendColors.Button_INC.ToColor(), new Font("微软雅黑", 9F, FontStyle.Underline, GraphicsUnit.Point, 134), new Font("微软雅黑", 9F, FontStyle.Regular, GraphicsUnit.Point, 134), new Font("微软雅黑", 9F, FontStyle.Regular, GraphicsUnit.Point, 134));
             Com.WinForm.ControlSubstitution.LabelAsButton(Label_TrianglePiece_Color_Val, Label_TrianglePiece_Color_Val_Click, Color.Transparent, FormManager.RecommendColors.Button_DEC.ToColor(), FormManager.RecommendColors.Button_INC.ToColor(), new Font("微软雅黑", 9F, FontStyle.Underline, GraphicsUnit.Point, 134), new Font("微软雅黑", 9F, FontStyle.Regular, GraphicsUnit.Point, 134), new Font("微软雅黑", 9F, FontStyle.Regular, GraphicsUnit.Point, 134));
             Com.WinForm.ControlSubstitution.LabelAsButton(Label_Shine_Color_Val, Label_Shine_Color_Val_Click, Color.Transparent, FormManager.RecommendColors.Button_DEC.ToColor(), FormManager.RecommendColors.Button_INC.ToColor(), new Font("微软雅黑", 9F, FontStyle.Underline, GraphicsUnit.Point, 134), new Font("微软雅黑", 9F, FontStyle.Regular, GraphicsUnit.Point, 134), new Font("微软雅黑", 9F, FontStyle.Regular, GraphicsUnit.Point, 134));
@@ -1629,13 +1629,13 @@ namespace WinFormApp
             }
         }
 
-        // 鼠标进入 Label_Tab。
+        // 鼠标进入 Label_Tab
         private void Label_Tab_MouseEnter(object sender, EventArgs e)
         {
             Panel_FunctionAreaOptionsBar.Refresh();
         }
 
-        // 鼠标离开 Label_Tab。
+        // 鼠标离开 Label_Tab
         private void Label_Tab_MouseLeave(object sender, EventArgs e)
         {
             Panel_FunctionAreaOptionsBar.Refresh();
@@ -1765,13 +1765,13 @@ namespace WinFormApp
             }
         }
 
-        // 鼠标进入 Label_AnimationTab。
+        // 鼠标进入 Label_AnimationTab
         private void Label_AnimationTab_MouseEnter(object sender, EventArgs e)
         {
             Panel_AnimationTypesOptionsBar.Refresh();
         }
 
-        // 鼠标离开 Label_AnimationTab。
+        // 鼠标离开 Label_AnimationTab
         private void Label_AnimationTab_MouseLeave(object sender, EventArgs e)
         {
             Panel_AnimationTypesOptionsBar.Refresh();
@@ -3442,16 +3442,43 @@ namespace WinFormApp
 
         #region "关于"区域
 
-        private static readonly string URL_GitHub_Base = @"https://github.com/chibayuki/Livedesk"; // 此项目在 GitHub 的 URL。
-        private static readonly string URL_GitHub_Release = URL_GitHub_Base + @"/releases/latest"; // 此项目的最新发布版本在 GitHub 的 URL。
+        // 此项目在 GitHub 的 URL
+        private static readonly string URL_GitHub_Base = @"https://github.com/chibayuki/Livedesk";
+        // 此项目的最新发布版本在 GitHub 的 URL
+        private static readonly string URL_GitHub_Release = URL_GitHub_Base + @"/releases/latest";
 
-        // 单击 Label_GitHub_Base。
+        // 表示版本的字符串
+        private string BuildString
+        {
+            get
+            {
+                int Build = new Version(Application.ProductVersion).Build;
+                int Rel = 1;
+
+                foreach (Version Ver in Configuration.OldVersionList)
+                {
+                    if (Ver.Build == Build)
+                    {
+                        Rel++;
+                    }
+                }
+
+                if (Rel > 1)
+                {
+                    return string.Concat("Build ", Build, " R", Rel);
+                }
+
+                return string.Concat("Build ", Build);
+            }
+        }
+
+        // 单击 Label_GitHub_Base
         private void Label_GitHub_Base_Click(object sender, EventArgs e)
         {
             Process.Start(URL_GitHub_Base);
         }
 
-        // 单击 Label_GitHub_Release。
+        // 单击 Label_GitHub_Release
         private void Label_GitHub_Release_Click(object sender, EventArgs e)
         {
             Process.Start(URL_GitHub_Release);
