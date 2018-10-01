@@ -2182,6 +2182,9 @@ namespace WinFormApp
                 Animation.Animations.TrianglePiece.Settings.ColorMode = Animation.ColorModes.Random;
             }
 
+            CheckBox_TrianglePiece_GradientWhenRandom.Enabled = (Animation.Animations.TrianglePiece.Settings.ColorMode == Animation.ColorModes.Random);
+            TrackBar_TrianglePiece_GradientVelocity.Enabled = (Animation.Animations.TrianglePiece.Settings.ColorMode == Animation.ColorModes.Random && Animation.Animations.TrianglePiece.Settings.GradientWhenRandom);
+
             Label_TrianglePiece_Color_Val.Enabled = (Animation.Animations.TrianglePiece.Settings.ColorMode == Animation.ColorModes.Custom);
         }
 
@@ -2205,6 +2208,9 @@ namespace WinFormApp
             {
                 Animation.Animations.TrianglePiece.Settings.ColorMode = Animation.ColorModes.Custom;
             }
+
+            CheckBox_TrianglePiece_GradientWhenRandom.Enabled = (Animation.Animations.TrianglePiece.Settings.ColorMode == Animation.ColorModes.Random);
+            TrackBar_TrianglePiece_GradientVelocity.Enabled = (Animation.Animations.TrianglePiece.Settings.ColorMode == Animation.ColorModes.Random && Animation.Animations.TrianglePiece.Settings.GradientWhenRandom);
 
             Label_TrianglePiece_Color_Val.Enabled = (Animation.Animations.TrianglePiece.Settings.ColorMode == Animation.ColorModes.Custom);
         }
@@ -2375,6 +2381,9 @@ namespace WinFormApp
                 Animation.Animations.Shine.Settings.ColorMode = Animation.ColorModes.Random;
             }
 
+            CheckBox_Shine_GradientWhenRandom.Enabled = (Animation.Animations.Shine.Settings.ColorMode == Animation.ColorModes.Random);
+            TrackBar_Shine_GradientVelocity.Enabled = (Animation.Animations.Shine.Settings.ColorMode == Animation.ColorModes.Random && Animation.Animations.Shine.Settings.GradientWhenRandom);
+
             Label_Shine_Color_Val.Enabled = (Animation.Animations.Shine.Settings.ColorMode == Animation.ColorModes.Custom);
         }
 
@@ -2398,6 +2407,9 @@ namespace WinFormApp
             {
                 Animation.Animations.Shine.Settings.ColorMode = Animation.ColorModes.Custom;
             }
+
+            CheckBox_Shine_GradientWhenRandom.Enabled = (Animation.Animations.Shine.Settings.ColorMode == Animation.ColorModes.Random);
+            TrackBar_Shine_GradientVelocity.Enabled = (Animation.Animations.Shine.Settings.ColorMode == Animation.ColorModes.Random && Animation.Animations.Shine.Settings.GradientWhenRandom);
 
             Label_Shine_Color_Val.Enabled = (Animation.Animations.Shine.Settings.ColorMode == Animation.ColorModes.Custom);
         }
@@ -2573,6 +2585,9 @@ namespace WinFormApp
                 Animation.Animations.Meteor.Settings.ColorMode = Animation.ColorModes.Random;
             }
 
+            CheckBox_Meteor_GradientWhenRandom.Enabled = (Animation.Animations.Meteor.Settings.ColorMode == Animation.ColorModes.Random);
+            TrackBar_Meteor_GradientVelocity.Enabled = (Animation.Animations.Meteor.Settings.ColorMode == Animation.ColorModes.Random && Animation.Animations.Meteor.Settings.GradientWhenRandom);
+
             Label_Meteor_Color_Val.Enabled = (Animation.Animations.Meteor.Settings.ColorMode == Animation.ColorModes.Custom);
         }
 
@@ -2596,6 +2611,9 @@ namespace WinFormApp
             {
                 Animation.Animations.Meteor.Settings.ColorMode = Animation.ColorModes.Custom;
             }
+
+            CheckBox_Meteor_GradientWhenRandom.Enabled = (Animation.Animations.Meteor.Settings.ColorMode == Animation.ColorModes.Random);
+            TrackBar_Meteor_GradientVelocity.Enabled = (Animation.Animations.Meteor.Settings.ColorMode == Animation.ColorModes.Random && Animation.Animations.Meteor.Settings.GradientWhenRandom);
 
             Label_Meteor_Color_Val.Enabled = (Animation.Animations.Meteor.Settings.ColorMode == Animation.ColorModes.Custom);
         }
@@ -2741,6 +2759,9 @@ namespace WinFormApp
                 Animation.Animations.Snow.Settings.ColorMode = Animation.ColorModes.Random;
             }
 
+            CheckBox_Snow_GradientWhenRandom.Enabled = (Animation.Animations.Snow.Settings.ColorMode == Animation.ColorModes.Random);
+            TrackBar_Snow_GradientVelocity.Enabled = (Animation.Animations.Snow.Settings.ColorMode == Animation.ColorModes.Random && Animation.Animations.Snow.Settings.GradientWhenRandom);
+
             Label_Snow_Color_Val.Enabled = (Animation.Animations.Snow.Settings.ColorMode == Animation.ColorModes.Custom);
         }
 
@@ -2764,6 +2785,9 @@ namespace WinFormApp
             {
                 Animation.Animations.Snow.Settings.ColorMode = Animation.ColorModes.Custom;
             }
+
+            CheckBox_Snow_GradientWhenRandom.Enabled = (Animation.Animations.Snow.Settings.ColorMode == Animation.ColorModes.Random);
+            TrackBar_Snow_GradientVelocity.Enabled = (Animation.Animations.Snow.Settings.ColorMode == Animation.ColorModes.Random && Animation.Animations.Snow.Settings.GradientWhenRandom);
 
             Label_Snow_Color_Val.Enabled = (Animation.Animations.Snow.Settings.ColorMode == Animation.ColorModes.Custom);
         }
@@ -2929,6 +2953,9 @@ namespace WinFormApp
                 Animation.Animations.GravityParticle.Settings.ColorMode = Animation.ColorModes.Random;
             }
 
+            CheckBox_GravityParticle_GradientWhenRandom.Enabled = (Animation.Animations.GravityParticle.Settings.ColorMode == Animation.ColorModes.Random);
+            TrackBar_GravityParticle_GradientVelocity.Enabled = (Animation.Animations.GravityParticle.Settings.ColorMode == Animation.ColorModes.Random && Animation.Animations.GravityParticle.Settings.GradientWhenRandom);
+
             Label_GravityParticle_Color_Val.Enabled = (Animation.Animations.GravityParticle.Settings.ColorMode == Animation.ColorModes.Custom);
         }
 
@@ -2952,6 +2979,9 @@ namespace WinFormApp
             {
                 Animation.Animations.GravityParticle.Settings.ColorMode = Animation.ColorModes.Custom;
             }
+
+            CheckBox_GravityParticle_GradientWhenRandom.Enabled = (Animation.Animations.GravityParticle.Settings.ColorMode == Animation.ColorModes.Random);
+            TrackBar_GravityParticle_GradientVelocity.Enabled = (Animation.Animations.GravityParticle.Settings.ColorMode == Animation.ColorModes.Random && Animation.Animations.GravityParticle.Settings.GradientWhenRandom);
 
             Label_GravityParticle_Color_Val.Enabled = (Animation.Animations.GravityParticle.Settings.ColorMode == Animation.ColorModes.Custom);
         }
@@ -3104,6 +3134,9 @@ namespace WinFormApp
                 Animation.Animations.GravityGrid.Settings.ColorMode = Animation.ColorModes.Random;
             }
 
+            CheckBox_GravityGrid_GradientWhenRandom.Enabled = (Animation.Animations.GravityGrid.Settings.ColorMode == Animation.ColorModes.Random);
+            TrackBar_GravityGrid_GradientVelocity.Enabled = (Animation.Animations.GravityGrid.Settings.ColorMode == Animation.ColorModes.Random && Animation.Animations.GravityGrid.Settings.GradientWhenRandom);
+
             Label_GravityGrid_Color_Val.Enabled = (Animation.Animations.GravityGrid.Settings.ColorMode == Animation.ColorModes.Custom);
         }
 
@@ -3127,6 +3160,9 @@ namespace WinFormApp
             {
                 Animation.Animations.GravityGrid.Settings.ColorMode = Animation.ColorModes.Custom;
             }
+
+            CheckBox_GravityGrid_GradientWhenRandom.Enabled = (Animation.Animations.GravityGrid.Settings.ColorMode == Animation.ColorModes.Random);
+            TrackBar_GravityGrid_GradientVelocity.Enabled = (Animation.Animations.GravityGrid.Settings.ColorMode == Animation.ColorModes.Random && Animation.Animations.GravityGrid.Settings.GradientWhenRandom);
 
             Label_GravityGrid_Color_Val.Enabled = (Animation.Animations.GravityGrid.Settings.ColorMode == Animation.ColorModes.Custom);
         }
@@ -3310,6 +3346,9 @@ namespace WinFormApp
                 Animation.Animations.SpreadSpot.Settings.ColorMode = Animation.ColorModes.Random;
             }
 
+            CheckBox_SpreadSpot_GradientWhenRandom.Enabled = (Animation.Animations.SpreadSpot.Settings.ColorMode == Animation.ColorModes.Random);
+            TrackBar_SpreadSpot_GradientVelocity.Enabled = (Animation.Animations.SpreadSpot.Settings.ColorMode == Animation.ColorModes.Random && Animation.Animations.SpreadSpot.Settings.GradientWhenRandom);
+
             Label_SpreadSpot_Color_Val.Enabled = (Animation.Animations.SpreadSpot.Settings.ColorMode == Animation.ColorModes.Custom);
         }
 
@@ -3333,6 +3372,9 @@ namespace WinFormApp
             {
                 Animation.Animations.SpreadSpot.Settings.ColorMode = Animation.ColorModes.Custom;
             }
+
+            CheckBox_SpreadSpot_GradientWhenRandom.Enabled = (Animation.Animations.SpreadSpot.Settings.ColorMode == Animation.ColorModes.Random);
+            TrackBar_SpreadSpot_GradientVelocity.Enabled = (Animation.Animations.SpreadSpot.Settings.ColorMode == Animation.ColorModes.Random && Animation.Animations.SpreadSpot.Settings.GradientWhenRandom);
 
             Label_SpreadSpot_Color_Val.Enabled = (Animation.Animations.SpreadSpot.Settings.ColorMode == Animation.ColorModes.Custom);
         }

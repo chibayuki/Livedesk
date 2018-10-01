@@ -34,7 +34,8 @@ namespace WinFormApp
             new Version(1, 0, 1704, 470),
             new Version(1, 0, 1711, 0),
             new Version(1, 0, 1712, 0),
-            new Version(1, 0, 1712, 127)
+            new Version(1, 0, 1712, 127),/*
+            new Version(1, 0, 1807, 0)*/
         };
 
         // 根目录：此产品
@@ -75,18 +76,18 @@ namespace WinFormApp
 
                     while (OldVersionList_Copy.Count > 0)
                     {
-                        Version NewestVersion = OldVersionList_Copy[0];
+                        Version LatestVersion = OldVersionList_Copy[0];
 
                         foreach (Version Ver in OldVersionList_Copy)
                         {
-                            if (NewestVersion <= Ver)
+                            if (LatestVersion <= Ver)
                             {
-                                NewestVersion = Ver;
+                                LatestVersion = Ver;
                             }
                         }
 
-                        OldVersionList_Sorted.Add(NewestVersion);
-                        OldVersionList_Copy.Remove(NewestVersion);
+                        OldVersionList_Sorted.Add(LatestVersion);
+                        OldVersionList_Copy.Remove(LatestVersion);
                     }
 
                     for (int i = 0; i < OldVersionList_Sorted.Count; i++)
