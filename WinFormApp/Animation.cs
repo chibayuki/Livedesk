@@ -2,7 +2,7 @@
 Copyright © 2018 chibayuki@foxmail.com
 
 动态桌面
-Version 1.0.1807.0.R1.180720-1450
+Version 1.0.1807.25.R2.181002-1500
 
 This file is part of "动态桌面" (Livedesk)
 
