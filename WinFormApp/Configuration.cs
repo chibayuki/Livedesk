@@ -2,7 +2,7 @@
 Copyright © 2018 chibayuki@foxmail.com
 
 动态桌面
-Version 1.0.1807.25.R2.181002-1500
+Version 1.0.1807.25.R3.181103-0000
 
 This file is part of "动态桌面" (Livedesk)
 
@@ -35,7 +35,8 @@ namespace WinFormApp
             new Version(1, 0, 1711, 0),
             new Version(1, 0, 1712, 0),
             new Version(1, 0, 1712, 127),
-            new Version(1, 0, 1807, 0)
+            new Version(1, 0, 1807, 0),/*
+            new Version(1, 0, 1807, 25)*/
         };
 
         // 根目录：此产品

@@ -2,7 +2,7 @@
 Copyright © 2018 chibayuki@foxmail.com
 
 动态桌面
-Version 1.0.1807.25.R2.181002-1500
+Version 1.0.1807.25.R3.181103-0000
 
 This file is part of "动态桌面" (Livedesk)
 
@@ -616,7 +616,7 @@ namespace WinFormApp
                         Com.PointD3D Cr3D_From = new Com.PointD3D(InitialColor.R, InitialColor.G, InitialColor.B);
                         Com.PointD3D Cr3D_To = new Com.PointD3D(_DestinationColor.R, _DestinationColor.G, _DestinationColor.B);
                         Com.PointD3D Cr3D_Dist = Cr3D_To - Cr3D_From;
-                        double DistMod = Cr3D_Dist.VectorModule;
+                        double DistMod = Cr3D_Dist.Module;
                         double DistNow = (TotalSeconds - _TotalSecondsOfOldColors) * Settings.GradientVelocity;
 
                         if (DistNow >= DistMod)
@@ -628,7 +628,7 @@ namespace WinFormApp
                             _TotalSecondsOfOldColors = TotalSeconds;
                         }
 
-                        Com.PointD3D Cr3D_Now = Com.PointD3D.Max(new Com.PointD3D(0, 0, 0), Com.PointD3D.Min(Cr3D_From + DistNow * Cr3D_Dist.VectorNormalize, new Com.PointD3D(255, 255, 255)));
+                        Com.PointD3D Cr3D_Now = Com.PointD3D.Max(new Com.PointD3D(0, 0, 0), Com.PointD3D.Min(Cr3D_From + DistNow * Cr3D_Dist.Normalize, new Com.PointD3D(255, 255, 255)));
                         _CurrentColor = Color.FromArgb((int)Cr3D_Now.X, (int)Cr3D_Now.Y, (int)Cr3D_Now.Z);
                     }
                     else
@@ -1159,7 +1159,7 @@ namespace WinFormApp
                         Com.PointD3D Cr3D_From = new Com.PointD3D(InitialColor.R, InitialColor.G, InitialColor.B);
                         Com.PointD3D Cr3D_To = new Com.PointD3D(_DestinationColor.R, _DestinationColor.G, _DestinationColor.B);
                         Com.PointD3D Cr3D_Dist = Cr3D_To - Cr3D_From;
-                        double DistMod = Cr3D_Dist.VectorModule;
+                        double DistMod = Cr3D_Dist.Module;
                         double DistNow = (TotalSeconds - _TotalSecondsOfOldColors) * Settings.GradientVelocity;
 
                         if (DistNow >= DistMod)
@@ -1171,7 +1171,7 @@ namespace WinFormApp
                             _TotalSecondsOfOldColors = TotalSeconds;
                         }
 
-                        Com.PointD3D Cr3D_Now = Com.PointD3D.Max(new Com.PointD3D(0, 0, 0), Com.PointD3D.Min(Cr3D_From + DistNow * Cr3D_Dist.VectorNormalize, new Com.PointD3D(255, 255, 255)));
+                        Com.PointD3D Cr3D_Now = Com.PointD3D.Max(new Com.PointD3D(0, 0, 0), Com.PointD3D.Min(Cr3D_From + DistNow * Cr3D_Dist.Normalize, new Com.PointD3D(255, 255, 255)));
                         _CurrentColor = Color.FromArgb((int)Cr3D_Now.X, (int)Cr3D_Now.Y, (int)Cr3D_Now.Z);
                     }
                     else
@@ -1756,7 +1756,7 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                         Com.PointD3D Cr3D_From = new Com.PointD3D(InitialColor.R, InitialColor.G, InitialColor.B);
                         Com.PointD3D Cr3D_To = new Com.PointD3D(_DestinationColor.R, _DestinationColor.G, _DestinationColor.B);
                         Com.PointD3D Cr3D_Dist = Cr3D_To - Cr3D_From;
-                        double DistMod = Cr3D_Dist.VectorModule;
+                        double DistMod = Cr3D_Dist.Module;
                         double DistNow = (TotalSeconds - _TotalSecondsOfOldColors) * Settings.GradientVelocity;
 
                         if (DistNow >= DistMod)
@@ -1768,7 +1768,7 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                             _TotalSecondsOfOldColors = TotalSeconds;
                         }
 
-                        Com.PointD3D Cr3D_Now = Com.PointD3D.Max(new Com.PointD3D(0, 0, 0), Com.PointD3D.Min(Cr3D_From + DistNow * Cr3D_Dist.VectorNormalize, new Com.PointD3D(255, 255, 255)));
+                        Com.PointD3D Cr3D_Now = Com.PointD3D.Max(new Com.PointD3D(0, 0, 0), Com.PointD3D.Min(Cr3D_From + DistNow * Cr3D_Dist.Normalize, new Com.PointD3D(255, 255, 255)));
                         _CurrentColor = Color.FromArgb((int)Cr3D_Now.X, (int)Cr3D_Now.Y, (int)Cr3D_Now.Z);
                     }
                     else
@@ -2305,7 +2305,7 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                         Com.PointD3D Cr3D_From = new Com.PointD3D(InitialColor.R, InitialColor.G, InitialColor.B);
                         Com.PointD3D Cr3D_To = new Com.PointD3D(_DestinationColor.R, _DestinationColor.G, _DestinationColor.B);
                         Com.PointD3D Cr3D_Dist = Cr3D_To - Cr3D_From;
-                        double DistMod = Cr3D_Dist.VectorModule;
+                        double DistMod = Cr3D_Dist.Module;
                         double DistNow = (TotalSeconds - _TotalSecondsOfOldColors) * Settings.GradientVelocity;
 
                         if (DistNow >= DistMod)
@@ -2317,7 +2317,7 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                             _TotalSecondsOfOldColors = TotalSeconds;
                         }
 
-                        Com.PointD3D Cr3D_Now = Com.PointD3D.Max(new Com.PointD3D(0, 0, 0), Com.PointD3D.Min(Cr3D_From + DistNow * Cr3D_Dist.VectorNormalize, new Com.PointD3D(255, 255, 255)));
+                        Com.PointD3D Cr3D_Now = Com.PointD3D.Max(new Com.PointD3D(0, 0, 0), Com.PointD3D.Min(Cr3D_From + DistNow * Cr3D_Dist.Normalize, new Com.PointD3D(255, 255, 255)));
                         _CurrentColor = Color.FromArgb((int)Cr3D_Now.X, (int)Cr3D_Now.Y, (int)Cr3D_Now.Z);
                     }
                     else
@@ -2810,7 +2810,7 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                         Com.PointD3D Cr3D_From = new Com.PointD3D(InitialColor.R, InitialColor.G, InitialColor.B);
                         Com.PointD3D Cr3D_To = new Com.PointD3D(_DestinationColor.R, _DestinationColor.G, _DestinationColor.B);
                         Com.PointD3D Cr3D_Dist = Cr3D_To - Cr3D_From;
-                        double DistMod = Cr3D_Dist.VectorModule;
+                        double DistMod = Cr3D_Dist.Module;
                         double DistNow = (TotalSeconds - _TotalSecondsOfOldColors) * Settings.GradientVelocity;
 
                         if (DistNow >= DistMod)
@@ -2822,7 +2822,7 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                             _TotalSecondsOfOldColors = TotalSeconds;
                         }
 
-                        Com.PointD3D Cr3D_Now = Com.PointD3D.Max(new Com.PointD3D(0, 0, 0), Com.PointD3D.Min(Cr3D_From + DistNow * Cr3D_Dist.VectorNormalize, new Com.PointD3D(255, 255, 255)));
+                        Com.PointD3D Cr3D_Now = Com.PointD3D.Max(new Com.PointD3D(0, 0, 0), Com.PointD3D.Min(Cr3D_From + DistNow * Cr3D_Dist.Normalize, new Com.PointD3D(255, 255, 255)));
                         _CurrentColor = Color.FromArgb((int)Cr3D_Now.X, (int)Cr3D_Now.Y, (int)Cr3D_Now.Z);
                     }
                     else
@@ -3405,7 +3405,7 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                         Com.PointD3D Cr3D_From = new Com.PointD3D(InitialColor.R, InitialColor.G, InitialColor.B);
                         Com.PointD3D Cr3D_To = new Com.PointD3D(_DestinationColor.R, _DestinationColor.G, _DestinationColor.B);
                         Com.PointD3D Cr3D_Dist = Cr3D_To - Cr3D_From;
-                        double DistMod = Cr3D_Dist.VectorModule;
+                        double DistMod = Cr3D_Dist.Module;
                         double DistNow = _TotalSecondsOfCurrentColor * Settings.GradientVelocity;
 
                         if (DistNow >= DistMod)
@@ -3417,7 +3417,7 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                             _TotalSecondsOfCurrentColor = 0;
                         }
 
-                        Com.PointD3D Cr3D_Now = Com.PointD3D.Max(new Com.PointD3D(0, 0, 0), Com.PointD3D.Min(Cr3D_From + DistNow * Cr3D_Dist.VectorNormalize, new Com.PointD3D(255, 255, 255)));
+                        Com.PointD3D Cr3D_Now = Com.PointD3D.Max(new Com.PointD3D(0, 0, 0), Com.PointD3D.Min(Cr3D_From + DistNow * Cr3D_Dist.Normalize, new Com.PointD3D(255, 255, 255)));
                         _CurrentColor = Color.FromArgb((int)Cr3D_Now.X, (int)Cr3D_Now.Y, (int)Cr3D_Now.Z);
                     }
                     else
@@ -4031,7 +4031,7 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                         Com.PointD3D Cr3D_From = new Com.PointD3D(InitialColor.R, InitialColor.G, InitialColor.B);
                         Com.PointD3D Cr3D_To = new Com.PointD3D(_DestinationColor.R, _DestinationColor.G, _DestinationColor.B);
                         Com.PointD3D Cr3D_Dist = Cr3D_To - Cr3D_From;
-                        double DistMod = Cr3D_Dist.VectorModule;
+                        double DistMod = Cr3D_Dist.Module;
                         double DistNow = _TotalSecondsOfCurrentColor * Settings.GradientVelocity;
 
                         if (DistNow >= DistMod)
@@ -4043,7 +4043,7 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                             _TotalSecondsOfCurrentColor = 0;
                         }
 
-                        Com.PointD3D Cr3D_Now = Com.PointD3D.Max(new Com.PointD3D(0, 0, 0), Com.PointD3D.Min(Cr3D_From + DistNow * Cr3D_Dist.VectorNormalize, new Com.PointD3D(255, 255, 255)));
+                        Com.PointD3D Cr3D_Now = Com.PointD3D.Max(new Com.PointD3D(0, 0, 0), Com.PointD3D.Min(Cr3D_From + DistNow * Cr3D_Dist.Normalize, new Com.PointD3D(255, 255, 255)));
                         _CurrentColor = Color.FromArgb((int)Cr3D_Now.X, (int)Cr3D_Now.Y, (int)Cr3D_Now.Z);
                     }
                     else
@@ -4654,7 +4654,7 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                 private double TotalSeconds;
 
                 // 主显示的边界的对角线长度（像素）
-                private double _ScreenDiag => new Com.PointD(ScreenBounds.Size).VectorModule;
+                private double _ScreenDiag => new Com.PointD(ScreenBounds.Size).Module;
                 // 主显示的边界的中心位置（像素，像素）
                 private Com.PointD _ScreenCenter => new Com.PointD(ScreenBounds.Size) / 2;
 
@@ -4726,7 +4726,7 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                         Com.PointD3D Cr3D_From = new Com.PointD3D(InitialColor.R, InitialColor.G, InitialColor.B);
                         Com.PointD3D Cr3D_To = new Com.PointD3D(_DestinationColor.R, _DestinationColor.G, _DestinationColor.B);
                         Com.PointD3D Cr3D_Dist = Cr3D_To - Cr3D_From;
-                        double DistMod = Cr3D_Dist.VectorModule;
+                        double DistMod = Cr3D_Dist.Module;
                         double DistNow = (TotalSeconds - _TotalSecondsOfOldColors) * Settings.GradientVelocity;
 
                         if (DistNow >= DistMod)
@@ -4738,7 +4738,7 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                             _TotalSecondsOfOldColors = TotalSeconds;
                         }
 
-                        Com.PointD3D Cr3D_Now = Com.PointD3D.Max(new Com.PointD3D(0, 0, 0), Com.PointD3D.Min(Cr3D_From + DistNow * Cr3D_Dist.VectorNormalize, new Com.PointD3D(255, 255, 255)));
+                        Com.PointD3D Cr3D_Now = Com.PointD3D.Max(new Com.PointD3D(0, 0, 0), Com.PointD3D.Min(Cr3D_From + DistNow * Cr3D_Dist.Normalize, new Com.PointD3D(255, 255, 255)));
                         _CurrentColor = Color.FromArgb((int)Cr3D_Now.X, (int)Cr3D_Now.Y, (int)Cr3D_Now.Z);
                     }
                     else
