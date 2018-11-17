@@ -2013,7 +2013,7 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                                         {
                                             case GlowModes.OuterGlow:
                                                 {
-                                                    double Angle = Element.CurrentVelocity.VectorAngle;
+                                                    double Angle = Element.CurrentVelocity.Azimuth;
 
                                                     GraphicsPath Path_Outer_Outer = Element.Path;
                                                     GraphicsPath Path_Outer_Inner = new GraphicsPath();
@@ -2382,7 +2382,7 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                         Com.PointD Loc = new Com.PointD(_CL);
                         double _CR = CurrentRadius;
                         double _CLength = CurrentLength;
-                        double Angle = CurrentVelocity.VectorAngle;
+                        double Angle = CurrentVelocity.Azimuth;
 
                         GraphicsPath GP = new GraphicsPath();
                         GP.AddArc(new RectangleF((float)(_CL.X - _CR), (float)(_CL.Y - _CR), (float)(2 * _CR), (float)(2 * _CR)), (float)(Angle / Math.PI * 180 - 90), 180F);
