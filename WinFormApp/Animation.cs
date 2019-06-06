@@ -1,8 +1,8 @@
 ﻿/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-Copyright © 2018 chibayuki@foxmail.com
+Copyright © 2019 chibayuki@foxmail.com
 
-动态桌面
-Version 1.0.1807.25.R3.181103-0000
+动态桌面 (Livedesk)
+Version 1.0.1807.326.R3.190525-1400
 
 This file is part of "动态桌面" (Livedesk)
 

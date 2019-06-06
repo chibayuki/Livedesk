@@ -1,8 +1,8 @@
 ﻿/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-Copyright © 2018 chibayuki@foxmail.com
+Copyright © 2019 chibayuki@foxmail.com
 
-动态桌面
-Version 1.0.1807.25.R2.181002-1500
+动态桌面 (Livedesk)
+Version 1.0.1807.326.R3.190525-1400
 
 This file is part of "动态桌面" (Livedesk)
 
@@ -51,82 +51,244 @@ namespace WinFormApp
             // 构造 FormManager
             FormManager = new Com.WinForm.FormManager(new Form());
             FormManager.Theme = Com.WinForm.Theme.White;
-            FormManager.ThemeColor = new Com.ColorX(Color.White);
+            FormManager.ThemeColor = Color.White;
 
             // "动画"区域：圆形光点
-            TrackBar_LightSpot_MinRadius.ValueChanged += (s, e) => Label_LightSpot_MinRadius_Val.Text = ((int)(Animation.Animations.LightSpot.Settings.MinRadius * 100) * 0.01).ToString();
-            TrackBar_LightSpot_MaxRadius.ValueChanged += (s, e) => Label_LightSpot_MaxRadius_Val.Text = ((int)(Animation.Animations.LightSpot.Settings.MaxRadius * 100) * 0.01).ToString();
-            TrackBar_LightSpot_Count.ValueChanged += (s, e) => Label_LightSpot_Count_Val.Text = Animation.Animations.LightSpot.Settings.Count.ToString();
-            TrackBar_LightSpot_Amplitude.ValueChanged += (s, e) => Label_LightSpot_Amplitude_Val.Text = ((int)(Animation.Animations.LightSpot.Settings.Amplitude * 100) * 0.01).ToString();
-            TrackBar_LightSpot_WaveLength.ValueChanged += (s, e) => Label_LightSpot_WaveLength_Val.Text = ((int)(Animation.Animations.LightSpot.Settings.WaveLength * 10) * 0.1).ToString();
-            TrackBar_LightSpot_WaveVelocity.ValueChanged += (s, e) => Label_LightSpot_WaveVelocity_Val.Text = ((int)(Animation.Animations.LightSpot.Settings.WaveVelocity * 100) * 0.01).ToString();
-            TrackBar_LightSpot_GradientVelocity.ValueChanged += (s, e) => Label_LightSpot_GradientVelocity_Val.Text = ((int)(Animation.Animations.LightSpot.Settings.GradientVelocity * 10) * 0.1).ToString();
+            EventHandler Set_Label_LightSpot_MinRadius_Val_Text = (s, e) => Label_LightSpot_MinRadius_Val.Text = ((int)(Animation.Animations.LightSpot.Settings.MinRadius * 100) * 0.01).ToString();
+            this.Load += Set_Label_LightSpot_MinRadius_Val_Text;
+            TrackBar_LightSpot_MinRadius.ValueChanged += Set_Label_LightSpot_MinRadius_Val_Text;
+
+            EventHandler Set_Label_LightSpot_MaxRadius_Val_Text = (s, e) => Label_LightSpot_MaxRadius_Val.Text = ((int)(Animation.Animations.LightSpot.Settings.MaxRadius * 100) * 0.01).ToString();
+            this.Load += Set_Label_LightSpot_MaxRadius_Val_Text;
+            TrackBar_LightSpot_MaxRadius.ValueChanged += Set_Label_LightSpot_MaxRadius_Val_Text;
+
+            EventHandler Set_Label_LightSpot_Count_Val_Text = (s, e) => Label_LightSpot_Count_Val.Text = Animation.Animations.LightSpot.Settings.Count.ToString();
+            this.Load += Set_Label_LightSpot_Count_Val_Text;
+            TrackBar_LightSpot_Count.ValueChanged += Set_Label_LightSpot_Count_Val_Text;
+
+            EventHandler Set_Label_LightSpot_Amplitude_Val_Text = (s, e) => Label_LightSpot_Amplitude_Val.Text = ((int)(Animation.Animations.LightSpot.Settings.Amplitude * 100) * 0.01).ToString();
+            this.Load += Set_Label_LightSpot_Amplitude_Val_Text;
+            TrackBar_LightSpot_Amplitude.ValueChanged += Set_Label_LightSpot_Amplitude_Val_Text;
+
+            EventHandler Set_Label_LightSpot_WaveLength_Val_Text = (s, e) => Label_LightSpot_WaveLength_Val.Text = ((int)(Animation.Animations.LightSpot.Settings.WaveLength * 10) * 0.1).ToString();
+            this.Load += Set_Label_LightSpot_WaveLength_Val_Text;
+            TrackBar_LightSpot_WaveLength.ValueChanged += Set_Label_LightSpot_WaveLength_Val_Text;
+
+            EventHandler Set_Label_LightSpot_WaveVelocity_Val_Text = (s, e) => Label_LightSpot_WaveVelocity_Val.Text = ((int)(Animation.Animations.LightSpot.Settings.WaveVelocity * 100) * 0.01).ToString();
+            this.Load += Set_Label_LightSpot_WaveVelocity_Val_Text;
+            TrackBar_LightSpot_WaveVelocity.ValueChanged += Set_Label_LightSpot_WaveVelocity_Val_Text;
+
+            EventHandler Set_Label_LightSpot_GradientVelocity_Val_Text = (s, e) => Label_LightSpot_GradientVelocity_Val.Text = ((int)(Animation.Animations.LightSpot.Settings.GradientVelocity * 10) * 0.1).ToString();
+            this.Load += Set_Label_LightSpot_GradientVelocity_Val_Text;
+            TrackBar_LightSpot_GradientVelocity.ValueChanged += Set_Label_LightSpot_GradientVelocity_Val_Text;
 
             // "动画"区域：三角形碎片
-            TrackBar_TrianglePiece_MinRadius.ValueChanged += (s, e) => Label_TrianglePiece_MinRadius_Val.Text = ((int)(Animation.Animations.TrianglePiece.Settings.MinRadius * 10) * 0.1).ToString();
-            TrackBar_TrianglePiece_MaxRadius.ValueChanged += (s, e) => Label_TrianglePiece_MaxRadius_Val.Text = ((int)(Animation.Animations.TrianglePiece.Settings.MaxRadius * 10) * 0.1).ToString();
-            TrackBar_TrianglePiece_Count.ValueChanged += (s, e) => Label_TrianglePiece_Count_Val.Text = Animation.Animations.TrianglePiece.Settings.Count.ToString();
-            TrackBar_TrianglePiece_Amplitude.ValueChanged += (s, e) => Label_TrianglePiece_Amplitude_Val.Text = ((int)(Animation.Animations.TrianglePiece.Settings.Amplitude * 100) * 0.01).ToString();
-            TrackBar_TrianglePiece_WaveLength.ValueChanged += (s, e) => Label_TrianglePiece_WaveLength_Val.Text = ((int)(Animation.Animations.TrianglePiece.Settings.WaveLength * 10) * 0.1).ToString();
-            TrackBar_TrianglePiece_WaveVelocity.ValueChanged += (s, e) => Label_TrianglePiece_WaveVelocity_Val.Text = ((int)(Animation.Animations.TrianglePiece.Settings.WaveVelocity * 100) * 0.01).ToString();
-            TrackBar_TrianglePiece_GradientVelocity.ValueChanged += (s, e) => Label_TrianglePiece_GradientVelocity_Val.Text = ((int)(Animation.Animations.TrianglePiece.Settings.GradientVelocity * 10) * 0.1).ToString();
+            EventHandler Set_Label_TrianglePiece_MinRadius_Val_Text = (s, e) => Label_TrianglePiece_MinRadius_Val.Text = ((int)(Animation.Animations.TrianglePiece.Settings.MinRadius * 10) * 0.1).ToString();
+            this.Load += Set_Label_TrianglePiece_MinRadius_Val_Text;
+            TrackBar_TrianglePiece_MinRadius.ValueChanged += Set_Label_TrianglePiece_MinRadius_Val_Text;
+
+            EventHandler Set_Label_TrianglePiece_MaxRadius_Val_Text = (s, e) => Label_TrianglePiece_MaxRadius_Val.Text = ((int)(Animation.Animations.TrianglePiece.Settings.MaxRadius * 10) * 0.1).ToString();
+            this.Load += Set_Label_TrianglePiece_MaxRadius_Val_Text;
+            TrackBar_TrianglePiece_MaxRadius.ValueChanged += Set_Label_TrianglePiece_MaxRadius_Val_Text;
+
+            EventHandler Set_Label_TrianglePiece_Count_Val_Text = (s, e) => Label_TrianglePiece_Count_Val.Text = Animation.Animations.TrianglePiece.Settings.Count.ToString();
+            this.Load += Set_Label_TrianglePiece_Count_Val_Text;
+            TrackBar_TrianglePiece_Count.ValueChanged += Set_Label_TrianglePiece_Count_Val_Text;
+
+            EventHandler Set_Label_TrianglePiece_Amplitude_Val_Text = (s, e) => Label_TrianglePiece_Amplitude_Val.Text = ((int)(Animation.Animations.TrianglePiece.Settings.Amplitude * 100) * 0.01).ToString();
+            this.Load += Set_Label_TrianglePiece_Amplitude_Val_Text;
+            TrackBar_TrianglePiece_Amplitude.ValueChanged += Set_Label_TrianglePiece_Amplitude_Val_Text;
+
+            EventHandler Set_Label_TrianglePiece_WaveLength_Val_Text = (s, e) => Label_TrianglePiece_WaveLength_Val.Text = ((int)(Animation.Animations.TrianglePiece.Settings.WaveLength * 10) * 0.1).ToString();
+            this.Load += Set_Label_TrianglePiece_WaveLength_Val_Text;
+            TrackBar_TrianglePiece_WaveLength.ValueChanged += Set_Label_TrianglePiece_WaveLength_Val_Text;
+
+            EventHandler Set_Label_TrianglePiece_WaveVelocity_Val_Text = (s, e) => Label_TrianglePiece_WaveVelocity_Val.Text = ((int)(Animation.Animations.TrianglePiece.Settings.WaveVelocity * 100) * 0.01).ToString();
+            this.Load += Set_Label_TrianglePiece_WaveVelocity_Val_Text;
+            TrackBar_TrianglePiece_WaveVelocity.ValueChanged += Set_Label_TrianglePiece_WaveVelocity_Val_Text;
+
+            EventHandler Set_Label_TrianglePiece_GradientVelocity_Val_Text = (s, e) => Label_TrianglePiece_GradientVelocity_Val.Text = ((int)(Animation.Animations.TrianglePiece.Settings.GradientVelocity * 10) * 0.1).ToString();
+            this.Load += Set_Label_TrianglePiece_GradientVelocity_Val_Text;
+            TrackBar_TrianglePiece_GradientVelocity.ValueChanged += Set_Label_TrianglePiece_GradientVelocity_Val_Text;
 
             // "动画"区域：光芒
-            TrackBar_Shine_MinRadius.ValueChanged += (s, e) => Label_Shine_MinRadius_Val.Text = ((int)(Animation.Animations.Shine.Settings.MinRadius * 10) * 0.1).ToString();
-            TrackBar_Shine_MaxRadius.ValueChanged += (s, e) => Label_Shine_MaxRadius_Val.Text = ((int)(Animation.Animations.Shine.Settings.MaxRadius * 10) * 0.1).ToString();
-            TrackBar_Shine_Count.ValueChanged += (s, e) => Label_Shine_Count_Val.Text = Animation.Animations.Shine.Settings.Count.ToString();
-            TrackBar_Shine_Displacement.ValueChanged += (s, e) => Label_Shine_Displacement_Val.Text = ((int)(Animation.Animations.Shine.Settings.Displacement * 100) * 0.01).ToString();
-            TrackBar_Shine_MinPeriod.ValueChanged += (s, e) => Label_Shine_MinPeriod_Val.Text = ((int)(Animation.Animations.Shine.Settings.MinPeriod * 100) * 0.01).ToString();
-            TrackBar_Shine_MaxPeriod.ValueChanged += (s, e) => Label_Shine_MaxPeriod_Val.Text = ((int)(Animation.Animations.Shine.Settings.MaxPeriod * 100) * 0.01).ToString();
-            TrackBar_Shine_GradientVelocity.ValueChanged += (s, e) => Label_Shine_GradientVelocity_Val.Text = ((int)(Animation.Animations.Shine.Settings.GradientVelocity * 10) * 0.1).ToString();
+            EventHandler Set_Label_Shine_MinRadius_Val_Text = (s, e) => Label_Shine_MinRadius_Val.Text = ((int)(Animation.Animations.Shine.Settings.MinRadius * 10) * 0.1).ToString();
+            this.Load += Set_Label_Shine_MinRadius_Val_Text;
+            TrackBar_Shine_MinRadius.ValueChanged += Set_Label_Shine_MinRadius_Val_Text;
+
+            EventHandler Set_Label_Shine_MaxRadius_Val_Text = (s, e) => Label_Shine_MaxRadius_Val.Text = ((int)(Animation.Animations.Shine.Settings.MaxRadius * 10) * 0.1).ToString();
+            this.Load += Set_Label_Shine_MaxRadius_Val_Text;
+            TrackBar_Shine_MaxRadius.ValueChanged += Set_Label_Shine_MaxRadius_Val_Text;
+
+            EventHandler Set_Label_Shine_Count_Val_Text = (s, e) => Label_Shine_Count_Val.Text = Animation.Animations.Shine.Settings.Count.ToString();
+            this.Load += Set_Label_Shine_Count_Val_Text;
+            TrackBar_Shine_Count.ValueChanged += Set_Label_Shine_Count_Val_Text;
+
+            EventHandler Set_Label_Shine_Displacement_Val_Text = (s, e) => Label_Shine_Displacement_Val.Text = ((int)(Animation.Animations.Shine.Settings.Displacement * 100) * 0.01).ToString();
+            this.Load += Set_Label_Shine_Displacement_Val_Text;
+            TrackBar_Shine_Displacement.ValueChanged += Set_Label_Shine_Displacement_Val_Text;
+
+            EventHandler Set_Label_Shine_MinPeriod_Val_Text = (s, e) => Label_Shine_MinPeriod_Val.Text = ((int)(Animation.Animations.Shine.Settings.MinPeriod * 100) * 0.01).ToString();
+            this.Load += Set_Label_Shine_MinPeriod_Val_Text;
+            TrackBar_Shine_MinPeriod.ValueChanged += Set_Label_Shine_MinPeriod_Val_Text;
+
+            EventHandler Set_Label_Shine_MaxPeriod_Val_Text = (s, e) => Label_Shine_MaxPeriod_Val.Text = ((int)(Animation.Animations.Shine.Settings.MaxPeriod * 100) * 0.01).ToString();
+            this.Load += Set_Label_Shine_MaxPeriod_Val_Text;
+            TrackBar_Shine_MaxPeriod.ValueChanged += Set_Label_Shine_MaxPeriod_Val_Text;
+
+            EventHandler Set_Label_Shine_GradientVelocity_Val_Text = (s, e) => Label_Shine_GradientVelocity_Val.Text = ((int)(Animation.Animations.Shine.Settings.GradientVelocity * 10) * 0.1).ToString();
+            this.Load += Set_Label_Shine_GradientVelocity_Val_Text;
+            TrackBar_Shine_GradientVelocity.ValueChanged += Set_Label_Shine_GradientVelocity_Val_Text;
 
             // "动画"区域：流星
-            TrackBar_Meteor_MinRadius.ValueChanged += (s, e) => Label_Meteor_MinRadius_Val.Text = ((int)(Animation.Animations.Meteor.Settings.MinRadius * 100) * 0.01).ToString();
-            TrackBar_Meteor_MaxRadius.ValueChanged += (s, e) => Label_Meteor_MaxRadius_Val.Text = ((int)(Animation.Animations.Meteor.Settings.MaxRadius * 100) * 0.01).ToString();
-            TrackBar_Meteor_Length.ValueChanged += (s, e) => Label_Meteor_Length_Val.Text = ((int)(Animation.Animations.Meteor.Settings.Length * 10) * 0.1).ToString();
-            TrackBar_Meteor_Count.ValueChanged += (s, e) => Label_Meteor_Count_Val.Text = Animation.Animations.Meteor.Settings.Count.ToString();
-            TrackBar_Meteor_Velocity.ValueChanged += (s, e) => Label_Meteor_Velocity_Val.Text = ((int)(Animation.Animations.Meteor.Settings.Velocity * 10) * 0.1).ToString();
-            TrackBar_Meteor_Angle.ValueChanged += (s, e) => Label_Meteor_Angle_Val.Text = ((int)(Animation.Animations.Meteor.Settings.Angle * 10) * 0.1).ToString();
-            TrackBar_Meteor_GravitationalAcceleration.ValueChanged += (s, e) => Label_Meteor_GravitationalAcceleration_Val.Text = ((int)(Animation.Animations.Meteor.Settings.GravitationalAcceleration * 100) * 0.01).ToString();
-            TrackBar_Meteor_GradientVelocity.ValueChanged += (s, e) => Label_Meteor_GradientVelocity_Val.Text = ((int)(Animation.Animations.Meteor.Settings.GradientVelocity * 10) * 0.1).ToString();
+            EventHandler Set_Label_Meteor_MinRadius_Val_Text = (s, e) => Label_Meteor_MinRadius_Val.Text = ((int)(Animation.Animations.Meteor.Settings.MinRadius * 100) * 0.01).ToString();
+            this.Load += Set_Label_Meteor_MinRadius_Val_Text;
+            TrackBar_Meteor_MinRadius.ValueChanged += Set_Label_Meteor_MinRadius_Val_Text;
+
+            EventHandler Set_Label_Meteor_MaxRadius_Val_Text = (s, e) => Label_Meteor_MaxRadius_Val.Text = ((int)(Animation.Animations.Meteor.Settings.MaxRadius * 100) * 0.01).ToString();
+            this.Load += Set_Label_Meteor_MaxRadius_Val_Text;
+            TrackBar_Meteor_MaxRadius.ValueChanged += Set_Label_Meteor_MaxRadius_Val_Text;
+
+            EventHandler Set_Label_Meteor_Length_Val_Text = (s, e) => Label_Meteor_Length_Val.Text = ((int)(Animation.Animations.Meteor.Settings.Length * 10) * 0.1).ToString();
+            this.Load += Set_Label_Meteor_Length_Val_Text;
+            TrackBar_Meteor_Length.ValueChanged += Set_Label_Meteor_Length_Val_Text;
+
+            EventHandler Set_Label_Meteor_Count_Val_Text = (s, e) => Label_Meteor_Count_Val.Text = Animation.Animations.Meteor.Settings.Count.ToString();
+            this.Load += Set_Label_Meteor_Count_Val_Text;
+            TrackBar_Meteor_Count.ValueChanged += Set_Label_Meteor_Count_Val_Text;
+
+            EventHandler Set_Label_Meteor_Velocity_Val_Text = (s, e) => Label_Meteor_Velocity_Val.Text = ((int)(Animation.Animations.Meteor.Settings.Velocity * 10) * 0.1).ToString();
+            this.Load += Set_Label_Meteor_Velocity_Val_Text;
+            TrackBar_Meteor_Velocity.ValueChanged += Set_Label_Meteor_Velocity_Val_Text;
+
+            EventHandler Set_Label_Meteor_Angle_Val_Text = (s, e) => Label_Meteor_Angle_Val.Text = ((int)(Animation.Animations.Meteor.Settings.Angle * 10) * 0.1).ToString();
+            this.Load += Set_Label_Meteor_Angle_Val_Text;
+            TrackBar_Meteor_Angle.ValueChanged += Set_Label_Meteor_Angle_Val_Text;
+
+            EventHandler Set_Label_Meteor_GravitationalAcceleration_Val_Text = (s, e) => Label_Meteor_GravitationalAcceleration_Val.Text = ((int)(Animation.Animations.Meteor.Settings.GravitationalAcceleration * 100) * 0.01).ToString();
+            this.Load += Set_Label_Meteor_GravitationalAcceleration_Val_Text;
+            TrackBar_Meteor_GravitationalAcceleration.ValueChanged += Set_Label_Meteor_GravitationalAcceleration_Val_Text;
+
+            EventHandler Set_Label_Meteor_GradientVelocity_Val_Text = (s, e) => Label_Meteor_GradientVelocity_Val.Text = ((int)(Animation.Animations.Meteor.Settings.GradientVelocity * 10) * 0.1).ToString();
+            this.Load += Set_Label_Meteor_GradientVelocity_Val_Text;
+            TrackBar_Meteor_GradientVelocity.ValueChanged += Set_Label_Meteor_GradientVelocity_Val_Text;
 
             // "动画"区域：雪
-            TrackBar_Snow_MinRadius.ValueChanged += (s, e) => Label_Snow_MinRadius_Val.Text = ((int)(Animation.Animations.Snow.Settings.MinRadius * 100) * 0.01).ToString();
-            TrackBar_Snow_MaxRadius.ValueChanged += (s, e) => Label_Snow_MaxRadius_Val.Text = ((int)(Animation.Animations.Snow.Settings.MaxRadius * 100) * 0.01).ToString();
-            TrackBar_Snow_Count.ValueChanged += (s, e) => Label_Snow_Count_Val.Text = Animation.Animations.Snow.Settings.Count.ToString();
-            TrackBar_Snow_Velocity.ValueChanged += (s, e) => Label_Snow_Velocity_Val.Text = ((int)(Animation.Animations.Snow.Settings.Velocity * 10) * 0.1).ToString();
-            TrackBar_Snow_GradientVelocity.ValueChanged += (s, e) => Label_Snow_GradientVelocity_Val.Text = ((int)(Animation.Animations.Snow.Settings.GradientVelocity * 10) * 0.1).ToString();
+            EventHandler Set_Label_Snow_MinRadius_Val_Text = (s, e) => Label_Snow_MinRadius_Val.Text = ((int)(Animation.Animations.Snow.Settings.MinRadius * 100) * 0.01).ToString();
+            this.Load += Set_Label_Snow_MinRadius_Val_Text;
+            TrackBar_Snow_MinRadius.ValueChanged += Set_Label_Snow_MinRadius_Val_Text;
+
+            EventHandler Set_Label_Snow_MaxRadius_Val_Text = (s, e) => Label_Snow_MaxRadius_Val.Text = ((int)(Animation.Animations.Snow.Settings.MaxRadius * 100) * 0.01).ToString();
+            this.Load += Set_Label_Snow_MaxRadius_Val_Text;
+            TrackBar_Snow_MaxRadius.ValueChanged += Set_Label_Snow_MaxRadius_Val_Text;
+
+            EventHandler Set_Label_Snow_Count_Val_Text = (s, e) => Label_Snow_Count_Val.Text = Animation.Animations.Snow.Settings.Count.ToString();
+            this.Load += Set_Label_Snow_Count_Val_Text;
+            TrackBar_Snow_Count.ValueChanged += Set_Label_Snow_Count_Val_Text;
+
+            EventHandler Set_Label_Snow_Velocity_Val_Text = (s, e) => Label_Snow_Velocity_Val.Text = ((int)(Animation.Animations.Snow.Settings.Velocity * 10) * 0.1).ToString();
+            this.Load += Set_Label_Snow_Velocity_Val_Text;
+            TrackBar_Snow_Velocity.ValueChanged += Set_Label_Snow_Velocity_Val_Text;
+
+            EventHandler Set_Label_Snow_GradientVelocity_Val_Text = (s, e) => Label_Snow_GradientVelocity_Val.Text = ((int)(Animation.Animations.Snow.Settings.GradientVelocity * 10) * 0.1).ToString();
+            this.Load += Set_Label_Snow_GradientVelocity_Val_Text;
+            TrackBar_Snow_GradientVelocity.ValueChanged += Set_Label_Snow_GradientVelocity_Val_Text;
 
             // "动画"区域：引力粒子
-            TrackBar_GravityParticle_MinMass.ValueChanged += (s, e) => Label_GravityParticle_MinMass_Val.Text = ((int)Animation.Animations.GravityParticle.Settings.MinMass).ToString();
-            TrackBar_GravityParticle_MaxMass.ValueChanged += (s, e) => Label_GravityParticle_MaxMass_Val.Text = ((int)Animation.Animations.GravityParticle.Settings.MaxMass).ToString();
-            TrackBar_GravityParticle_Count.ValueChanged += (s, e) => Label_GravityParticle_Count_Val.Text = Animation.Animations.GravityParticle.Settings.Count.ToString();
-            TrackBar_GravityParticle_CursorMass.ValueChanged += (s, e) => Label_GravityParticle_CursorMass_Val.Text = ((int)Animation.Animations.GravityParticle.Settings.CursorMass).ToString();
-            TrackBar_GravityParticle_GravityConstant.ValueChanged += (s, e) => Label_GravityParticle_GravityConstant_Val.Text = ((int)(Animation.Animations.GravityParticle.Settings.GravityConstant * 100) * 0.01).ToString();
-            TrackBar_GravityParticle_ElasticRestitutionCoefficient.ValueChanged += (s, e) => Label_GravityParticle_ElasticRestitutionCoefficient_Val.Text = ((int)(Animation.Animations.GravityParticle.Settings.ElasticRestitutionCoefficient * 1000) * 0.001).ToString();
-            TrackBar_GravityParticle_GradientVelocity.ValueChanged += (s, e) => Label_GravityParticle_GradientVelocity_Val.Text = ((int)(Animation.Animations.GravityParticle.Settings.GradientVelocity * 10) * 0.1).ToString();
+            EventHandler Set_Label_GravityParticle_MinMass_Val_Text = (s, e) => Label_GravityParticle_MinMass_Val.Text = ((int)Animation.Animations.GravityParticle.Settings.MinMass).ToString();
+            this.Load += Set_Label_GravityParticle_MinMass_Val_Text;
+            TrackBar_GravityParticle_MinMass.ValueChanged += Set_Label_GravityParticle_MinMass_Val_Text;
+
+            EventHandler Set_Label_GravityParticle_MaxMass_Val_Text = (s, e) => Label_GravityParticle_MaxMass_Val.Text = ((int)Animation.Animations.GravityParticle.Settings.MaxMass).ToString();
+            this.Load += Set_Label_GravityParticle_MaxMass_Val_Text;
+            TrackBar_GravityParticle_MaxMass.ValueChanged += Set_Label_GravityParticle_MaxMass_Val_Text;
+
+            EventHandler Set_Label_GravityParticle_Count_Val_Text = (s, e) => Label_GravityParticle_Count_Val.Text = Animation.Animations.GravityParticle.Settings.Count.ToString();
+            this.Load += Set_Label_GravityParticle_Count_Val_Text;
+            TrackBar_GravityParticle_Count.ValueChanged += Set_Label_GravityParticle_Count_Val_Text;
+
+            EventHandler Set_Label_GravityParticle_CursorMass_Val_Text = (s, e) => Label_GravityParticle_CursorMass_Val.Text = ((int)Animation.Animations.GravityParticle.Settings.CursorMass).ToString();
+            this.Load += Set_Label_GravityParticle_CursorMass_Val_Text;
+            TrackBar_GravityParticle_CursorMass.ValueChanged += Set_Label_GravityParticle_CursorMass_Val_Text;
+
+            EventHandler Set_Label_GravityParticle_GravityConstant_Val_Text = (s, e) => Label_GravityParticle_GravityConstant_Val.Text = ((int)(Animation.Animations.GravityParticle.Settings.GravityConstant * 100) * 0.01).ToString();
+            this.Load += Set_Label_GravityParticle_GravityConstant_Val_Text;
+            TrackBar_GravityParticle_GravityConstant.ValueChanged += Set_Label_GravityParticle_GravityConstant_Val_Text;
+
+            EventHandler Set_Label_GravityParticle_ElasticRestitutionCoefficient_Val_Text = (s, e) => Label_GravityParticle_ElasticRestitutionCoefficient_Val.Text = ((int)(Animation.Animations.GravityParticle.Settings.ElasticRestitutionCoefficient * 1000) * 0.001).ToString();
+            this.Load += Set_Label_GravityParticle_ElasticRestitutionCoefficient_Val_Text;
+            TrackBar_GravityParticle_ElasticRestitutionCoefficient.ValueChanged += Set_Label_GravityParticle_ElasticRestitutionCoefficient_Val_Text;
+
+            EventHandler Set_Label_GravityParticle_GradientVelocity_Val_Text = (s, e) => Label_GravityParticle_GradientVelocity_Val.Text = ((int)(Animation.Animations.GravityParticle.Settings.GradientVelocity * 10) * 0.1).ToString();
+            this.Load += Set_Label_GravityParticle_GradientVelocity_Val_Text;
+            TrackBar_GravityParticle_GradientVelocity.ValueChanged += Set_Label_GravityParticle_GradientVelocity_Val_Text;
 
             // "动画"区域：引力网
-            TrackBar_GravityGrid_Radius.ValueChanged += (s, e) => Label_GravityGrid_Radius_Val.Text = ((int)(Animation.Animations.GravityGrid.Settings.Radius * 100) * 0.01).ToString();
-            TrackBar_GravityGrid_Count.ValueChanged += (s, e) => Label_GravityGrid_Count_Val.Text = Animation.Animations.GravityGrid.Settings.Count.ToString();
-            TrackBar_GravityGrid_LineWidth.ValueChanged += (s, e) => Label_GravityGrid_LineWidth_Val.Text = ((int)(Animation.Animations.GravityGrid.Settings.LineWidth * 100) * 0.01F).ToString();
-            TrackBar_GravityGrid_CursorMass.ValueChanged += (s, e) => Label_GravityGrid_CursorMass_Val.Text = ((int)Animation.Animations.GravityGrid.Settings.CursorMass).ToString();
-            TrackBar_GravityGrid_CursorRepulsionRadius.ValueChanged += (s, e) => Label_GravityGrid_CursorRepulsionRadius_Val.Text = ((int)Animation.Animations.GravityGrid.Settings.CursorRepulsionRadius).ToString();
-            TrackBar_GravityGrid_GradientVelocity.ValueChanged += (s, e) => Label_GravityGrid_GradientVelocity_Val.Text = ((int)(Animation.Animations.GravityGrid.Settings.GradientVelocity * 10) * 0.1).ToString();
+            EventHandler Set_Label_GravityGrid_Radius_Val_Text = (s, e) => Label_GravityGrid_Radius_Val.Text = ((int)(Animation.Animations.GravityGrid.Settings.Radius * 100) * 0.01).ToString();
+            this.Load += Set_Label_GravityGrid_Radius_Val_Text;
+            TrackBar_GravityGrid_Radius.ValueChanged += Set_Label_GravityGrid_Radius_Val_Text;
+
+            EventHandler Set_Label_GravityGrid_Count_Val_Text = (s, e) => Label_GravityGrid_Count_Val.Text = Animation.Animations.GravityGrid.Settings.Count.ToString();
+            this.Load += Set_Label_GravityGrid_Count_Val_Text;
+            TrackBar_GravityGrid_Count.ValueChanged += Set_Label_GravityGrid_Count_Val_Text;
+
+            EventHandler Set_Label_GravityGrid_LineWidth_Val_Text = (s, e) => Label_GravityGrid_LineWidth_Val.Text = ((int)(Animation.Animations.GravityGrid.Settings.LineWidth * 100) * 0.01F).ToString();
+            this.Load += Set_Label_GravityGrid_LineWidth_Val_Text;
+            TrackBar_GravityGrid_LineWidth.ValueChanged += Set_Label_GravityGrid_LineWidth_Val_Text;
+
+            EventHandler Set_Label_GravityGrid_CursorMass_Val_Text = (s, e) => Label_GravityGrid_CursorMass_Val.Text = ((int)Animation.Animations.GravityGrid.Settings.CursorMass).ToString();
+            this.Load += Set_Label_GravityGrid_CursorMass_Val_Text;
+            TrackBar_GravityGrid_CursorMass.ValueChanged += Set_Label_GravityGrid_CursorMass_Val_Text;
+
+            EventHandler Set_Label_GravityGrid_CursorRepulsionRadius_Val_Text = (s, e) => Label_GravityGrid_CursorRepulsionRadius_Val.Text = ((int)Animation.Animations.GravityGrid.Settings.CursorRepulsionRadius).ToString();
+            this.Load += Set_Label_GravityGrid_CursorRepulsionRadius_Val_Text;
+            TrackBar_GravityGrid_CursorRepulsionRadius.ValueChanged += Set_Label_GravityGrid_CursorRepulsionRadius_Val_Text;
+
+            EventHandler Set_Label_GravityGrid_GradientVelocity_Val_Text = (s, e) => Label_GravityGrid_GradientVelocity_Val.Text = ((int)(Animation.Animations.GravityGrid.Settings.GradientVelocity * 10) * 0.1).ToString();
+            this.Load += Set_Label_GravityGrid_GradientVelocity_Val_Text;
+            TrackBar_GravityGrid_GradientVelocity.ValueChanged += Set_Label_GravityGrid_GradientVelocity_Val_Text;
 
             // "动画"区域：扩散光点
-            TrackBar_SpreadSpot_MinRadius.ValueChanged += (s, e) => Label_SpreadSpot_MinRadius_Val.Text = ((int)(Animation.Animations.SpreadSpot.Settings.MinRadius * 100) * 0.01).ToString();
-            TrackBar_SpreadSpot_MaxRadius.ValueChanged += (s, e) => Label_SpreadSpot_MaxRadius_Val.Text = ((int)(Animation.Animations.SpreadSpot.Settings.MaxRadius * 100) * 0.01).ToString();
-            TrackBar_SpreadSpot_Count.ValueChanged += (s, e) => Label_SpreadSpot_Count_Val.Text = Animation.Animations.SpreadSpot.Settings.Count.ToString();
-            TrackBar_SpreadSpot_SourceX.ValueChanged += (s, e) => Label_SpreadSpot_SourceX_Val.Text = ((int)(Animation.Animations.SpreadSpot.Settings.SourceX * 1000) * 0.001).ToString();
-            TrackBar_SpreadSpot_SourceY.ValueChanged += (s, e) => Label_SpreadSpot_SourceY_Val.Text = ((int)(Animation.Animations.SpreadSpot.Settings.SourceY * 1000) * 0.001).ToString();
-            TrackBar_SpreadSpot_SourceZ.ValueChanged += (s, e) => Label_SpreadSpot_SourceZ_Val.Text = ((int)(Animation.Animations.SpreadSpot.Settings.SourceZ * 1000) * 0.001).ToString();
-            TrackBar_SpreadSpot_SourceSize.ValueChanged += (s, e) => Label_SpreadSpot_SourceSize_Val.Text = ((int)(Animation.Animations.SpreadSpot.Settings.SourceSize * 1000) * 0.001).ToString();
-            TrackBar_SpreadSpot_Velocity.ValueChanged += (s, e) => Label_SpreadSpot_Velocity_Val.Text = ((int)(Animation.Animations.SpreadSpot.Settings.Velocity * 100) * 0.01).ToString();
-            TrackBar_SpreadSpot_GradientVelocity.ValueChanged += (s, e) => Label_SpreadSpot_GradientVelocity_Val.Text = ((int)(Animation.Animations.SpreadSpot.Settings.GradientVelocity * 10) * 0.1).ToString();
+            EventHandler Set_Label_SpreadSpot_MinRadius_Val_Text = (s, e) => Label_SpreadSpot_MinRadius_Val.Text = ((int)(Animation.Animations.SpreadSpot.Settings.MinRadius * 100) * 0.01).ToString();
+            this.Load += Set_Label_SpreadSpot_MinRadius_Val_Text;
+            TrackBar_SpreadSpot_MinRadius.ValueChanged += Set_Label_SpreadSpot_MinRadius_Val_Text;
+
+            EventHandler Set_Label_SpreadSpot_MaxRadius_Val_Text = (s, e) => Label_SpreadSpot_MaxRadius_Val.Text = ((int)(Animation.Animations.SpreadSpot.Settings.MaxRadius * 100) * 0.01).ToString();
+            this.Load += Set_Label_SpreadSpot_MaxRadius_Val_Text;
+            TrackBar_SpreadSpot_MaxRadius.ValueChanged += Set_Label_SpreadSpot_MaxRadius_Val_Text;
+
+            EventHandler Set_Label_SpreadSpot_Count_Val_Text = (s, e) => Label_SpreadSpot_Count_Val.Text = Animation.Animations.SpreadSpot.Settings.Count.ToString();
+            this.Load += Set_Label_SpreadSpot_Count_Val_Text;
+            TrackBar_SpreadSpot_Count.ValueChanged += Set_Label_SpreadSpot_Count_Val_Text;
+
+            EventHandler Set_Label_SpreadSpot_SourceX_Val_Text = (s, e) => Label_SpreadSpot_SourceX_Val.Text = ((int)(Animation.Animations.SpreadSpot.Settings.SourceX * 1000) * 0.001).ToString();
+            this.Load += Set_Label_SpreadSpot_SourceX_Val_Text;
+            TrackBar_SpreadSpot_SourceX.ValueChanged += Set_Label_SpreadSpot_SourceX_Val_Text;
+
+            EventHandler Set_Label_SpreadSpot_SourceY_Val_Text = (s, e) => Label_SpreadSpot_SourceY_Val.Text = ((int)(Animation.Animations.SpreadSpot.Settings.SourceY * 1000) * 0.001).ToString();
+            this.Load += Set_Label_SpreadSpot_SourceY_Val_Text;
+            TrackBar_SpreadSpot_SourceY.ValueChanged += Set_Label_SpreadSpot_SourceY_Val_Text;
+
+            EventHandler Set_Label_SpreadSpot_SourceZ_Val_Text = (s, e) => Label_SpreadSpot_SourceZ_Val.Text = ((int)(Animation.Animations.SpreadSpot.Settings.SourceZ * 1000) * 0.001).ToString();
+            this.Load += Set_Label_SpreadSpot_SourceZ_Val_Text;
+            TrackBar_SpreadSpot_SourceZ.ValueChanged += Set_Label_SpreadSpot_SourceZ_Val_Text;
+
+            EventHandler Set_Label_SpreadSpot_SourceSize_Val_Text = (s, e) => Label_SpreadSpot_SourceSize_Val.Text = ((int)(Animation.Animations.SpreadSpot.Settings.SourceSize * 1000) * 0.001).ToString();
+            this.Load += Set_Label_SpreadSpot_SourceSize_Val_Text;
+            TrackBar_SpreadSpot_SourceSize.ValueChanged += Set_Label_SpreadSpot_SourceSize_Val_Text;
+
+            EventHandler Set_Label_SpreadSpot_Velocity_Val_Text = (s, e) => Label_SpreadSpot_Velocity_Val.Text = ((int)(Animation.Animations.SpreadSpot.Settings.Velocity * 100) * 0.01).ToString();
+            this.Load += Set_Label_SpreadSpot_Velocity_Val_Text;
+            TrackBar_SpreadSpot_Velocity.ValueChanged += Set_Label_SpreadSpot_Velocity_Val_Text;
+
+            EventHandler Set_Label_SpreadSpot_GradientVelocity_Val_Text = (s, e) => Label_SpreadSpot_GradientVelocity_Val.Text = ((int)(Animation.Animations.SpreadSpot.Settings.GradientVelocity * 10) * 0.1).ToString();
+            this.Load += Set_Label_SpreadSpot_GradientVelocity_Val_Text;
+            TrackBar_SpreadSpot_GradientVelocity.ValueChanged += Set_Label_SpreadSpot_GradientVelocity_Val_Text;
 
             // "通用"区域
-            TrackBar_FPS.ValueChanged += (s, e) => Label_FPS_Val.Text = ((int)Animation.Settings.FPS).ToString();
+            EventHandler Set_Label_FPS_Val_Text = (s, e) => Label_FPS_Val.Text = ((int)Animation.Settings.FPS).ToString();
+            this.Load += Set_Label_FPS_Val_Text;
+            TrackBar_FPS.ValueChanged += Set_Label_FPS_Val_Text;
         }
 
         // 窗体加载
