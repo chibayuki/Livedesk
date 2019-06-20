@@ -58,6 +58,7 @@ namespace WinFormApp
         {
             InitializeComponent();
 
+#if !DEBUG
             // 使窗体不在任务栏、任务视图与任务管理器「应用」中显示
             this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
             this.ShowInTaskbar = false;
@@ -85,15 +86,17 @@ namespace WinFormApp
                 IntPtr hWndNewParent = User32.FindWindow("Progman", null);
                 User32.SetParent(base.Handle, hWndNewParent);
             }
+#endif
 
             // 设置控件属性
-            ToolStripMenuItem_Exit.Text = "关闭 \"" + Application.ProductName + "\"";
+            ToolStripMenuItem_Settings.Text = "\"" + Application.ProductName + "\" 设置";
         }
 
         // 窗体加载
         private void Form_Main_Load(object sender, EventArgs e)
         {
-            // 防止进程多开
+#if !DEBUG
+    // 防止进程多开
             string ModuleName = Process.GetCurrentProcess().MainModule.ModuleName;
             string ProcessName = Path.GetFileNameWithoutExtension(ModuleName);
             Process[] Processes = Process.GetProcessesByName(ProcessName);
@@ -101,6 +104,7 @@ namespace WinFormApp
             {
                 Application.Exit();
             }
+#endif
 
             // 从以前的版本迁移最新的配置文件
             Configuration.TransConfig();
@@ -116,21 +120,25 @@ namespace WinFormApp
         // 窗体激活
         private void Form_Main_Activated(object sender, EventArgs e)
         {
-            // 将窗体置于底层
+#if !DEBUG
+       // 将窗体置于底层
             if (Environment.OSVersion.Version.Major >= 6)
             {
                 User32.SetWindowPos(base.Handle, 1, 0, 0, 0, 0, 19U);
             }
+#endif
         }
 
         // 窗体重绘
         private void Form_Main_Paint(object sender, PaintEventArgs e)
         {
-            // 将窗体置于底层
+#if !DEBUG
+        // 将窗体置于底层
             if (Environment.OSVersion.Version.Major >= 6)
             {
                 User32.SetWindowPos(base.Handle, 1, 0, 0, 0, 0, 19U);
             }
+#endif
         }
 
         #endregion
@@ -164,15 +172,25 @@ namespace WinFormApp
         private void RedrawBitmap()
         {
             // 当屏幕分辨率发生变化时重新设置窗体边界
-            if (this.Bounds != Animation.FormBounds)
+            Rectangle FormBounds = Animation.FormBounds;
+            if (this.Bounds != FormBounds)
             {
-                this.Bounds = Animation.FormBounds;
+                this.Bounds = FormBounds;
             }
 
             if (Bmp != null)
             {
+#if !DEBUG
                 // 在透明窗体上绘制位图
                 Com.Painting2D.PaintImageOnTransparentForm(this, Bmp, 255);
+#else
+                using (Bitmap b = new Bitmap(Bmp.Width, Bmp.Height)) using (Graphics g = Graphics.FromImage(b))
+                {
+                    g.Clear(Color.Black);
+                    g.DrawImage(Bmp, new Point(0, 0));
+                    this.CreateGraphics().DrawImage(b, new Point(0, 0));
+                }
+#endif
 
                 // 释放资源
                 Bmp.Dispose();

@@ -400,6 +400,10 @@
             this.Label_Shortcut = new System.Windows.Forms.Label();
             this.CheckBox_StartMenuShortcut = new System.Windows.Forms.CheckBox();
             this.CheckBox_DesktopShortcut = new System.Windows.Forms.CheckBox();
+            this.Panel_Theme = new System.Windows.Forms.Panel();
+            this.Label_Theme = new System.Windows.Forms.Label();
+            this.RadioButton_Theme_Light = new System.Windows.Forms.RadioButton();
+            this.RadioButton_Theme_Dark = new System.Windows.Forms.RadioButton();
             this.Panel_Tab_About = new System.Windows.Forms.Panel();
             this.Panel_AppInfo = new System.Windows.Forms.Panel();
             this.PictureBox_AppLogo = new System.Windows.Forms.PictureBox();
@@ -554,6 +558,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.TrackBar_FPS)).BeginInit();
             this.Panel_AutoStart.SuspendLayout();
             this.Panel_Shortcut.SuspendLayout();
+            this.Panel_Theme.SuspendLayout();
             this.Panel_Tab_About.SuspendLayout();
             this.Panel_AppInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox_AppLogo)).BeginInit();
@@ -4560,9 +4565,10 @@
             this.Panel_Tab_Common.Controls.Add(this.Panel_LimitFPS);
             this.Panel_Tab_Common.Controls.Add(this.Panel_AutoStart);
             this.Panel_Tab_Common.Controls.Add(this.Panel_Shortcut);
+            this.Panel_Tab_Common.Controls.Add(this.Panel_Theme);
             this.Panel_Tab_Common.Location = new System.Drawing.Point(0, 0);
             this.Panel_Tab_Common.Name = "Panel_Tab_Common";
-            this.Panel_Tab_Common.Size = new System.Drawing.Size(460, 370);
+            this.Panel_Tab_Common.Size = new System.Drawing.Size(440, 415);
             this.Panel_Tab_Common.TabIndex = 0;
             // 
             // Panel_AntiAlias
@@ -4571,7 +4577,7 @@
             this.Panel_AntiAlias.Controls.Add(this.CheckBox_AntiAlias);
             this.Panel_AntiAlias.Location = new System.Drawing.Point(10, 10);
             this.Panel_AntiAlias.Name = "Panel_AntiAlias";
-            this.Panel_AntiAlias.Size = new System.Drawing.Size(440, 65);
+            this.Panel_AntiAlias.Size = new System.Drawing.Size(420, 65);
             this.Panel_AntiAlias.TabIndex = 0;
             this.Panel_AntiAlias.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_AntiAlias_Paint);
             // 
@@ -4607,7 +4613,7 @@
             this.Panel_LimitFPS.Controls.Add(this.Label_FPS_Val);
             this.Panel_LimitFPS.Location = new System.Drawing.Point(10, 75);
             this.Panel_LimitFPS.Name = "Panel_LimitFPS";
-            this.Panel_LimitFPS.Size = new System.Drawing.Size(440, 110);
+            this.Panel_LimitFPS.Size = new System.Drawing.Size(420, 110);
             this.Panel_LimitFPS.TabIndex = 0;
             this.Panel_LimitFPS.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_LimitFPS_Paint);
             // 
@@ -4672,7 +4678,7 @@
             this.Panel_AutoStart.Controls.Add(this.CheckBox_AutoStart);
             this.Panel_AutoStart.Location = new System.Drawing.Point(10, 185);
             this.Panel_AutoStart.Name = "Panel_AutoStart";
-            this.Panel_AutoStart.Size = new System.Drawing.Size(440, 65);
+            this.Panel_AutoStart.Size = new System.Drawing.Size(420, 65);
             this.Panel_AutoStart.TabIndex = 0;
             this.Panel_AutoStart.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_AutoStart_Paint);
             // 
@@ -4706,7 +4712,7 @@
             this.Panel_Shortcut.Controls.Add(this.CheckBox_DesktopShortcut);
             this.Panel_Shortcut.Location = new System.Drawing.Point(10, 250);
             this.Panel_Shortcut.Name = "Panel_Shortcut";
-            this.Panel_Shortcut.Size = new System.Drawing.Size(440, 90);
+            this.Panel_Shortcut.Size = new System.Drawing.Size(420, 90);
             this.Panel_Shortcut.TabIndex = 0;
             this.Panel_Shortcut.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_Shortcut_Paint);
             // 
@@ -4745,6 +4751,51 @@
             this.CheckBox_DesktopShortcut.Text = "在桌面创建快捷方式";
             this.CheckBox_DesktopShortcut.UseVisualStyleBackColor = true;
             this.CheckBox_DesktopShortcut.CheckedChanged += new System.EventHandler(this.CheckBox_DesktopShortcut_CheckedChanged);
+            // 
+            // Panel_Theme
+            // 
+            this.Panel_Theme.Controls.Add(this.Label_Theme);
+            this.Panel_Theme.Controls.Add(this.RadioButton_Theme_Light);
+            this.Panel_Theme.Controls.Add(this.RadioButton_Theme_Dark);
+            this.Panel_Theme.Location = new System.Drawing.Point(10, 340);
+            this.Panel_Theme.Name = "Panel_Theme";
+            this.Panel_Theme.Size = new System.Drawing.Size(420, 65);
+            this.Panel_Theme.TabIndex = 0;
+            this.Panel_Theme.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_Theme_Paint);
+            // 
+            // Label_Theme
+            // 
+            this.Label_Theme.AutoSize = true;
+            this.Label_Theme.Font = new System.Drawing.Font("微软雅黑", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Label_Theme.Location = new System.Drawing.Point(0, 0);
+            this.Label_Theme.Name = "Label_Theme";
+            this.Label_Theme.Size = new System.Drawing.Size(35, 19);
+            this.Label_Theme.TabIndex = 0;
+            this.Label_Theme.Text = "主题";
+            // 
+            // RadioButton_Theme_Light
+            // 
+            this.RadioButton_Theme_Light.AutoSize = true;
+            this.RadioButton_Theme_Light.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.RadioButton_Theme_Light.Location = new System.Drawing.Point(10, 30);
+            this.RadioButton_Theme_Light.Name = "RadioButton_Theme_Light";
+            this.RadioButton_Theme_Light.Size = new System.Drawing.Size(50, 21);
+            this.RadioButton_Theme_Light.TabIndex = 0;
+            this.RadioButton_Theme_Light.Text = "浅色";
+            this.RadioButton_Theme_Light.UseVisualStyleBackColor = true;
+            this.RadioButton_Theme_Light.CheckedChanged += new System.EventHandler(this.RadioButton_Theme_Light_CheckedChanged);
+            // 
+            // RadioButton_Theme_Dark
+            // 
+            this.RadioButton_Theme_Dark.AutoSize = true;
+            this.RadioButton_Theme_Dark.Font = new System.Drawing.Font("微软雅黑", 9F);
+            this.RadioButton_Theme_Dark.Location = new System.Drawing.Point(90, 30);
+            this.RadioButton_Theme_Dark.Name = "RadioButton_Theme_Dark";
+            this.RadioButton_Theme_Dark.Size = new System.Drawing.Size(50, 21);
+            this.RadioButton_Theme_Dark.TabIndex = 0;
+            this.RadioButton_Theme_Dark.Text = "深色";
+            this.RadioButton_Theme_Dark.UseVisualStyleBackColor = true;
+            this.RadioButton_Theme_Dark.CheckedChanged += new System.EventHandler(this.RadioButton_Theme_Dark_CheckedChanged);
             // 
             // Panel_Tab_About
             // 
@@ -5105,6 +5156,8 @@
             this.Panel_AutoStart.PerformLayout();
             this.Panel_Shortcut.ResumeLayout(false);
             this.Panel_Shortcut.PerformLayout();
+            this.Panel_Theme.ResumeLayout(false);
+            this.Panel_Theme.PerformLayout();
             this.Panel_Tab_About.ResumeLayout(false);
             this.Panel_AppInfo.ResumeLayout(false);
             this.Panel_AppInfo.PerformLayout();
@@ -5500,5 +5553,9 @@
         private System.Windows.Forms.Label Label_Snow_ResetToDefault;
         private System.Windows.Forms.Label Label_GravityParticle_ResetToDefault;
         private System.Windows.Forms.Label Label_GravityGrid_ResetToDefault;
+        private System.Windows.Forms.Panel Panel_Theme;
+        private System.Windows.Forms.Label Label_Theme;
+        private System.Windows.Forms.RadioButton RadioButton_Theme_Dark;
+        private System.Windows.Forms.RadioButton RadioButton_Theme_Light;
     }
 }

@@ -36,7 +36,8 @@ namespace WinFormApp
             new Version(1, 0, 1712, 0),
             new Version(1, 0, 1712, 127),
             new Version(1, 0, 1807, 0),
-            new Version(1, 0, 1807, 25)
+            new Version(1, 0, 1807, 25),/*
+            new Version(1, 0, 1807, 326)*/
         };
 
         // 根目录：此产品
@@ -1227,6 +1228,21 @@ namespace WinFormApp
                         }
                     }
                     catch { }
+
+                    try
+                    {
+                        string SubStr = Com.Text.GetIntervalString(Cfg, "<Theme>", "</Theme>", false, false);
+                        foreach (object Obj in Enum.GetValues(typeof(Com.WinForm.Theme)))
+                        {
+                            if (SubStr.Trim().ToUpper() == Obj.ToString().ToUpper())
+                            {
+                                Com.WinForm.Theme Theme = (Com.WinForm.Theme)Obj;
+                                Animation.Settings.Theme = (Theme <= Com.WinForm.Theme.LightGray ? Com.WinForm.Theme.White : Com.WinForm.Theme.Black);
+                                break;
+                            }
+                        }
+                    }
+                    catch { }
                 }
             }
             catch { }
@@ -1481,6 +1497,7 @@ namespace WinFormApp
                     Cfg += "<AntiAlias>" + Animation.Settings.AntiAlias + "</AntiAlias>";
                     Cfg += "<LimitFPS>" + Animation.Settings.LimitFPS + "</LimitFPS>";
                     Cfg += "<FPS>" + Animation.Settings.FPS + "</FPS>";
+                    Cfg += "<Theme>" + Animation.Settings.Theme + "</Theme>";
                     Cfg += "</Config>";
 
                     if (File.Exists(CommonSettingsFilePath) && new FileInfo(CommonSettingsFilePath).Attributes != FileAttributes.Normal)

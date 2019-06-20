@@ -197,6 +197,9 @@ namespace WinFormApp
                     }
                 }
             }
+
+            // 主题
+            public static Com.WinForm.Theme Theme = Com.WinForm.Theme.White;
         }
 
         // 动画

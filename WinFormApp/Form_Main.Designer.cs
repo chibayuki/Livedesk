@@ -53,30 +53,31 @@
             this.ToolStripSeparator_0,
             this.ToolStripMenuItem_Exit});
             this.ContextMenuStrip_Main.Name = "ContextMenuStrip_Main";
-            this.ContextMenuStrip_Main.Size = new System.Drawing.Size(174, 60);
+            this.ContextMenuStrip_Main.Size = new System.Drawing.Size(178, 60);
             // 
             // ToolStripMenuItem_Settings
             // 
-            this.ToolStripMenuItem_Settings.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ToolStripMenuItem_Settings.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ToolStripMenuItem_Settings.Image = ((System.Drawing.Image)(resources.GetObject("ToolStripMenuItem_Settings.Image")));
             this.ToolStripMenuItem_Settings.Margin = new System.Windows.Forms.Padding(0, 1, 0, 1);
             this.ToolStripMenuItem_Settings.Name = "ToolStripMenuItem_Settings";
-            this.ToolStripMenuItem_Settings.Size = new System.Drawing.Size(173, 22);
-            this.ToolStripMenuItem_Settings.Text = "设置";
+            this.ToolStripMenuItem_Settings.Size = new System.Drawing.Size(177, 22);
+            this.ToolStripMenuItem_Settings.Text = "\"AppName\" 设置";
             this.ToolStripMenuItem_Settings.Click += new System.EventHandler(this.ToolStripMenuItem_Settings_Click);
             // 
             // ToolStripSeparator_0
             // 
             this.ToolStripSeparator_0.Margin = new System.Windows.Forms.Padding(0, 1, 0, 1);
             this.ToolStripSeparator_0.Name = "ToolStripSeparator_0";
-            this.ToolStripSeparator_0.Size = new System.Drawing.Size(170, 6);
+            this.ToolStripSeparator_0.Size = new System.Drawing.Size(177, 6);
             // 
             // ToolStripMenuItem_Exit
             // 
             this.ToolStripMenuItem_Exit.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.ToolStripMenuItem_Exit.Margin = new System.Windows.Forms.Padding(0, 1, 0, 1);
             this.ToolStripMenuItem_Exit.Name = "ToolStripMenuItem_Exit";
-            this.ToolStripMenuItem_Exit.Size = new System.Drawing.Size(173, 22);
-            this.ToolStripMenuItem_Exit.Text = "关闭 \"AppName\"";
+            this.ToolStripMenuItem_Exit.Size = new System.Drawing.Size(180, 22);
+            this.ToolStripMenuItem_Exit.Text = "退出";
             this.ToolStripMenuItem_Exit.Click += new System.EventHandler(this.ToolStripMenuItem_Exit_Click);
             // 
             // Form_Main

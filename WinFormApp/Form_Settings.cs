@@ -28,7 +28,7 @@ namespace WinFormApp
         #region 窗体
 
         // 仅使用 RecommendColors
-        Com.WinForm.FormManager FormManager;
+        private Com.WinForm.FormManager FormManager;
 
         // 窗体构造
         public Form_Settings()
@@ -47,11 +47,6 @@ namespace WinFormApp
             this.StartPosition = FormStartPosition.CenterScreen;
             // 窗体标题
             this.Text = "\"" + Application.ProductName + "\" 设置";
-
-            // 构造 FormManager
-            FormManager = new Com.WinForm.FormManager(new Form());
-            FormManager.Theme = Com.WinForm.Theme.White;
-            FormManager.ThemeColor = Color.White;
 
             // "动画"区域：圆形光点
             EventHandler Set_Label_LightSpot_MinRadius_Val_Text = (s, e) => Label_LightSpot_MinRadius_Val.Text = ((int)(Animation.Animations.LightSpot.Settings.MinRadius * 100) * 0.01).ToString();
@@ -294,6 +289,11 @@ namespace WinFormApp
         // 窗体加载
         private void Form_Settings_Load(object sender, EventArgs e)
         {
+            // 构造 FormManager
+            FormManager = new Com.WinForm.FormManager(new Form());
+            FormManager.Theme = Animation.Settings.Theme;
+            FormManager.ThemeColor = Color.White;
+
             // 设置主题与颜色
             SetThemeAndColor();
 
@@ -339,6 +339,16 @@ namespace WinFormApp
             CheckBox_DesktopShortcut.CheckedChanged -= CheckBox_DesktopShortcut_CheckedChanged;
             CheckBox_DesktopShortcut.Checked = Animation.Settings.DesktopShortcut;
             CheckBox_DesktopShortcut.CheckedChanged += CheckBox_DesktopShortcut_CheckedChanged;
+
+            RadioButton_Theme_Light.CheckedChanged -= RadioButton_Theme_Light_CheckedChanged;
+            RadioButton_Theme_Dark.CheckedChanged -= RadioButton_Theme_Dark_CheckedChanged;
+            switch (Animation.Settings.Theme)
+            {
+                case Com.WinForm.Theme.White: RadioButton_Theme_Light.Checked = true; break;
+                case Com.WinForm.Theme.Black: RadioButton_Theme_Dark.Checked = true; break;
+            }
+            RadioButton_Theme_Light.CheckedChanged += RadioButton_Theme_Light_CheckedChanged;
+            RadioButton_Theme_Dark.CheckedChanged += RadioButton_Theme_Dark_CheckedChanged;
 
             // "关于"区域
             Label_ApplicationName.Text = Application.ProductName;
@@ -693,6 +703,9 @@ namespace WinFormApp
 
             Label_Shortcut.ForeColor = FormManager.RecommendColors.Text_INC.ToColor();
             CheckBox_StartMenuShortcut.ForeColor = CheckBox_DesktopShortcut.ForeColor = FormManager.RecommendColors.Text.ToColor();
+
+            Label_Theme.ForeColor = FormManager.RecommendColors.Text_INC.ToColor();
+            RadioButton_Theme_Light.ForeColor = RadioButton_Theme_Dark.ForeColor = FormManager.RecommendColors.Text.ToColor();
 
             // "关于"区域
 
@@ -1699,6 +1712,19 @@ namespace WinFormApp
             {
                 Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
                 Control Ctrl = Label_Shortcut;
+                e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
+                P.Dispose();
+            }
+        }
+
+        // Panel_Theme 绘图
+        private void Panel_Theme_Paint(object sender, PaintEventArgs e)
+        {
+            Control Cntr = sender as Control;
+            if (Cntr != null)
+            {
+                Pen P = new Pen(FormManager.RecommendColors.Border_DEC.ToColor(), 1);
+                Control Ctrl = Label_Theme;
                 e.Graphics.DrawLine(P, new Point(Ctrl.Right, Ctrl.Top + Ctrl.Height / 2), new Point(Cntr.Width, Ctrl.Top + Ctrl.Height / 2));
                 P.Dispose();
             }
@@ -3640,6 +3666,28 @@ namespace WinFormApp
             CheckBox_DesktopShortcut.CheckedChanged -= CheckBox_DesktopShortcut_CheckedChanged;
             CheckBox_DesktopShortcut.Checked = Animation.Settings.DesktopShortcut;
             CheckBox_DesktopShortcut.CheckedChanged += CheckBox_DesktopShortcut_CheckedChanged;
+        }
+
+        // RadioButton_Theme_Light 的 Checked 更改
+        private void RadioButton_Theme_Light_CheckedChanged(object sender, EventArgs e)
+        {
+            if (RadioButton_Theme_Light.Checked)
+            {
+                FormManager.Theme = Animation.Settings.Theme = Com.WinForm.Theme.White;
+
+                SetThemeAndColor();
+            }
+        }
+
+        // RadioButton_Theme_Dark 的 Checked 更改
+        private void RadioButton_Theme_Dark_CheckedChanged(object sender, EventArgs e)
+        {
+            if (RadioButton_Theme_Dark.Checked)
+            {
+                FormManager.Theme = Animation.Settings.Theme = Com.WinForm.Theme.Black;
+
+                SetThemeAndColor();
+            }
         }
 
         #endregion
