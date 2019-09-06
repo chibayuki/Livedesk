@@ -3509,11 +3509,10 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                     Com.PointD _Acc = Acceleration;
                     double dT = DeltaTime.Elapsed.TotalSeconds;
 
-                    Location.X += (float)((2 * Velocity.X + _Acc.X * dT) * dT / 2);
-                    Location.Y += (float)((2 * Velocity.Y + _Acc.Y * dT) * dT / 2);
+                    Location.X += (float)((Velocity.X + _Acc.X * (dT / 2)) * dT);
+                    Location.Y += (float)((Velocity.Y + _Acc.Y * (dT / 2)) * dT);
 
-                    Velocity.X += _Acc.X * dT;
-                    Velocity.Y += _Acc.Y * dT;
+                    Velocity += _Acc * dT;
                 }
 
                 // 边界
@@ -4106,8 +4105,7 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                             // 当粒子处于鼠标指针斥力范围内达到一定时间后，使该粒子减速，并且使引力加速度反向
                             if (_MSOfNearByCursor >= _RepulsionAfterThisMS && CurDist < Settings.CursorRepulsionRadius)
                             {
-                                Acc.X -= Velocity.X * 0.5;
-                                Acc.Y -= Velocity.Y * 0.5;
+                                Acc -= Velocity * 0.5;
 
                                 Acc_Abs *= -1;
                             }
@@ -4164,11 +4162,10 @@ Rand.NextDouble() * 2 * Math.PI, Rand.NextDouble() * 2 * Math.PI, Rand.NextDoubl
                     Com.PointD _Acc = Acceleration;
                     double dT = DeltaTime.Elapsed.TotalSeconds;
 
-                    Location.X += (float)((2 * Velocity.X + _Acc.X * dT) * dT / 2);
-                    Location.Y += (float)((2 * Velocity.Y + _Acc.Y * dT) * dT / 2);
+                    Location.X += (float)((Velocity.X + _Acc.X * (dT / 2)) * dT);
+                    Location.Y += (float)((Velocity.Y + _Acc.Y * (dT / 2)) * dT);
 
-                    Velocity.X += _Acc.X * dT;
-                    Velocity.Y += _Acc.Y * dT;
+                    Velocity += _Acc * dT;
                 }
 
                 // 边界
